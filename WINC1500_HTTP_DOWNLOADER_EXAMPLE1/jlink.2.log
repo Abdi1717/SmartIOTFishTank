@@ -1,0 +1,1286 @@
+T2C30 5158:529.925   SEGGER J-Link V7.94a Log File
+T2C30 5158:530.030   DLL Compiled: Dec  6 2023 16:01:39
+T2C30 5158:530.052   Logging started @ 2023-12-19 06:31
+T2C30 5158:530.073   Process: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atbackend.exe
+T2C30 5158:530.094 - 5195.077ms
+T2C30 5158:605.499 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T2C30 5158:605.874   Device "ATSAMD21G18A" selected.
+T2C30 5158:606.275 - 0.708ms returns 0x00
+T2C30 5158:632.587 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T2C30 5158:633.341 - 0.752ms returns 0x00
+T2C30 5158:633.433 JLINK_SetSpeed(4000)
+T2C30 5158:633.571 - 0.137ms
+T2C30 5158:633.618 JLINK_ResetPullsRESET(OFF)
+T2C30 5158:633.641 - 0.023ms
+T2C30 5158:633.664 JLINK_Connect()
+T2C30 5158:634.233   InitTarget() start
+T2C30 5158:634.254    J-Link Script File: Executing InitTarget()
+T2C30 5158:634.278   InitTarget()
+T2C30 5158:636.663   InitTarget() end - Took 2.34ms
+T2C30 5162:470.744   Found SW-DP with ID 0x0BC11477
+T2C30 5162:473.769   DPIDR: 0x0BC11477
+T2C30 5162:473.936   CoreSight SoC-400 or earlier
+T2C30 5162:474.012   Scanning AP map to find all available APs
+T2C30 5162:474.882   AP[1]: Stopped AP scan as end of AP map has been reached
+T2C30 5162:474.991   AP[0]: AHB-AP (IDR: 0x04770031)
+T2C30 5162:475.059   Iterating through AP map to find AHB-AP to use
+T2C30 5162:476.219   AP[0]: Core found
+T2C30 5162:476.315   AP[0]: AHB-AP ROM base: 0x41003000
+T2C30 5162:477.185   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T2C30 5162:477.294   Found Cortex-M0 r0p1, Little endian.
+T2C30 5162:478.054   -- Max. mem block: 0x00002BA8
+T2C30 5162:478.795   Cortex-M: The connected J-Link (S/N 801048353) uses an old firmware module: V1 (current is 2)
+T2C30 5162:478.882   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5162:479.509   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T2C30 5162:480.159   CPU_ReadMem(4 bytes @ 0xE0002000)
+T2C30 5162:480.870   FPUnit: 4 code (BP) slots and 0 literal slots
+T2C30 5162:480.956   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5162:481.515   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5162:482.168   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5162:482.624   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5162:483.355   CoreSight components:
+T2C30 5162:483.426   ROMTbl[0] @ 41003000
+T2C30 5162:483.459   CPU_ReadMem(64 bytes @ 0x41003000)
+T2C30 5162:484.260   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T2C30 5162:485.056   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T2C30 5162:485.134   ROMTbl[1] @ E00FF000
+T2C30 5162:485.180   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T2C30 5162:486.002   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T2C30 5162:486.875   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T2C30 5162:486.932   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T2C30 5162:487.752   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T2C30 5162:487.825   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T2C30 5162:488.610   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T2C30 5162:488.670   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T2C30 5162:489.375   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T2C30 5162:489.451 - 3855.784ms returns 0x00
+T2C30 5162:491.082 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T2C30 5162:491.173 - 0.002ms returns 0x00
+T2C30 5162:491.287 JLINK_Halt()
+T2C30 5162:494.520 - 3.230ms returns 0x00
+T2C30 5162:497.862 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T2C30 5162:497.899 - 0.039ms returns 0
+T2C30 5162:497.922 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T2C30 5162:497.982   CPU_ReadMem(4 bytes @ 0x41002018)
+T2C30 5162:498.450   Data:  05 03 01 10
+T2C30 5162:498.500 - 0.578ms returns 1 (0x1)
+T20C8 5162:511.412 JLINK_IsHalted()
+T20C8 5162:511.803 - 0.390ms returns TRUE
+T20C8 5162:511.834 JLINK_GetMOEs(...)
+T20C8 5162:511.849   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T20C8 5162:512.195 - 0.360ms returns 0x01
+T20C8 5162:512.221 JLINK_ReadReg(R15 (PC))
+T20C8 5162:512.239 - 0.017ms returns 0x00004A70
+T2C30 5162:614.368 JLINK_BeginDownload(Flags = 0x00000000)
+T2C30 5162:614.396 - 0.028ms
+T2C30 5162:614.413 JLINK_WriteMem(0x00000000, 0x1964C Bytes, ...)
+T2C30 5162:614.505   Data:  58 7D 00 20 7D E8 00 00 61 E8 00 00 61 E8 00 00 ...
+T2C30 5162:614.879   completely In flash
+T2C30 5162:614.896 - 0.483ms returns 0x1964C
+T2C30 5162:615.269 JLINK_WriteMem(0x0001964C, 0x2D0 Bytes, ...)
+T2C30 5162:615.278   Data:  7B 22 64 22 3A 7B 22 74 65 6D 70 22 3A 31 37 7D ...
+T2C30 5162:615.336   completely In flash
+T2C30 5162:615.346 - 0.076ms returns 0x2D0
+T2C30 5162:654.393 JLINK_EndDownload()
+T2C30 5162:654.898   CPU_ReadMem(4 bytes @ 0x41006004)
+T2C30 5162:655.386   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T2C30 5162:655.804    -- --------------------------------------
+T2C30 5162:655.826    -- Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T2C30 5162:655.838    -- Start of determining dirty areas in flash cache
+T2C30 5162:655.851    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000000 if necessary
+T2C30 5162:655.864    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000100 if necessary
+T2C30 5162:655.876    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000200 if necessary
+T2C30 5162:655.888    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000300 if necessary
+T2C30 5162:655.900    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000400 if necessary
+T2C30 5162:655.912    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000500 if necessary
+T2C30 5162:655.924    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000600 if necessary
+T2C30 5162:655.936    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000700 if necessary
+T2C30 5162:655.948    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000800 if necessary
+T2C30 5162:655.960    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000900 if necessary
+T2C30 5162:655.972    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000A00 if necessary
+T2C30 5162:655.984    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000B00 if necessary
+T2C30 5162:655.996    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000C00 if necessary
+T2C30 5162:656.024    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000D00 if necessary
+T2C30 5162:656.036    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000E00 if necessary
+T2C30 5162:656.048    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000F00 if necessary
+T2C30 5162:656.060    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001000 if necessary
+T2C30 5162:656.072    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001100 if necessary
+T2C30 5162:656.084    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001200 if necessary
+T2C30 5162:656.095    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001300 if necessary
+T2C30 5162:656.115    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001400 if necessary
+T2C30 5162:656.127    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001500 if necessary
+T2C30 5162:656.139    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001600 if necessary
+T2C30 5162:656.151    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001700 if necessary
+T2C30 5162:656.163    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001800 if necessary
+T2C30 5162:656.175    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001900 if necessary
+T2C30 5162:656.187    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001A00 if necessary
+T2C30 5162:656.199    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001B00 if necessary
+T2C30 5162:656.278    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001C00 if necessary
+T2C30 5162:656.290    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001D00 if necessary
+T2C30 5162:656.302    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001E00 if necessary
+T2C30 5162:656.314    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001F00 if necessary
+T2C30 5162:656.326    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002000 if necessary
+T2C30 5162:656.338    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002100 if necessary
+T2C30 5162:656.350    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002200 if necessary
+T2C30 5162:656.362    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002300 if necessary
+T2C30 5162:656.374    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002400 if necessary
+T2C30 5162:656.386    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002500 if necessary
+T2C30 5162:656.398    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002600 if necessary
+T2C30 5162:656.410    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002700 if necessary
+T2C30 5162:656.422    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002800 if necessary
+T2C30 5162:656.434    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002900 if necessary
+T2C30 5162:656.446    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002A00 if necessary
+T2C30 5162:656.458    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002B00 if necessary
+T2C30 5162:656.470    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002C00 if necessary
+T2C30 5162:656.482    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002D00 if necessary
+T2C30 5162:656.494    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002E00 if necessary
+T2C30 5162:656.506    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002F00 if necessary
+T2C30 5162:656.518    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003000 if necessary
+T2C30 5162:656.530    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003100 if necessary
+T2C30 5162:656.542    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003200 if necessary
+T2C30 5162:656.553    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003300 if necessary
+T2C30 5162:656.575    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003400 if necessary
+T2C30 5162:656.587    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003500 if necessary
+T2C30 5162:656.599    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003600 if necessary
+T2C30 5162:656.611    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003700 if necessary
+T2C30 5162:656.623    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003800 if necessary
+T2C30 5162:656.635    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003900 if necessary
+T2C30 5162:656.647    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003A00 if necessary
+T2C30 5162:656.659    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003B00 if necessary
+T2C30 5162:656.671    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003C00 if necessary
+T2C30 5162:656.683    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003D00 if necessary
+T2C30 5162:656.695    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003E00 if necessary
+T2C30 5162:656.708    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003F00 if necessary
+T2C30 5162:656.720    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004000 if necessary
+T2C30 5162:656.732    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004100 if necessary
+T2C30 5162:656.744    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004200 if necessary
+T2C30 5162:656.756    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004300 if necessary
+T2C30 5162:656.768    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004400 if necessary
+T2C30 5162:656.783    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004500 if necessary
+T2C30 5162:656.796    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004600 if necessary
+T2C30 5162:656.808    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004700 if necessary
+T2C30 5162:656.820    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004800 if necessary
+T2C30 5162:656.831    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004900 if necessary
+T2C30 5162:656.850    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004A00 if necessary
+T2C30 5162:656.862    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004B00 if necessary
+T2C30 5162:656.874    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004C00 if necessary
+T2C30 5162:656.886    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004D00 if necessary
+T2C30 5162:656.898    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004E00 if necessary
+T2C30 5162:656.910    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004F00 if necessary
+T2C30 5162:656.922    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005000 if necessary
+T2C30 5162:656.934    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005100 if necessary
+T2C30 5162:656.946    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005200 if necessary
+T2C30 5162:656.958    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005300 if necessary
+T2C30 5162:656.970    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005400 if necessary
+T2C30 5162:656.982    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005500 if necessary
+T2C30 5162:656.994    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005600 if necessary
+T2C30 5162:657.006    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005700 if necessary
+T2C30 5162:657.017    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005800 if necessary
+T2C30 5162:657.029    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005900 if necessary
+T2C30 5162:657.041    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005A00 if necessary
+T2C30 5162:657.054    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005B00 if necessary
+T2C30 5162:657.065    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005C00 if necessary
+T2C30 5162:657.077    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005D00 if necessary
+T2C30 5162:657.089    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005E00 if necessary
+T2C30 5162:657.101    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005F00 if necessary
+T2C30 5162:657.113    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006000 if necessary
+T2C30 5162:657.125    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006100 if necessary
+T2C30 5162:657.164    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006200 if necessary
+T2C30 5162:657.176    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006300 if necessary
+T2C30 5162:657.188    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006400 if necessary
+T2C30 5162:657.200    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006500 if necessary
+T2C30 5162:657.212    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006600 if necessary
+T2C30 5162:657.224    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006700 if necessary
+T2C30 5162:657.236    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006800 if necessary
+T2C30 5162:657.248    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006900 if necessary
+T2C30 5162:657.260    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006A00 if necessary
+T2C30 5162:657.272    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006B00 if necessary
+T2C30 5162:657.284    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006C00 if necessary
+T2C30 5162:657.296    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006D00 if necessary
+T2C30 5162:657.308    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006E00 if necessary
+T2C30 5162:657.320    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006F00 if necessary
+T2C30 5162:657.332    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007000 if necessary
+T2C30 5162:657.344    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007100 if necessary
+T2C30 5162:657.356    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007200 if necessary
+T2C30 5162:657.368    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007300 if necessary
+T2C30 5162:657.380    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007400 if necessary
+T2C30 5162:657.392    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007500 if necessary
+T2C30 5162:657.404    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007600 if necessary
+T2C30 5162:657.416    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007700 if necessary
+T2C30 5162:657.428    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007800 if necessary
+T2C30 5162:657.440    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007900 if necessary
+T2C30 5162:657.451    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007A00 if necessary
+T2C30 5162:657.464    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007B00 if necessary
+T2C30 5162:657.475    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007C00 if necessary
+T2C30 5162:657.487    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007D00 if necessary
+T2C30 5162:657.499    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007E00 if necessary
+T2C30 5162:657.511    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007F00 if necessary
+T2C30 5162:657.523    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008000 if necessary
+T2C30 5162:657.535    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008100 if necessary
+T2C30 5162:657.547    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008200 if necessary
+T2C30 5162:657.559    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008300 if necessary
+T2C30 5162:657.571    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008400 if necessary
+T2C30 5162:657.593    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008500 if necessary
+T2C30 5162:657.606    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008600 if necessary
+T2C30 5162:657.617    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008700 if necessary
+T2C30 5162:657.629    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008800 if necessary
+T2C30 5162:657.641    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008900 if necessary
+T2C30 5162:657.653    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008A00 if necessary
+T2C30 5162:657.665    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008B00 if necessary
+T2C30 5162:657.677    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008C00 if necessary
+T2C30 5162:657.689    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008D00 if necessary
+T2C30 5162:657.701    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008E00 if necessary
+T2C30 5162:657.713    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008F00 if necessary
+T2C30 5162:657.725    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009000 if necessary
+T2C30 5162:657.741    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009100 if necessary
+T2C30 5162:657.759    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009200 if necessary
+T2C30 5162:657.771    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009300 if necessary
+T2C30 5162:657.799    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009400 if necessary
+T2C30 5162:657.815    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009500 if necessary
+T2C30 5162:657.831    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009600 if necessary
+T2C30 5162:657.862    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009700 if necessary
+T2C30 5162:657.875    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009800 if necessary
+T2C30 5162:657.907    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009900 if necessary
+T2C30 5162:657.931    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009A00 if necessary
+T2C30 5162:657.958    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009B00 if necessary
+T2C30 5162:657.973    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009C00 if necessary
+T2C30 5162:658.012    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009D00 if necessary
+T2C30 5162:658.030    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009E00 if necessary
+T2C30 5162:658.045    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009F00 if necessary
+T2C30 5162:658.073    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A000 if necessary
+T2C30 5162:658.096    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A100 if necessary
+T2C30 5162:658.112    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A200 if necessary
+T2C30 5162:658.128    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A300 if necessary
+T2C30 5162:658.155    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A400 if necessary
+T2C30 5162:658.174    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A500 if necessary
+T2C30 5162:658.216    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A600 if necessary
+T2C30 5162:658.236    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A700 if necessary
+T2C30 5162:658.286    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A800 if necessary
+T2C30 5162:658.304    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A900 if necessary
+T2C30 5162:658.323    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AA00 if necessary
+T2C30 5162:658.341    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AB00 if necessary
+T2C30 5162:658.357    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AC00 if necessary
+T2C30 5162:658.388    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AD00 if necessary
+T2C30 5162:658.406    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AE00 if necessary
+T2C30 5162:658.425    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AF00 if necessary
+T2C30 5162:658.449    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B000 if necessary
+T2C30 5162:658.466    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B100 if necessary
+T2C30 5162:658.498    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B200 if necessary
+T2C30 5162:658.518    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B300 if necessary
+T2C30 5162:658.542    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B400 if necessary
+T2C30 5162:658.563    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B500 if necessary
+T2C30 5162:658.582    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B600 if necessary
+T2C30 5162:658.594    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B700 if necessary
+T2C30 5162:658.606    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B800 if necessary
+T2C30 5162:658.620    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B900 if necessary
+T2C30 5162:658.666    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BA00 if necessary
+T2C30 5162:658.699    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BB00 if necessary
+T2C30 5162:658.711    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BC00 if necessary
+T2C30 5162:658.722    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BD00 if necessary
+T2C30 5162:658.734    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BE00 if necessary
+T2C30 5162:658.746    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BF00 if necessary
+T2C30 5162:658.758    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C000 if necessary
+T2C30 5162:658.770    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C100 if necessary
+T2C30 5162:658.782    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C200 if necessary
+T2C30 5162:658.795    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C300 if necessary
+T2C30 5162:658.807    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C400 if necessary
+T2C30 5162:658.821    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C500 if necessary
+T2C30 5162:658.838    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C600 if necessary
+T2C30 5162:658.849    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C700 if necessary
+T2C30 5162:658.861    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C800 if necessary
+T2C30 5162:658.873    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C900 if necessary
+T2C30 5162:658.885    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CA00 if necessary
+T2C30 5162:658.910    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CB00 if necessary
+T2C30 5162:658.923    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CC00 if necessary
+T2C30 5162:658.935    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CD00 if necessary
+T2C30 5162:658.950    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CE00 if necessary
+T2C30 5162:658.963    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CF00 if necessary
+T2C30 5162:659.401    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D000 if necessary
+T2C30 5162:659.436    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D100 if necessary
+T2C30 5162:659.448    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D200 if necessary
+T2C30 5162:659.460    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D300 if necessary
+T2C30 5162:659.472    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D400 if necessary
+T2C30 5162:659.495    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D500 if necessary
+T2C30 5162:659.517    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D600 if necessary
+T2C30 5162:659.529    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D700 if necessary
+T2C30 5162:659.541    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D800 if necessary
+T2C30 5162:659.553    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D900 if necessary
+T2C30 5162:659.573    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DA00 if necessary
+T2C30 5162:659.591    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DB00 if necessary
+T2C30 5162:659.603    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DC00 if necessary
+T2C30 5162:659.622    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DD00 if necessary
+T2C30 5162:659.644    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DE00 if necessary
+T2C30 5162:659.656    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DF00 if necessary
+T2C30 5162:659.668    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E000 if necessary
+T2C30 5162:659.680    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E100 if necessary
+T2C30 5162:659.691    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E200 if necessary
+T2C30 5162:659.704    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E300 if necessary
+T2C30 5162:659.729    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E400 if necessary
+T2C30 5162:659.741    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E500 if necessary
+T2C30 5162:659.753    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E600 if necessary
+T2C30 5162:659.773    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E700 if necessary
+T2C30 5162:659.785    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E800 if necessary
+T2C30 5162:659.802    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E900 if necessary
+T2C30 5162:659.814    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EA00 if necessary
+T2C30 5162:659.826    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EB00 if necessary
+T2C30 5162:659.838    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EC00 if necessary
+T2C30 5162:659.850    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000ED00 if necessary
+T2C30 5162:659.862    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EE00 if necessary
+T2C30 5162:659.944    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EF00 if necessary
+T2C30 5162:659.956    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F000 if necessary
+T2C30 5162:659.968    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F100 if necessary
+T2C30 5162:659.980    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F200 if necessary
+T2C30 5162:659.992    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F300 if necessary
+T2C30 5162:660.004    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F400 if necessary
+T2C30 5162:660.016    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F500 if necessary
+T2C30 5162:660.028    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F600 if necessary
+T2C30 5162:660.040    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F700 if necessary
+T2C30 5162:660.052    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F800 if necessary
+T2C30 5162:660.063    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F900 if necessary
+T2C30 5162:660.075    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FA00 if necessary
+T2C30 5162:660.087    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FB00 if necessary
+T2C30 5162:660.099    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FC00 if necessary
+T2C30 5162:660.111    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FD00 if necessary
+T2C30 5162:660.123    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FE00 if necessary
+T2C30 5162:660.135    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FF00 if necessary
+T2C30 5162:660.147    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010000 if necessary
+T2C30 5162:660.161    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010100 if necessary
+T2C30 5162:660.173    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010200 if necessary
+T2C30 5162:660.185    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010300 if necessary
+T2C30 5162:660.197    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010400 if necessary
+T2C30 5162:660.209    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010500 if necessary
+T2C30 5162:660.221    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010600 if necessary
+T2C30 5162:660.233    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010700 if necessary
+T2C30 5162:660.245    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010800 if necessary
+T2C30 5162:660.257    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010900 if necessary
+T2C30 5162:660.269    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010A00 if necessary
+T2C30 5162:660.281    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010B00 if necessary
+T2C30 5162:660.292    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010C00 if necessary
+T2C30 5162:660.304    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010D00 if necessary
+T2C30 5162:660.316    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010E00 if necessary
+T2C30 5162:660.328    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010F00 if necessary
+T2C30 5162:660.340    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011000 if necessary
+T2C30 5162:660.359    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011100 if necessary
+T2C30 5162:660.380    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011200 if necessary
+T2C30 5162:660.392    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011300 if necessary
+T2C30 5162:660.404    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011400 if necessary
+T2C30 5162:660.416    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011500 if necessary
+T2C30 5162:660.428    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011600 if necessary
+T2C30 5162:660.440    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011700 if necessary
+T2C30 5162:660.452    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011800 if necessary
+T2C30 5162:660.464    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011900 if necessary
+T2C30 5162:660.476    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011A00 if necessary
+T2C30 5162:660.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011B00 if necessary
+T2C30 5162:660.499    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011C00 if necessary
+T2C30 5162:660.511    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011D00 if necessary
+T2C30 5162:660.523    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011E00 if necessary
+T2C30 5162:660.535    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011F00 if necessary
+T2C30 5162:660.547    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012000 if necessary
+T2C30 5162:660.559    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012100 if necessary
+T2C30 5162:660.571    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012200 if necessary
+T2C30 5162:660.583    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012300 if necessary
+T2C30 5162:660.594    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012400 if necessary
+T2C30 5162:660.606    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012500 if necessary
+T2C30 5162:660.618    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012600 if necessary
+T2C30 5162:660.640    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012700 if necessary
+T2C30 5162:660.652    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012800 if necessary
+T2C30 5162:660.664    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012900 if necessary
+T2C30 5162:660.676    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012A00 if necessary
+T2C30 5162:660.688    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012B00 if necessary
+T2C30 5162:660.699    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012C00 if necessary
+T2C30 5162:660.711    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012D00 if necessary
+T2C30 5162:660.723    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012E00 if necessary
+T2C30 5162:660.735    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012F00 if necessary
+T2C30 5162:660.747    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013000 if necessary
+T2C30 5162:660.758    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013100 if necessary
+T2C30 5162:660.770    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013200 if necessary
+T2C30 5162:660.782    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013300 if necessary
+T2C30 5162:660.794    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013400 if necessary
+T2C30 5162:660.807    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013500 if necessary
+T2C30 5162:660.819    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013600 if necessary
+T2C30 5162:660.831    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013700 if necessary
+T2C30 5162:660.843    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013800 if necessary
+T2C30 5162:660.855    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013900 if necessary
+T2C30 5162:660.867    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013A00 if necessary
+T2C30 5162:660.878    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013B00 if necessary
+T2C30 5162:660.890    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013C00 if necessary
+T2C30 5162:660.902    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013D00 if necessary
+T2C30 5162:660.914    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013E00 if necessary
+T2C30 5162:660.926    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013F00 if necessary
+T2C30 5162:660.938    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014000 if necessary
+T2C30 5162:660.950    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014100 if necessary
+T2C30 5162:660.962    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014200 if necessary
+T2C30 5162:660.974    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014300 if necessary
+T2C30 5162:660.986    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014400 if necessary
+T2C30 5162:660.998    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014500 if necessary
+T2C30 5162:661.009    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014600 if necessary
+T2C30 5162:661.021    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014700 if necessary
+T2C30 5162:661.033    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014800 if necessary
+T2C30 5162:661.045    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014900 if necessary
+T2C30 5162:661.057    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014A00 if necessary
+T2C30 5162:661.068    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014B00 if necessary
+T2C30 5162:661.080    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014C00 if necessary
+T2C30 5162:661.092    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014D00 if necessary
+T2C30 5162:661.104    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014E00 if necessary
+T2C30 5162:661.116    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014F00 if necessary
+T2C30 5162:661.128    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015000 if necessary
+T2C30 5162:661.139    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015100 if necessary
+T2C30 5162:661.151    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015200 if necessary
+T2C30 5162:661.163    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015300 if necessary
+T2C30 5162:661.175    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015400 if necessary
+T2C30 5162:661.187    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015500 if necessary
+T2C30 5162:661.199    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015600 if necessary
+T2C30 5162:661.211    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015700 if necessary
+T2C30 5162:661.224    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015800 if necessary
+T2C30 5162:661.236    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015900 if necessary
+T2C30 5162:661.248    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015A00 if necessary
+T2C30 5162:661.260    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015B00 if necessary
+T2C30 5162:661.271    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015C00 if necessary
+T2C30 5162:661.284    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015D00 if necessary
+T2C30 5162:661.296    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015E00 if necessary
+T2C30 5162:661.307    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015F00 if necessary
+T2C30 5162:661.319    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016000 if necessary
+T2C30 5162:661.331    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016100 if necessary
+T2C30 5162:661.345    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016200 if necessary
+T2C30 5162:661.362    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016300 if necessary
+T2C30 5162:661.382    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016400 if necessary
+T2C30 5162:661.409    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016500 if necessary
+T2C30 5162:661.421    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016600 if necessary
+T2C30 5162:661.433    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016700 if necessary
+T2C30 5162:661.445    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016800 if necessary
+T2C30 5162:661.457    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016900 if necessary
+T2C30 5162:661.469    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016A00 if necessary
+T2C30 5162:661.481    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016B00 if necessary
+T2C30 5162:661.493    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016C00 if necessary
+T2C30 5162:661.505    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016D00 if necessary
+T2C30 5162:661.516    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016E00 if necessary
+T2C30 5162:661.528    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016F00 if necessary
+T2C30 5162:661.540    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017000 if necessary
+T2C30 5162:661.552    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017100 if necessary
+T2C30 5162:661.564    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017200 if necessary
+T2C30 5162:661.576    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017300 if necessary
+T2C30 5162:661.588    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017400 if necessary
+T2C30 5162:661.600    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017500 if necessary
+T2C30 5162:661.612    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017600 if necessary
+T2C30 5162:661.623    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017700 if necessary
+T2C30 5162:661.645    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017800 if necessary
+T2C30 5162:661.657    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017900 if necessary
+T2C30 5162:661.669    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017A00 if necessary
+T2C30 5162:661.684    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017B00 if necessary
+T2C30 5162:661.696    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017C00 if necessary
+T2C30 5162:661.708    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017D00 if necessary
+T2C30 5162:661.720    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017E00 if necessary
+T2C30 5162:661.732    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017F00 if necessary
+T2C30 5162:661.743    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018000 if necessary
+T2C30 5162:661.755    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018100 if necessary
+T2C30 5162:661.767    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018200 if necessary
+T2C30 5162:661.779    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018300 if necessary
+T2C30 5162:661.791    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018400 if necessary
+T2C30 5162:661.803    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018500 if necessary
+T2C30 5162:661.815    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018600 if necessary
+T2C30 5162:661.827    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018700 if necessary
+T2C30 5162:661.838    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018800 if necessary
+T2C30 5162:661.850    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018900 if necessary
+T2C30 5162:661.862    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018A00 if necessary
+T2C30 5162:661.874    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018B00 if necessary
+T2C30 5162:661.886    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018C00 if necessary
+T2C30 5162:661.898    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018D00 if necessary
+T2C30 5162:661.910    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018E00 if necessary
+T2C30 5162:661.922    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018F00 if necessary
+T2C30 5162:661.934    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019000 if necessary
+T2C30 5162:661.945    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019100 if necessary
+T2C30 5162:661.957    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019200 if necessary
+T2C30 5162:661.974    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019300 if necessary
+T2C30 5162:661.986    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019400 if necessary
+T2C30 5162:661.998    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019500 if necessary
+T2C30 5162:662.010    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019600 if necessary
+T2C30 5162:662.021    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019700 if necessary
+T2C30 5162:662.033    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019800 if necessary
+T2C30 5162:662.045    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019900 if necessary
+T2C30 5162:662.126    -- End of determining dirty areas
+T2C30 5162:662.138    -- Start of preparing flash programming
+T2C30 5162:662.151    -- Calculating RAM usage
+T2C30 5162:662.170    -- RAM usage = 5956 Bytes
+T2C30 5162:662.181    -- Preserving CPU registers
+T2C30 5162:662.211    -- Preparing target
+T2C30 5162:662.223    -- Preserving target RAM temporarily used for programming
+T2C30 5162:693.534    -- Downloading RAMCode
+T2C30 5162:711.565    -- Preparing RAMCode
+T2C30 5162:718.653    -- End of preparing flash programming
+T2C30 5162:724.581    -- CPU speed could not be measured.
+T2C30 5162:724.685    -- Start of comparing flash
+T2C30 5162:724.724    -- CRC check was estimated as fastest method
+T2C30 5162:786.079    -- Comparing range 0x0000 - 0xFFFF (256 Sectors, 64 KB), using multi-block CRC calculation
+T2C30 5162:852.363    -- All CRCs match
+T2C30 5162:853.950    -- Comparing range 0x10000 - 0x199FF (154 Sectors, 38 KB), using multi-block CRC calculation
+T2C30 5162:892.418    -- All CRCs match
+T2C30 5162:893.110    -- Comparing range 0x0000 - 0xFFFF (256 Sectors, 64 KB), using alternative multi-block CRC calculation
+T2C30 5162:948.405    -- All CRCs match
+T2C30 5162:949.410    -- Comparing range 0x10000 - 0x199FF (154 Sectors, 38 KB), using alternative multi-block CRC calculation
+T2C30 5162:985.030    -- All CRCs match
+T2C30 5162:985.120    -- End of comparing flash
+T2C30 5162:985.147    -- Start of erasing sectors
+T2C30 5162:985.174    -- End of erasing sectors
+T2C30 5162:985.206    -- Start of flash programming
+T2C30 5162:985.256    -- End of flash programming
+T2C30 5162:985.281    -- Start of restoring
+T2C30 5162:985.308    -- Restoring RAMCode
+T2C30 5162:992.217    -- Restoring target memory
+T2C30 5163:022.234    -- Restore target
+T2C30 5163:022.296    -- Restoring CPU registers
+T2C30 5163:022.351    -- End of restoring
+T2C30 5163:022.499    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T2C30 5163:022.537    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T2C30 5163:036.977 - 382.581ms returns 0 (0x0)
+T2C30 5163:037.166 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T2C30 5163:037.196 - 0.030ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T2C30 5163:037.223 JLINK_Reset()
+T2C30 5163:037.270   CPU_ReadMem(4 bytes @ 0x20000000)
+T2C30 5163:037.719   CPU_WriteMem(4 bytes @ 0x20000000)
+T2C30 5163:038.267   ResetTarget() start
+T2C30 5163:038.313    J-Link Script File: Executing ResetTarget()
+T2C30 5163:038.736   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5163:039.335   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5163:040.110   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T2C30 5163:042.446   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5163:043.042   CPU_ReadMem(4 bytes @ 0x41002100)
+T2C30 5163:043.653   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5163:044.302   ResetTarget() end - Took 5.89ms
+T2C30 5163:048.411   CPU_WriteMem(4 bytes @ 0xE0002000)
+T2C30 5163:049.025   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5163:049.637   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5163:050.204   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5163:050.722 - 13.498ms
+T20C8 5163:114.058 JLINK_IsHalted()
+T20C8 5163:114.084 - 0.026ms returns TRUE
+T2E14 5163:166.568 JLINK_Halt()
+T2E14 5163:166.602 - 0.033ms returns 0x00
+T2E14 5163:166.626 JLINK_ReadReg(R15 (PC))
+T2E14 5163:166.641 - 0.015ms returns 0x0000E87C
+T2E14 5163:166.655 JLINK_ReadReg(R13 (SP))
+T2E14 5163:166.664 - 0.009ms returns 0x20007D58
+T2E14 5163:173.159 JLINK_ReadMemHW(0x0000E87C, 0x0004 Bytes, ...)
+T2E14 5163:173.212   CPU_ReadMem(4 bytes @ 0x0000E87C)
+T2E14 5163:173.614   Data:  F8 B5 2A 4A
+T2E14 5163:173.659 - 0.500ms returns 0
+T2E14 5163:173.948 JLINK_ReadReg(R0)
+T2E14 5163:173.970 - 0.021ms returns 0x200006B4
+T2E14 5163:174.009 JLINK_ReadReg(R1)
+T2E14 5163:174.018 - 0.008ms returns 0x00000000
+T2E14 5163:174.029 JLINK_ReadReg(R2)
+T2E14 5163:174.037 - 0.008ms returns 0x00000000
+T2E14 5163:174.048 JLINK_ReadReg(R3)
+T2E14 5163:174.058 - 0.010ms returns 0x00000000
+T2E14 5163:174.070 JLINK_ReadReg(R4)
+T2E14 5163:174.078 - 0.008ms returns 0x200006B4
+T2E14 5163:174.090 JLINK_ReadReg(R5)
+T2E14 5163:174.098 - 0.008ms returns 0x200006D4
+T2E14 5163:174.109 JLINK_ReadReg(R6)
+T2E14 5163:174.117 - 0.008ms returns 0x200006D4
+T2E14 5163:174.128 JLINK_ReadReg(R7)
+T2E14 5163:174.152 - 0.023ms returns 0x0000019B
+T2E14 5163:174.169 JLINK_ReadReg(R8)
+T2E14 5163:174.177 - 0.008ms returns 0x00000000
+T2E14 5163:174.193 JLINK_ReadReg(R9)
+T2E14 5163:174.204 - 0.011ms returns 0x0000131D
+T2E14 5163:174.215 JLINK_ReadReg(R10)
+T2E14 5163:174.223 - 0.008ms returns 0x200003D8
+T2E14 5163:174.235 JLINK_ReadReg(R11)
+T2E14 5163:174.243 - 0.007ms returns 0x00001335
+T2E14 5163:174.254 JLINK_ReadReg(R12)
+T2E14 5163:174.262 - 0.008ms returns 0x20000638
+T2E14 5163:174.277 JLINK_ReadReg(R13 (SP))
+T2E14 5163:174.285 - 0.008ms returns 0x20007D58
+T2E14 5163:174.297 JLINK_ReadReg(R14)
+T2E14 5163:174.305 - 0.008ms returns 0x2000035B
+T2E14 5163:174.317 JLINK_ReadReg(R15 (PC))
+T2E14 5163:174.325 - 0.008ms returns 0x0000E87C
+T2E14 5163:174.363 JLINK_ReadReg(XPSR)
+T2E14 5163:174.378 - 0.016ms returns 0x21000000
+T2E14 5163:174.389 JLINK_ReadReg(MSP)
+T2E14 5163:174.397 - 0.008ms returns 0x20007D58
+T2E14 5163:174.420 JLINK_ReadReg(PSP)
+T2E14 5163:174.428 - 0.008ms returns 0x200006B0
+T2E14 5163:174.440 JLINK_ReadReg(PRIMASK)
+T2E14 5163:174.448 - 0.008ms returns 0x00000000
+T2E14 5163:174.460 JLINK_ReadReg(BASEPRI)
+T2E14 5163:174.468 - 0.008ms returns 0x00000000
+T2E14 5163:174.479 JLINK_ReadReg(FAULTMASK)
+T2E14 5163:174.488 - 0.008ms returns 0x00000000
+T2E14 5163:174.499 JLINK_ReadReg(CONTROL)
+T2E14 5163:174.507 - 0.008ms returns 0x00000000
+T2E14 5163:174.904 JLINK_ReadMemHW(0x0000E87C, 0x0002 Bytes, ...)
+T2E14 5163:174.919   CPU_ReadMem(2 bytes @ 0x0000E87C)
+T2E14 5163:175.292   Data:  F8 B5
+T2E14 5163:175.317 - 0.412ms returns 0
+T20C8 5163:315.546 JLINK_IsHalted()
+T20C8 5163:315.614 - 0.092ms returns TRUE
+T20C8 5163:517.442 JLINK_IsHalted()
+T20C8 5163:517.479 - 0.037ms returns TRUE
+T20C8 5163:718.435 JLINK_IsHalted()
+T20C8 5163:719.048 - 0.612ms returns TRUE
+T2E14 5163:784.945 JLINK_ReadReg(R0)
+T2E14 5163:784.987 - 0.042ms returns 0x200006B4
+T2E14 5163:785.007 JLINK_ReadReg(R1)
+T2E14 5163:785.019 - 0.011ms returns 0x00000000
+T2E14 5163:785.066 JLINK_ReadReg(R2)
+T2E14 5163:785.078 - 0.012ms returns 0x00000000
+T2E14 5163:785.091 JLINK_ReadReg(R3)
+T2E14 5163:785.100 - 0.008ms returns 0x00000000
+T2E14 5163:785.111 JLINK_ReadReg(R4)
+T2E14 5163:785.119 - 0.008ms returns 0x200006B4
+T2E14 5163:785.130 JLINK_ReadReg(R5)
+T2E14 5163:785.139 - 0.008ms returns 0x200006D4
+T2E14 5163:785.162 JLINK_ReadReg(R6)
+T2E14 5163:785.170 - 0.008ms returns 0x200006D4
+T2E14 5163:785.182 JLINK_ReadReg(R7)
+T2E14 5163:785.190 - 0.008ms returns 0x0000019B
+T2E14 5163:785.210 JLINK_ReadReg(R8)
+T2E14 5163:785.218 - 0.008ms returns 0x00000000
+T2E14 5163:785.250 JLINK_ReadReg(R9)
+T2E14 5163:785.258 - 0.008ms returns 0x0000131D
+T2E14 5163:785.269 JLINK_ReadReg(R10)
+T2E14 5163:785.277 - 0.008ms returns 0x200003D8
+T2E14 5163:785.288 JLINK_ReadReg(R11)
+T2E14 5163:785.296 - 0.007ms returns 0x00001335
+T2E14 5163:785.307 JLINK_ReadReg(R12)
+T2E14 5163:785.316 - 0.008ms returns 0x20000638
+T2E14 5163:785.327 JLINK_ReadReg(R13 (SP))
+T2E14 5163:785.335 - 0.008ms returns 0x20007D58
+T2E14 5163:785.347 JLINK_ReadReg(R14)
+T2E14 5163:785.355 - 0.007ms returns 0x2000035B
+T2E14 5163:785.366 JLINK_ReadReg(R15 (PC))
+T2E14 5163:785.375 - 0.008ms returns 0x0000E87C
+T2E14 5163:785.397 JLINK_ReadReg(XPSR)
+T2E14 5163:785.422 - 0.025ms returns 0x21000000
+T2E14 5163:785.434 JLINK_ReadReg(MSP)
+T2E14 5163:785.442 - 0.008ms returns 0x20007D58
+T2E14 5163:785.453 JLINK_ReadReg(PSP)
+T2E14 5163:785.461 - 0.008ms returns 0x200006B0
+T2E14 5163:785.473 JLINK_ReadReg(PRIMASK)
+T2E14 5163:785.481 - 0.008ms returns 0x00000000
+T2E14 5163:785.493 JLINK_ReadReg(BASEPRI)
+T2E14 5163:785.501 - 0.008ms returns 0x00000000
+T2E14 5163:785.513 JLINK_ReadReg(FAULTMASK)
+T2E14 5163:785.539 - 0.026ms returns 0x00000000
+T2E14 5163:785.551 JLINK_ReadReg(CONTROL)
+T2E14 5163:785.559 - 0.008ms returns 0x00000000
+T20C8 5163:919.454 JLINK_IsHalted()
+T20C8 5163:919.495 - 0.040ms returns TRUE
+T20C8 5164:119.448 JLINK_IsHalted()
+T20C8 5164:119.495 - 0.047ms returns TRUE
+T2E14 5164:126.598 JLINK_ReadMemHW(0x0000E87C, 0x0004 Bytes, ...)
+T2E14 5164:126.632   CPU_ReadMem(4 bytes @ 0x0000E87C)
+T2E14 5164:127.131   Data:  F8 B5 2A 4A
+T2E14 5164:127.179 - 0.582ms returns 0
+T2E14 5164:151.304 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T2E14 5164:151.388 - 0.085ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T2E14 5164:151.410 JLINK_Reset()
+T2E14 5164:151.524   ResetTarget() start
+T2E14 5164:151.551    J-Link Script File: Executing ResetTarget()
+T2E14 5164:151.587   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2E14 5164:152.269   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2E14 5164:152.768   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T2E14 5164:155.296   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2E14 5164:155.786   CPU_ReadMem(4 bytes @ 0x41002100)
+T2E14 5164:156.233   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2E14 5164:156.734   ResetTarget() end - Took 5.13ms
+T2E14 5164:160.792   CPU_WriteMem(4 bytes @ 0xE0002000)
+T2E14 5164:161.252   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2E14 5164:161.737   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2E14 5164:162.168   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2E14 5164:162.619 - 11.208ms
+T20C8 5164:162.728 JLINK_IsHalted()
+T20C8 5164:162.757 - 0.031ms returns TRUE
+T20C8 5164:162.771 JLINK_GetMOEs(...)
+T20C8 5164:162.784   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T20C8 5164:163.293 - 0.521ms returns 0x01
+T20C8 5164:163.315 JLINK_ReadReg(R15 (PC))
+T20C8 5164:163.329 - 0.013ms returns 0x0000E87C
+T2E14 5164:172.799 JLINK_ReadReg(R15 (PC))
+T2E14 5164:172.849 - 0.049ms returns 0x0000E87C
+T2E14 5164:172.873 JLINK_ReadReg(R13 (SP))
+T2E14 5164:172.887 - 0.013ms returns 0x20007D58
+T2E14 5164:173.532 JLINK_ReadMemHW(0x0000E87C, 0x0004 Bytes, ...)
+T2E14 5164:173.615   CPU_ReadMem(4 bytes @ 0x0000E87C)
+T2E14 5164:174.128   Data:  F8 B5 2A 4A
+T2E14 5164:174.182 - 0.650ms returns 0
+T2E14 5164:274.947 JLINK_ReadMemHW(0x00011BA4, 0x0001 Bytes, ...)
+T2E14 5164:275.038   CPU_ReadMem(1 bytes @ 0x00011BA4)
+T2E14 5164:275.510   Data:  10
+T2E14 5164:275.572 - 0.625ms returns 0
+T2E14 5164:336.391 JLINK_ReadReg(R15 (PC))
+T2E14 5164:336.461 - 0.069ms returns 0x0000E87C
+T2E14 5164:336.792 JLINK_GetNumBPUnits(Type = 0xFFFFFF02)
+T2E14 5164:336.839 - 0.048ms returns 0x04
+T2E14 5164:336.871 JLINK_SetBPEx(Addr = 0x00011BA4, Type = 0xFFFFFFF2)
+T2E14 5164:336.912 - 0.042ms returns 0x00000001
+T2E14 5164:336.941 JLINK_GetBPInfo(BPHandle = 1)
+T2E14 5164:336.974 - 0.032ms returns 0x0
+T2E14 5164:337.375 JLINK_Go()
+T2E14 5164:337.433   CPU_WriteMem(4 bytes @ 0xE0002000)
+T2E14 5164:338.010   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2E14 5164:338.512   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2E14 5164:339.226   CPU_WriteMem(4 bytes @ 0xE000ED30)
+T2E14 5164:339.723   CPU_WriteMem(4 bytes @ 0xE0002008)
+T2E14 5164:339.771   CPU_WriteMem(4 bytes @ 0xE000200C)
+T2E14 5164:339.800   CPU_WriteMem(4 bytes @ 0xE0002010)
+T2E14 5164:339.838   CPU_WriteMem(4 bytes @ 0xE0002014)
+T2E14 5164:341.017   CPU_WriteMem(4 bytes @ 0xE0001004)
+T2E14 5164:342.304   Memory map 'after startup completion point' is active
+T2E14 5164:342.342 - 4.966ms
+T20C8 5164:342.520 JLINK_IsHalted()
+T20C8 5164:343.070   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5164:343.576 - 1.055ms returns FALSE
+T20C8 5164:363.694 JLINK_IsHalted()
+T20C8 5164:364.524   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5164:365.133 - 1.437ms returns FALSE
+T20C8 5164:446.548 JLINK_IsHalted()
+T20C8 5164:450.083 - 3.534ms returns TRUE
+T20C8 5164:450.122 JLINK_GetMOEs(...)
+T20C8 5164:450.136   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T20C8 5164:450.532 - 0.408ms returns 0x01
+T20C8 5164:450.557 JLINK_ReadReg(R15 (PC))
+T20C8 5164:450.572 - 0.014ms returns 0x00011BA4
+T2E14 5164:457.694 JLINK_ReadReg(R15 (PC))
+T2E14 5164:457.724 - 0.030ms returns 0x00011BA4
+T2E14 5164:457.735 JLINK_ReadReg(R13 (SP))
+T2E14 5164:457.741 - 0.006ms returns 0x20007D40
+T2E14 5164:458.091 JLINK_ReadMemHW(0x00011BA4, 0x0004 Bytes, ...)
+T2E14 5164:458.110   CPU_ReadMem(4 bytes @ 0x00011BA4)
+T2E14 5164:458.646   Data:  10 B5 05 4B
+T2E14 5164:458.666 - 0.575ms returns 0
+T2E14 5164:477.015 JLINK_WriteU32_64(0xE000EDFC, 0x01000000)
+T2E14 5164:477.045   Debug reg: DEMCR
+T2E14 5164:477.608   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2E14 5164:478.023 - 1.008ms returns 0 (0x00000000)
+T2E14 5164:478.126 JLINK_ReadMem(0xE0001000, 0x4 Bytes, ...)
+T2E14 5164:478.151   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2E14 5164:478.562   Data:  00 00 00 20
+T2E14 5164:478.590   Debug reg: DWT_CTRL
+T2E14 5164:478.602 - 0.475ms returns 0
+T2E14 5164:478.678 JLINK_WriteU32_64(0xE0001000, 0x20000001)
+T2E14 5164:478.687   Debug reg: DWT_CTRL
+T2E14 5164:478.713 - 0.035ms returns 0 (0x00000000)
+T2E14 5164:478.736 JLINK_WriteU32_64(0xE0001028, 0x00000100)
+T2E14 5164:478.745   Debug reg: DWT_FUNC[0]
+T2E14 5164:478.760 - 0.024ms returns 0 (0x00000000)
+T2E14 5164:478.771 JLINK_ReadMem(0xE0001028, 0x4 Bytes, ...)
+T2E14 5164:478.784   CPU_WriteMem(4 bytes @ 0xE0001028)
+T2E14 5164:479.162   CPU_ReadMem(4 bytes @ 0xE0001028)
+T2E14 5164:479.569   Data:  00 00 00 00
+T2E14 5164:479.601   Debug reg: DWT_FUNC[0]
+T2E14 5164:479.612 - 0.841ms returns 0
+T2E14 5164:479.663 JLINK_WriteU32_64(0xE0001024, 0x0000001F)
+T2E14 5164:479.672   Debug reg: DWT_MASK[0]
+T2E14 5164:479.691 - 0.028ms returns 0 (0x00000000)
+T2E14 5164:479.702 JLINK_ReadMem(0xE0001024, 0x4 Bytes, ...)
+T2E14 5164:479.713   CPU_WriteMem(4 bytes @ 0xE0001024)
+T2E14 5164:480.181   CPU_ReadMem(4 bytes @ 0xE0001024)
+T2E14 5164:480.624   Data:  1F 00 00 00
+T2E14 5164:480.639   Debug reg: DWT_MASK[0]
+T2E14 5164:480.650 - 0.948ms returns 0
+T2E14 5164:480.692 JLINK_WriteU32_64(0xE0001038, 0x00000100)
+T2E14 5164:480.700   Debug reg: DWT_FUNC[1]
+T2E14 5164:480.719 - 0.026ms returns 0 (0x00000000)
+T2E14 5164:480.729 JLINK_ReadMem(0xE0001038, 0x4 Bytes, ...)
+T2E14 5164:480.739   CPU_WriteMem(4 bytes @ 0xE0001038)
+T2E14 5164:481.200   CPU_ReadMem(4 bytes @ 0xE0001038)
+T2E14 5164:481.643   Data:  00 00 00 00
+T2E14 5164:481.657   Debug reg: DWT_FUNC[1]
+T2E14 5164:481.668 - 0.939ms returns 0
+T2E14 5164:481.705 JLINK_WriteU32_64(0xE0001034, 0x0000001F)
+T2E14 5164:481.714   Debug reg: DWT_MASK[1]
+T2E14 5164:481.730 - 0.024ms returns 0 (0x00000000)
+T2E14 5164:481.741 JLINK_ReadMem(0xE0001034, 0x4 Bytes, ...)
+T2E14 5164:481.751   CPU_WriteMem(4 bytes @ 0xE0001034)
+T2E14 5164:482.277   CPU_ReadMem(4 bytes @ 0xE0001034)
+T2E14 5164:482.808   Data:  1F 00 00 00
+T2E14 5164:482.826   Debug reg: DWT_MASK[1]
+T2E14 5164:482.834 - 1.093ms returns 0
+T2E14 5164:482.903 JLINK_WriteU32_64(0xE0001020, 0x00000000)
+T2E14 5164:482.913   Debug reg: DWT_COMP[0]
+T2E14 5164:482.948 - 0.045ms returns 0 (0x00000000)
+T2E14 5164:482.970 JLINK_WriteU32_64(0xE0001024, 0x00000000)
+T2E14 5164:482.979   Debug reg: DWT_MASK[0]
+T2E14 5164:482.995 - 0.024ms returns 0 (0x00000000)
+T2E14 5164:483.016 JLINK_WriteU32_64(0xE0001028, 0x00000000)
+T2E14 5164:483.024   Debug reg: DWT_FUNC[0]
+T2E14 5164:483.040 - 0.023ms returns 0 (0x00000000)
+T2E14 5164:483.059 JLINK_WriteU32_64(0xE0001030, 0x00000000)
+T2E14 5164:483.068   Debug reg: DWT_COMP[1]
+T2E14 5164:483.084 - 0.023ms returns 0 (0x00000000)
+T2E14 5164:483.101 JLINK_WriteU32_64(0xE0001034, 0x00000000)
+T2E14 5164:483.110   Debug reg: DWT_MASK[1]
+T2E14 5164:483.127 - 0.025ms returns 0 (0x00000000)
+T2E14 5164:483.146 JLINK_WriteU32_64(0xE0001038, 0x00000000)
+T2E14 5164:483.155   Debug reg: DWT_FUNC[1]
+T2E14 5164:483.170 - 0.024ms returns 0 (0x00000000)
+T2E14 5164:483.181 JLINK_GetBPInfo(BPHandle = 1)
+T2E14 5164:483.187 - 0.006ms returns 0x0
+T2E14 5164:483.195 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T2E14 5164:483.202 - 0.007ms returns 0x00
+T2E14 5164:483.257 JLINK_ReadReg(R15 (PC))
+T2E14 5164:483.266 - 0.009ms returns 0x00011BA4
+T2E14 5164:483.553 JLINK_Go()
+T2E14 5164:483.586   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2E14 5164:484.193   CPU_WriteMem(4 bytes @ 0xE000ED30)
+T2E14 5164:484.721   CPU_WriteMem(4 bytes @ 0xE0001020)
+T2E14 5164:484.741   CPU_WriteMem(4 bytes @ 0xE0001030)
+T2E14 5164:484.758   CPU_WriteMem(4 bytes @ 0xE0001024)
+T2E14 5164:484.770   CPU_WriteMem(4 bytes @ 0xE0001034)
+T2E14 5164:484.782   CPU_WriteMem(4 bytes @ 0xE0001028)
+T2E14 5164:484.793   CPU_WriteMem(4 bytes @ 0xE0001038)
+T2E14 5164:484.805   CPU_WriteMem(4 bytes @ 0xE0002008)
+T2E14 5164:487.237 - 3.684ms
+T20C8 5164:487.287 JLINK_IsHalted()
+T20C8 5164:487.739   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5164:488.222 - 0.934ms returns FALSE
+T20C8 5164:528.579 JLINK_IsHalted()
+T20C8 5164:529.020   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5164:529.450 - 0.871ms returns FALSE
+T20C8 5164:688.624 JLINK_IsHalted()
+T20C8 5164:689.111   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5164:689.549 - 0.924ms returns FALSE
+T20C8 5164:889.670 JLINK_IsHalted()
+T20C8 5164:890.165   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5164:890.608 - 0.938ms returns FALSE
+T20C8 5165:092.770 JLINK_IsHalted()
+T20C8 5165:093.989   Connection to device lost. Trying to reconnect to target.
+T20C8 5165:095.077   Found SW-DP with ID 0x0BC11477
+T20C8 5165:097.913   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5165:098.481 - 5.710ms returns FALSE
+T20C8 5165:297.946 JLINK_IsHalted()
+T20C8 5165:298.730   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5165:299.338 - 1.391ms returns FALSE
+T20C8 5165:499.289 JLINK_IsHalted()
+T20C8 5165:500.522   Connection to device lost. Trying to reconnect to target.
+T20C8 5165:501.720   Found SW-DP with ID 0x0BC11477
+T20C8 5165:504.976   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5165:505.563 - 6.273ms returns FALSE
+T20C8 5165:710.682 JLINK_IsHalted()
+T20C8 5165:711.347   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5165:711.945 - 1.261ms returns FALSE
+T20C8 5165:917.962 JLINK_IsHalted()
+T20C8 5165:919.038   Connection to device lost. Trying to reconnect to target.
+T20C8 5165:920.130   Found SW-DP with ID 0x0BC11477
+T20C8 5165:922.973   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5165:923.546 - 5.582ms returns FALSE
+T20C8 5166:126.372 JLINK_IsHalted()
+T20C8 5166:127.066   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5166:127.706 - 1.331ms returns FALSE
+T20C8 5166:327.819 JLINK_IsHalted()
+T20C8 5166:328.597   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5166:329.197 - 1.375ms returns FALSE
+T20C8 5166:529.898 JLINK_IsHalted()
+T20C8 5166:530.947   Connection to device lost. Trying to reconnect to target.
+T20C8 5166:532.148   Found SW-DP with ID 0x0BC11477
+T20C8 5166:535.186   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5166:535.759 - 5.859ms returns FALSE
+T20C8 5166:737.844 JLINK_IsHalted()
+T20C8 5166:738.439   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5166:738.993 - 1.148ms returns FALSE
+T20C8 5166:942.779 JLINK_IsHalted()
+T20C8 5166:943.895   Connection to device lost. Trying to reconnect to target.
+T20C8 5166:945.079   Found SW-DP with ID 0x0BC11477
+T20C8 5166:947.763   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5166:948.345 - 5.565ms returns FALSE
+T20C8 5167:150.704 JLINK_IsHalted()
+T20C8 5167:151.622   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5167:152.270 - 1.564ms returns FALSE
+T20C8 5167:355.119 JLINK_IsHalted()
+T20C8 5167:356.240   Connection to device lost. Trying to reconnect to target.
+T20C8 5167:357.296   Found SW-DP with ID 0x0BC11477
+T20C8 5167:360.319   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5167:361.099 - 5.986ms returns FALSE
+T20C8 5167:564.012 JLINK_IsHalted()
+T20C8 5167:564.616   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5167:565.192 - 1.178ms returns FALSE
+T20C8 5167:768.453 JLINK_IsHalted()
+T20C8 5167:769.105   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5167:769.761 - 1.306ms returns FALSE
+T20C8 5167:969.598 JLINK_IsHalted()
+T20C8 5167:970.478   Connection to device lost. Trying to reconnect to target.
+T20C8 5167:971.419   Found SW-DP with ID 0x0BC11477
+T20C8 5167:973.560   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5167:974.021 - 4.422ms returns FALSE
+T20C8 5168:174.496 JLINK_IsHalted()
+T20C8 5168:174.939   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5168:175.320 - 0.823ms returns FALSE
+T20C8 5168:374.534 JLINK_IsHalted()
+T20C8 5168:375.530   Connection to device lost. Trying to reconnect to target.
+T20C8 5168:376.480   Found SW-DP with ID 0x0BC11477
+T20C8 5168:379.341   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5168:379.889 - 5.354ms returns FALSE
+T20C8 5168:580.089 JLINK_IsHalted()
+T20C8 5168:580.706   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5168:581.303 - 1.212ms returns FALSE
+T20C8 5168:782.583 JLINK_IsHalted()
+T20C8 5168:783.326   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5168:783.858 - 1.274ms returns FALSE
+T20C8 5168:987.429 JLINK_IsHalted()
+T20C8 5168:988.409   Connection to device lost. Trying to reconnect to target.
+T20C8 5168:989.281   Found SW-DP with ID 0x0BC11477
+T20C8 5168:992.100   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5168:992.618 - 5.187ms returns FALSE
+T20C8 5169:193.688 JLINK_IsHalted()
+T20C8 5169:194.280   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5169:194.694 - 1.004ms returns FALSE
+T20C8 5169:394.790 JLINK_IsHalted()
+T20C8 5169:395.509   Connection to device lost. Trying to reconnect to target.
+T20C8 5169:396.198   Found SW-DP with ID 0x0BC11477
+T20C8 5169:398.078   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5169:398.457 - 3.666ms returns FALSE
+T20C8 5169:599.507 JLINK_IsHalted()
+T20C8 5169:600.069   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5169:600.522 - 1.014ms returns FALSE
+T20C8 5169:801.246 JLINK_IsHalted()
+T20C8 5169:802.394   Connection to device lost. Trying to reconnect to target.
+T20C8 5169:803.475   Found SW-DP with ID 0x0BC11477
+T20C8 5169:805.964   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5169:806.506 - 5.257ms returns FALSE
+T20C8 5170:008.932 JLINK_IsHalted()
+T20C8 5170:009.516   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5170:010.046 - 1.132ms returns FALSE
+T20C8 5170:210.580 JLINK_IsHalted()
+T20C8 5170:211.150   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5170:211.668 - 1.085ms returns FALSE
+T20C8 5170:411.918 JLINK_IsHalted()
+T20C8 5170:413.030   Connection to device lost. Trying to reconnect to target.
+T20C8 5170:414.148   Found SW-DP with ID 0x0BC11477
+T20C8 5170:416.860   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5170:417.338 - 5.419ms returns FALSE
+T20C8 5170:620.649 JLINK_IsHalted()
+T20C8 5170:621.237   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5170:621.901 - 1.250ms returns FALSE
+T20C8 5170:824.120 JLINK_IsHalted()
+T20C8 5170:825.459   Connection to device lost. Trying to reconnect to target.
+T20C8 5170:826.521   Found SW-DP with ID 0x0BC11477
+T20C8 5170:829.983   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5170:831.071 - 6.949ms returns FALSE
+T20C8 5171:033.335 JLINK_IsHalted()
+T20C8 5171:033.894   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5171:034.421 - 1.084ms returns FALSE
+T20C8 5171:234.713 JLINK_IsHalted()
+T20C8 5171:235.876   Connection to device lost. Trying to reconnect to target.
+T20C8 5171:236.911   Found SW-DP with ID 0x0BC11477
+T20C8 5171:239.385   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5171:239.927 - 5.213ms returns FALSE
+T20C8 5171:441.380 JLINK_IsHalted()
+T20C8 5171:442.093   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5171:442.614 - 1.232ms returns FALSE
+T20C8 5171:647.239 JLINK_IsHalted()
+T20C8 5171:648.067   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5171:648.603 - 1.362ms returns FALSE
+T20C8 5171:852.858 JLINK_IsHalted()
+T20C8 5171:853.910   Connection to device lost. Trying to reconnect to target.
+T20C8 5171:855.016   Found SW-DP with ID 0x0BC11477
+T20C8 5171:857.645   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5171:858.186 - 5.327ms returns FALSE
+T20C8 5172:057.940 JLINK_IsHalted()
+T20C8 5172:058.586   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5172:059.278 - 1.336ms returns FALSE
+T20C8 5172:259.705 JLINK_IsHalted()
+T20C8 5172:260.906   Connection to device lost. Trying to reconnect to target.
+T20C8 5172:261.986   Found SW-DP with ID 0x0BC11477
+T20C8 5172:264.901   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5172:265.401 - 5.695ms returns FALSE
+T20C8 5172:466.179 JLINK_IsHalted()
+T20C8 5172:466.805   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5172:467.310 - 1.130ms returns FALSE
+T20C8 5172:668.228 JLINK_IsHalted()
+T20C8 5172:669.465   Connection to device lost. Trying to reconnect to target.
+T20C8 5172:670.601   Found SW-DP with ID 0x0BC11477
+T20C8 5172:673.484   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5172:674.110 - 5.881ms returns FALSE
+T20C8 5172:874.843 JLINK_IsHalted()
+T20C8 5172:875.480   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5172:876.112 - 1.268ms returns FALSE
+T20C8 5173:076.756 JLINK_IsHalted()
+T20C8 5173:077.485   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5173:078.102 - 1.344ms returns FALSE
+T20C8 5173:278.700 JLINK_IsHalted()
+T20C8 5173:279.989   Connection to device lost. Trying to reconnect to target.
+T20C8 5173:281.096   Found SW-DP with ID 0x0BC11477
+T20C8 5173:283.818   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5173:284.442 - 5.741ms returns FALSE
+T20C8 5173:486.625 JLINK_IsHalted()
+T20C8 5173:487.337   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5173:487.949 - 1.322ms returns FALSE
+T20C8 5173:688.934 JLINK_IsHalted()
+T20C8 5173:690.131   Connection to device lost. Trying to reconnect to target.
+T20C8 5173:691.170   Found SW-DP with ID 0x0BC11477
+T20C8 5173:693.797   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5173:694.328 - 5.393ms returns FALSE
+T20C8 5173:897.973 JLINK_IsHalted()
+T20C8 5173:898.600   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5173:899.140 - 1.166ms returns FALSE
+T20C8 5174:100.464 JLINK_IsHalted()
+T20C8 5174:101.510   Connection to device lost. Trying to reconnect to target.
+T20C8 5174:102.480   Found SW-DP with ID 0x0BC11477
+T20C8 5174:105.116   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5174:105.658 - 5.194ms returns FALSE
+T20C8 5174:307.614 JLINK_IsHalted()
+T20C8 5174:308.308   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5174:308.908 - 1.292ms returns FALSE
+T20C8 5174:508.944 JLINK_IsHalted()
+T20C8 5174:509.524   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5174:510.238 - 1.291ms returns FALSE
+T20C8 5174:712.450 JLINK_IsHalted()
+T20C8 5174:713.728   Connection to device lost. Trying to reconnect to target.
+T20C8 5174:714.789   Found SW-DP with ID 0x0BC11477
+T20C8 5174:717.747   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5174:718.281 - 5.829ms returns FALSE
+T20C8 5174:920.087 JLINK_IsHalted()
+T20C8 5174:920.697   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5174:921.212 - 1.123ms returns FALSE
+T20C8 5175:121.599 JLINK_IsHalted()
+T20C8 5175:122.505   Connection to device lost. Trying to reconnect to target.
+T20C8 5175:123.484   Found SW-DP with ID 0x0BC11477
+T20C8 5175:126.090   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5175:126.578 - 4.977ms returns FALSE
+T20C8 5175:326.690 JLINK_IsHalted()
+T20C8 5175:327.300   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5175:327.924 - 1.232ms returns FALSE
+T20C8 5175:528.185 JLINK_IsHalted()
+T20C8 5175:529.182   Connection to device lost. Trying to reconnect to target.
+T20C8 5175:530.214   Found SW-DP with ID 0x0BC11477
+T20C8 5175:533.044   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5175:533.684 - 5.497ms returns FALSE
+T20C8 5175:736.483 JLINK_IsHalted()
+T20C8 5175:737.098   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5175:737.713 - 1.228ms returns FALSE
+T20C8 5175:938.353 JLINK_IsHalted()
+T20C8 5175:938.974   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5175:939.773 - 1.418ms returns FALSE
+T20C8 5176:142.653 JLINK_IsHalted()
+T20C8 5176:143.909   Connection to device lost. Trying to reconnect to target.
+T20C8 5176:145.230   Found SW-DP with ID 0x0BC11477
+T20C8 5176:148.104   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5176:148.702 - 6.048ms returns FALSE
+T20C8 5176:350.676 JLINK_IsHalted()
+T20C8 5176:351.213   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5176:351.667 - 0.989ms returns FALSE
+T20C8 5176:552.181 JLINK_IsHalted()
+T20C8 5176:553.470   Connection to device lost. Trying to reconnect to target.
+T20C8 5176:554.759   Found SW-DP with ID 0x0BC11477
+T20C8 5176:557.370   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5176:557.857 - 5.675ms returns FALSE
+T20C8 5176:759.772 JLINK_IsHalted()
+T20C8 5176:760.398   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5176:760.951 - 1.177ms returns FALSE
+T20C8 5176:964.000 JLINK_IsHalted()
+T20C8 5176:965.045   Connection to device lost. Trying to reconnect to target.
+T20C8 5176:966.273   Found SW-DP with ID 0x0BC11477
+T20C8 5176:969.162   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5176:969.746 - 5.745ms returns FALSE
+T20C8 5177:171.386 JLINK_IsHalted()
+T20C8 5177:171.978   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5177:172.566 - 1.178ms returns FALSE
+T20C8 5177:372.825 JLINK_IsHalted()
+T20C8 5177:373.453   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5177:374.053 - 1.226ms returns FALSE
+T20C8 5177:576.411 JLINK_IsHalted()
+T20C8 5177:577.578   Connection to device lost. Trying to reconnect to target.
+T20C8 5177:578.853   Found SW-DP with ID 0x0BC11477
+T20C8 5177:581.543   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5177:582.129 - 5.717ms returns FALSE
+T20C8 5177:781.737 JLINK_IsHalted()
+T20C8 5177:782.413   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5177:783.016 - 1.276ms returns FALSE
+T20C8 5177:983.511 JLINK_IsHalted()
+T20C8 5177:984.606   Connection to device lost. Trying to reconnect to target.
+T20C8 5177:985.596   Found SW-DP with ID 0x0BC11477
+T20C8 5177:988.142   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5177:988.658 - 5.145ms returns FALSE
+T20C8 5178:189.921 JLINK_IsHalted()
+T20C8 5178:190.594   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5178:191.214 - 1.290ms returns FALSE
+T20C8 5178:391.297 JLINK_IsHalted()
+T20C8 5178:391.899   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5178:392.396 - 1.097ms returns FALSE
+T20C8 5178:593.847 JLINK_IsHalted()
+T20C8 5178:595.079   Connection to device lost. Trying to reconnect to target.
+T20C8 5178:596.101   Found SW-DP with ID 0x0BC11477
+T20C8 5178:598.562   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5178:599.069 - 5.222ms returns FALSE
+T20C8 5178:799.592 JLINK_IsHalted()
+T20C8 5178:800.237   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5178:800.805 - 1.211ms returns FALSE
+T20C8 5179:002.552 JLINK_IsHalted()
+T20C8 5179:003.593   Connection to device lost. Trying to reconnect to target.
+T20C8 5179:004.711   Found SW-DP with ID 0x0BC11477
+T20C8 5179:007.151   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5179:007.953 - 5.398ms returns FALSE
+T20C8 5179:212.338 JLINK_IsHalted()
+T20C8 5179:213.130   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5179:213.867 - 1.526ms returns FALSE
+T20C8 5179:418.296 JLINK_IsHalted()
+T20C8 5179:419.560   Connection to device lost. Trying to reconnect to target.
+T20C8 5179:420.569   Found SW-DP with ID 0x0BC11477
+T20C8 5179:423.401   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5179:424.080 - 5.783ms returns FALSE
+T20C8 5179:624.103 JLINK_IsHalted()
+T20C8 5179:624.771   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5179:625.390 - 1.285ms returns FALSE
+T20C8 5179:826.302 JLINK_IsHalted()
+T20C8 5179:826.939   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5179:827.495 - 1.190ms returns FALSE
+T20C8 5180:029.182 JLINK_IsHalted()
+T20C8 5180:030.095   Connection to device lost. Trying to reconnect to target.
+T20C8 5180:031.099   Found SW-DP with ID 0x0BC11477
+T20C8 5180:033.885   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5180:034.432 - 5.249ms returns FALSE
+T20C8 5180:234.810 JLINK_IsHalted()
+T20C8 5180:235.401   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5180:235.943 - 1.131ms returns FALSE
+T20C8 5180:440.957 JLINK_IsHalted()
+T20C8 5180:441.970   Connection to device lost. Trying to reconnect to target.
+T20C8 5180:442.898   Found SW-DP with ID 0x0BC11477
+T20C8 5180:445.243   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5180:445.874 - 4.915ms returns FALSE
+T20C8 5180:650.874 JLINK_IsHalted()
+T20C8 5180:651.514   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5180:652.036 - 1.159ms returns FALSE
+T20C8 5180:852.753 JLINK_IsHalted()
+T20C8 5180:853.908   Connection to device lost. Trying to reconnect to target.
+T20C8 5180:855.054   Found SW-DP with ID 0x0BC11477
+T20C8 5180:857.492   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5180:857.931 - 5.176ms returns FALSE
+T20C8 5181:058.773 JLINK_IsHalted()
+T20C8 5181:059.360   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5181:059.977 - 1.203ms returns FALSE
+T20C8 5181:261.684 JLINK_IsHalted()
+T20C8 5181:262.371   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5181:262.906 - 1.219ms returns FALSE
+T20C8 5181:466.714 JLINK_IsHalted()
+T20C8 5181:467.699   Connection to device lost. Trying to reconnect to target.
+T20C8 5181:468.756   Found SW-DP with ID 0x0BC11477
+T20C8 5181:471.390   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5181:471.918 - 5.203ms returns FALSE
+T20C8 5181:674.490 JLINK_IsHalted()
+T20C8 5181:675.215   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5181:675.657 - 1.164ms returns FALSE
+T20C8 5181:879.896 JLINK_IsHalted()
+T20C8 5181:880.694   Connection to device lost. Trying to reconnect to target.
+T20C8 5181:881.374   Found SW-DP with ID 0x0BC11477
+T20C8 5181:883.089   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5181:883.426 - 3.530ms returns FALSE
+T20C8 5182:088.207 JLINK_IsHalted()
+T20C8 5182:088.938   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5182:089.432 - 1.223ms returns FALSE
+T20C8 5182:290.772 JLINK_IsHalted()
+T20C8 5182:291.895   Connection to device lost. Trying to reconnect to target.
+T20C8 5182:292.950   Found SW-DP with ID 0x0BC11477
+T20C8 5182:295.934   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5182:296.448 - 5.674ms returns FALSE
+T20C8 5182:496.840 JLINK_IsHalted()
+T20C8 5182:497.452   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5182:497.965 - 1.124ms returns FALSE
+T20C8 5182:699.013 JLINK_IsHalted()
+T20C8 5182:699.703   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5182:700.239 - 1.224ms returns FALSE
+T20C8 5182:905.717 JLINK_IsHalted()
+T20C8 5182:906.714   Connection to device lost. Trying to reconnect to target.
+T20C8 5182:907.695   Found SW-DP with ID 0x0BC11477
+T20C8 5182:910.344   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5182:910.814 - 5.096ms returns FALSE
+T20C8 5183:114.148 JLINK_IsHalted()
+T20C8 5183:114.720   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5183:115.267 - 1.116ms returns FALSE
+T20C8 5183:317.990 JLINK_IsHalted()
+T20C8 5183:319.017   Connection to device lost. Trying to reconnect to target.
+T20C8 5183:320.057   Found SW-DP with ID 0x0BC11477
+T20C8 5183:322.577   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5183:323.062 - 5.070ms returns FALSE
+T20C8 5183:524.924 JLINK_IsHalted()
+T20C8 5183:525.441   CPU_ReadMem(4 bytes @ 0x41002100)
+T20C8 5183:525.899 - 0.973ms returns FALSE
+T2E14 5183:569.313 JLINK_Halt()
+T2E14 5183:572.447 - 3.131ms returns 0x00
+T20C8 5183:726.864 JLINK_IsHalted()
+T20C8 5183:726.929 - 0.065ms returns TRUE
+T20C8 5183:726.953 JLINK_GetMOEs(...)
+T20C8 5183:726.981   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T20C8 5183:727.561 - 0.605ms returns 0x01
+T20C8 5183:727.610 JLINK_ReadReg(R15 (PC))
+T20C8 5183:727.640 - 0.029ms returns 0x00008FFA
+T2C30 5183:729.278 JLINK_ResetPullsRESET(ON)
+T2C30 5183:729.314 - 0.036ms
+T2C30 5183:729.344 JLINK_ResetNoHalt()
+T2C30 5183:729.773   InitTarget() start
+T2C30 5183:729.820    J-Link Script File: Executing InitTarget()
+T2C30 5183:729.876   InitTarget()
+T2C30 5183:733.939   InitTarget() end - Took 4.01ms
+T2C30 5183:735.196   Found SW-DP with ID 0x0BC11477
+T2C30 5183:738.426   DPIDR: 0x0BC11477
+T2C30 5183:738.520   CoreSight SoC-400 or earlier
+T2C30 5183:738.583   AP map detection skipped. Manually configured AP map found.
+T2C30 5183:738.645   AP[0]: AHB-AP (IDR: Not set)
+T2C30 5183:740.001   AP[0]: Core found
+T2C30 5183:740.078   AP[0]: AHB-AP ROM base: 0x41003000
+T2C30 5183:740.770   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T2C30 5183:740.845   Found Cortex-M0 r0p1, Little endian.
+T2C30 5183:741.190   -- Max. mem block: 0x00002860
+T2C30 5183:741.337   Cortex-M: The connected J-Link (S/N 801048353) uses an old firmware module: V1 (current is 2)
+T2C30 5183:741.385   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5183:741.903   CPU_ReadMem(4 bytes @ 0xE0002000)
+T2C30 5183:742.460   FPUnit: 4 code (BP) slots and 0 literal slots
+T2C30 5183:742.507   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5183:743.081   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5183:743.627   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5183:744.193   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5183:744.804   CoreSight components:
+T2C30 5183:744.880   ROMTbl[0] @ 41003000
+T2C30 5183:744.919   CPU_ReadMem(64 bytes @ 0x41003000)
+T2C30 5183:745.923   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T2C30 5183:746.798   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T2C30 5183:746.886   ROMTbl[1] @ E00FF000
+T2C30 5183:746.921   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T2C30 5183:747.951   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T2C30 5183:748.728   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T2C30 5183:748.769   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T2C30 5183:749.620   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T2C30 5183:749.694   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T2C30 5183:750.392   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T2C30 5183:750.446   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T2C30 5183:751.185   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T2C30 5183:751.246   JLINK_Reset()
+T2C30 5183:751.351     Memory map 'before startup completion point' is active
+T2C30 5183:751.413     ResetTarget() start
+T2C30 5183:751.449      J-Link Script File: Executing ResetTarget()
+T2C30 5183:751.488     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5183:752.064     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5183:752.694     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T2C30 5183:755.036     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5183:755.664     CPU_ReadMem(4 bytes @ 0x41002100)
+T2C30 5183:756.145     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5183:756.897     ResetTarget() end - Took 5.36ms
+T2C30 5183:761.198     CPU_WriteMem(4 bytes @ 0xE0002000)
+T2C30 5183:761.852     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5183:762.502     CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5183:763.071     CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5183:763.674   - 12.427ms
+T2C30 5183:763.711   JLINK_Go()
+T2C30 5183:763.755     CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5183:764.270     CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5183:764.853     CPU_WriteMem(4 bytes @ 0xE0002008)
+T2C30 5183:764.892     CPU_WriteMem(4 bytes @ 0xE000200C)
+T2C30 5183:764.914     CPU_WriteMem(4 bytes @ 0xE0002010)
+T2C30 5183:764.935     CPU_WriteMem(4 bytes @ 0xE0002014)
+T2C30 5183:766.557     CPU_WriteMem(4 bytes @ 0xE0001004)
+T2C30 5183:768.125     Memory map 'after startup completion point' is active
+T2C30 5183:768.191   - 4.479ms
+T2C30 5183:768.212 - 38.868ms
+T2C30 5183:777.601 JLINK_Close()
+T2C30 5183:778.548   CPU is running
+T2C30 5183:778.608   CPU_WriteMem(4 bytes @ 0xE0002008)
+T2C30 5183:779.192   CPU is running
+T2C30 5183:779.236   CPU_WriteMem(4 bytes @ 0xE000200C)
+T2C30 5183:779.824   CPU is running
+T2C30 5183:779.867   CPU_WriteMem(4 bytes @ 0xE0002010)
+T2C30 5183:780.523   CPU is running
+T2C30 5183:780.577   CPU_WriteMem(4 bytes @ 0xE0002014)
+T2C30 5183:794.155 - 16.551ms
+T2C30 5183:794.212   
+T2C30 5183:794.226   Closed

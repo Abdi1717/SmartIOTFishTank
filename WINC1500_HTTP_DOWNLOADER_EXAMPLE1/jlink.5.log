@@ -1,0 +1,2415 @@
+T2C30 5082:480.268   SEGGER J-Link V7.94a Log File
+T2C30 5082:480.900   DLL Compiled: Dec  6 2023 16:01:39
+T2C30 5082:480.934   Logging started @ 2023-12-19 06:30
+T2C30 5082:480.961   Process: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atbackend.exe
+T2C30 5082:480.980 - 5082480.979ms
+T1780 5082:481.108 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5082:482.390 - 1.352ms returns 0
+T2C30 5082:557.059 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T2C30 5082:558.934   Device "ATSAMD21G18A" selected.
+T2C30 5082:559.453 - 2.175ms returns 0x00
+T2C30 5082:569.972 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T2C30 5082:570.665 - 0.693ms returns 0x00
+T2C30 5082:570.729 JLINK_SetSpeed(4000)
+T2C30 5082:571.002 - 0.276ms
+T2C30 5082:571.022 JLINK_ResetPullsRESET(OFF)
+T2C30 5082:571.030 - 0.008ms
+T2C30 5082:571.045 JLINK_Connect()
+T2C30 5082:572.402   InitTarget() start
+T2C30 5082:572.424    J-Link Script File: Executing InitTarget()
+T2C30 5082:572.566   InitTarget()
+T2C30 5082:576.076   InitTarget() end - Took 3.57ms
+T2C30 5085:479.310   Found SW-DP with ID 0x0BC11477
+T2C30 5085:484.321   DPIDR: 0x0BC11477
+T2C30 5085:484.468   CoreSight SoC-400 or earlier
+T2C30 5085:484.537   Scanning AP map to find all available APs
+T2C30 5085:485.589   AP[1]: Stopped AP scan as end of AP map has been reached
+T2C30 5085:486.135   AP[0]: AHB-AP (IDR: 0x04770031)
+T2C30 5085:486.214   Iterating through AP map to find AHB-AP to use
+T2C30 5085:487.467   AP[0]: Core found
+T2C30 5085:487.558   AP[0]: AHB-AP ROM base: 0x41003000
+T2C30 5085:488.291   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T2C30 5085:488.948   Found Cortex-M0 r0p1, Little endian.
+T2C30 5085:489.788   -- Max. mem block: 0x00002BA8
+T2C30 5085:490.437   Cortex-M: The connected J-Link (S/N 801048353) uses an old firmware module: V1 (current is 2)
+T2C30 5085:490.579   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5085:491.170   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T2C30 5085:491.645   CPU_ReadMem(4 bytes @ 0xE0002000)
+T2C30 5085:492.246   FPUnit: 4 code (BP) slots and 0 literal slots
+T2C30 5085:492.305   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5085:492.952   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5085:493.581   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5085:494.088   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5085:494.891   CoreSight components:
+T2C30 5085:495.002   ROMTbl[0] @ 41003000
+T2C30 5085:495.043   CPU_ReadMem(64 bytes @ 0x41003000)
+T2C30 5085:495.858   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T2C30 5085:496.634   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T2C30 5085:496.712   ROMTbl[1] @ E00FF000
+T2C30 5085:496.742   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T2C30 5085:497.678   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T2C30 5085:498.401   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T2C30 5085:498.455   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T2C30 5085:499.152   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T2C30 5085:499.239   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T2C30 5085:500.014   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T2C30 5085:500.107   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T2C30 5085:500.931   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T2C30 5085:501.108 - 2930.066ms returns 0x00
+T1780 5085:502.778 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5085:506.860   [0]: USB, S/N: 801048353
+T1780 5085:506.918 - 4.140ms returns 1
+T2C30 5085:506.978 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T2C30 5085:507.041 - 0.017ms returns 0x00
+T1780 5085:507.095 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5085:509.794 - 2.698ms returns 0
+T2C30 5085:509.874 JLINK_Halt()
+T2C30 5085:513.641 - 3.763ms returns 0x00
+T2C30 5085:517.174 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T2C30 5085:517.215 - 0.041ms returns 0
+T2C30 5085:517.262 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T2C30 5085:517.326   CPU_ReadMem(4 bytes @ 0x41002018)
+T2C30 5085:519.646   Data:  05 03 01 10
+T2C30 5085:519.919 - 2.656ms returns 1 (0x1)
+T152C 5085:527.557 JLINK_IsHalted()
+T152C 5085:528.028 - 0.469ms returns TRUE
+T152C 5085:528.059 JLINK_GetMOEs(...)
+T152C 5085:528.084   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T152C 5085:528.429 - 0.369ms returns 0x01
+T152C 5085:528.514 JLINK_ReadReg(R15 (PC))
+T152C 5085:528.559 - 0.050ms returns 0x00022020
+T2C30 5085:629.455 JLINK_BeginDownload(Flags = 0x00000000)
+T2C30 5085:629.485 - 0.030ms
+T2C30 5085:629.505 JLINK_WriteMem(0x00000000, 0x1964C Bytes, ...)
+T2C30 5085:629.512   Data:  58 7D 00 20 7D E8 00 00 61 E8 00 00 61 E8 00 00 ...
+T2C30 5085:629.908   completely In flash
+T2C30 5085:629.955 - 0.449ms returns 0x1964C
+T2C30 5085:630.246 JLINK_WriteMem(0x0001964C, 0x2D0 Bytes, ...)
+T2C30 5085:630.256   Data:  7B 22 64 22 3A 7B 22 74 65 6D 70 22 3A 31 37 7D ...
+T2C30 5085:630.271   completely In flash
+T2C30 5085:630.280 - 0.033ms returns 0x2D0
+T2C30 5085:671.011 JLINK_EndDownload()
+T2C30 5085:671.363   CPU_ReadMem(4 bytes @ 0x41006004)
+T2C30 5085:671.859   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T2C30 5085:673.587    -- --------------------------------------
+T2C30 5085:673.633    -- Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T2C30 5085:673.645    -- Start of determining dirty areas in flash cache
+T2C30 5085:673.664    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000000 if necessary
+T2C30 5085:673.676    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000100 if necessary
+T2C30 5085:673.688    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000200 if necessary
+T2C30 5085:673.709    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000300 if necessary
+T2C30 5085:673.720    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000400 if necessary
+T2C30 5085:673.732    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000500 if necessary
+T2C30 5085:673.744    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000600 if necessary
+T2C30 5085:673.756    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000700 if necessary
+T2C30 5085:673.768    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000800 if necessary
+T2C30 5085:673.780    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000900 if necessary
+T2C30 5085:673.792    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000A00 if necessary
+T2C30 5085:673.804    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000B00 if necessary
+T2C30 5085:673.816    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000C00 if necessary
+T2C30 5085:673.828    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000D00 if necessary
+T2C30 5085:673.842    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000E00 if necessary
+T2C30 5085:673.854    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000F00 if necessary
+T2C30 5085:673.866    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001000 if necessary
+T2C30 5085:673.878    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001100 if necessary
+T2C30 5085:673.891    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001200 if necessary
+T2C30 5085:673.903    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001300 if necessary
+T2C30 5085:673.915    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001400 if necessary
+T2C30 5085:673.927    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001500 if necessary
+T2C30 5085:673.939    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001600 if necessary
+T2C30 5085:673.951    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001700 if necessary
+T2C30 5085:673.963    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001800 if necessary
+T2C30 5085:674.044    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001900 if necessary
+T2C30 5085:674.057    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001A00 if necessary
+T2C30 5085:674.069    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001B00 if necessary
+T2C30 5085:674.081    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001C00 if necessary
+T2C30 5085:674.093    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001D00 if necessary
+T2C30 5085:674.105    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001E00 if necessary
+T2C30 5085:674.117    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001F00 if necessary
+T2C30 5085:674.129    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002000 if necessary
+T2C30 5085:674.141    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002100 if necessary
+T2C30 5085:674.153    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002200 if necessary
+T2C30 5085:674.165    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002300 if necessary
+T2C30 5085:674.177    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002400 if necessary
+T2C30 5085:674.189    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002500 if necessary
+T2C30 5085:674.201    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002600 if necessary
+T2C30 5085:674.213    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002700 if necessary
+T2C30 5085:674.225    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002800 if necessary
+T2C30 5085:674.237    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002900 if necessary
+T2C30 5085:674.249    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002A00 if necessary
+T2C30 5085:674.261    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002B00 if necessary
+T2C30 5085:674.273    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002C00 if necessary
+T2C30 5085:674.285    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002D00 if necessary
+T2C30 5085:674.297    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002E00 if necessary
+T2C30 5085:674.309    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002F00 if necessary
+T2C30 5085:674.321    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003000 if necessary
+T2C30 5085:674.333    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003100 if necessary
+T2C30 5085:674.345    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003200 if necessary
+T2C30 5085:674.357    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003300 if necessary
+T2C30 5085:674.369    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003400 if necessary
+T2C30 5085:674.381    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003500 if necessary
+T2C30 5085:674.396    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003600 if necessary
+T2C30 5085:674.408    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003700 if necessary
+T2C30 5085:674.420    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003800 if necessary
+T2C30 5085:674.432    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003900 if necessary
+T2C30 5085:674.444    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003A00 if necessary
+T2C30 5085:674.456    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003B00 if necessary
+T2C30 5085:674.470    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003C00 if necessary
+T2C30 5085:674.482    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003D00 if necessary
+T2C30 5085:674.494    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003E00 if necessary
+T2C30 5085:674.506    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003F00 if necessary
+T2C30 5085:674.518    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004000 if necessary
+T2C30 5085:674.530    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004100 if necessary
+T2C30 5085:674.547    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004200 if necessary
+T2C30 5085:674.559    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004300 if necessary
+T2C30 5085:674.571    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004400 if necessary
+T2C30 5085:674.583    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004500 if necessary
+T2C30 5085:674.595    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004600 if necessary
+T2C30 5085:674.607    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004700 if necessary
+T2C30 5085:674.619    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004800 if necessary
+T2C30 5085:674.631    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004900 if necessary
+T2C30 5085:674.643    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004A00 if necessary
+T2C30 5085:674.655    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004B00 if necessary
+T2C30 5085:674.667    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004C00 if necessary
+T2C30 5085:674.679    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004D00 if necessary
+T2C30 5085:674.691    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004E00 if necessary
+T2C30 5085:674.703    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004F00 if necessary
+T2C30 5085:674.715    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005000 if necessary
+T2C30 5085:674.727    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005100 if necessary
+T2C30 5085:674.739    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005200 if necessary
+T2C30 5085:674.751    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005300 if necessary
+T2C30 5085:674.763    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005400 if necessary
+T2C30 5085:674.775    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005500 if necessary
+T2C30 5085:674.787    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005600 if necessary
+T2C30 5085:674.799    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005700 if necessary
+T2C30 5085:674.811    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005800 if necessary
+T2C30 5085:674.823    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005900 if necessary
+T2C30 5085:674.835    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005A00 if necessary
+T2C30 5085:674.846    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005B00 if necessary
+T2C30 5085:674.858    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005C00 if necessary
+T2C30 5085:674.870    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005D00 if necessary
+T2C30 5085:674.882    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005E00 if necessary
+T2C30 5085:674.924    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005F00 if necessary
+T2C30 5085:674.936    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006000 if necessary
+T2C30 5085:674.948    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006100 if necessary
+T2C30 5085:674.960    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006200 if necessary
+T2C30 5085:674.972    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006300 if necessary
+T2C30 5085:674.984    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006400 if necessary
+T2C30 5085:674.996    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006500 if necessary
+T2C30 5085:675.008    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006600 if necessary
+T2C30 5085:675.020    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006700 if necessary
+T2C30 5085:675.032    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006800 if necessary
+T2C30 5085:675.044    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006900 if necessary
+T2C30 5085:675.056    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006A00 if necessary
+T2C30 5085:675.068    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006B00 if necessary
+T2C30 5085:675.080    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006C00 if necessary
+T2C30 5085:675.092    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006D00 if necessary
+T2C30 5085:675.104    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006E00 if necessary
+T2C30 5085:675.116    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006F00 if necessary
+T2C30 5085:675.128    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007000 if necessary
+T2C30 5085:675.140    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007100 if necessary
+T2C30 5085:675.152    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007200 if necessary
+T2C30 5085:675.164    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007300 if necessary
+T2C30 5085:675.176    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007400 if necessary
+T2C30 5085:675.188    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007500 if necessary
+T2C30 5085:675.200    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007600 if necessary
+T2C30 5085:675.212    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007700 if necessary
+T2C30 5085:675.224    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007800 if necessary
+T2C30 5085:675.236    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007900 if necessary
+T2C30 5085:675.248    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007A00 if necessary
+T2C30 5085:675.260    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007B00 if necessary
+T2C30 5085:675.272    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007C00 if necessary
+T2C30 5085:675.284    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007D00 if necessary
+T2C30 5085:675.296    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007E00 if necessary
+T2C30 5085:675.308    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007F00 if necessary
+T2C30 5085:675.320    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008000 if necessary
+T2C30 5085:675.332    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008100 if necessary
+T2C30 5085:675.345    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008200 if necessary
+T2C30 5085:675.357    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008300 if necessary
+T2C30 5085:675.369    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008400 if necessary
+T2C30 5085:675.381    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008500 if necessary
+T2C30 5085:675.393    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008600 if necessary
+T2C30 5085:675.407    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008700 if necessary
+T2C30 5085:675.419    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008800 if necessary
+T2C30 5085:675.431    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008900 if necessary
+T2C30 5085:675.443    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008A00 if necessary
+T2C30 5085:675.455    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008B00 if necessary
+T2C30 5085:675.467    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008C00 if necessary
+T2C30 5085:675.479    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008D00 if necessary
+T2C30 5085:675.491    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008E00 if necessary
+T2C30 5085:675.503    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008F00 if necessary
+T2C30 5085:675.515    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009000 if necessary
+T2C30 5085:675.527    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009100 if necessary
+T2C30 5085:675.540    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009200 if necessary
+T2C30 5085:675.552    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009300 if necessary
+T2C30 5085:675.564    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009400 if necessary
+T2C30 5085:675.576    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009500 if necessary
+T2C30 5085:675.588    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009600 if necessary
+T2C30 5085:675.600    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009700 if necessary
+T2C30 5085:675.612    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009800 if necessary
+T2C30 5085:675.624    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009900 if necessary
+T2C30 5085:675.636    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009A00 if necessary
+T2C30 5085:675.648    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009B00 if necessary
+T2C30 5085:675.670    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009C00 if necessary
+T2C30 5085:675.682    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009D00 if necessary
+T2C30 5085:675.694    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009E00 if necessary
+T2C30 5085:675.706    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009F00 if necessary
+T2C30 5085:675.718    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A000 if necessary
+T2C30 5085:675.730    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A100 if necessary
+T2C30 5085:675.742    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A200 if necessary
+T2C30 5085:675.754    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A300 if necessary
+T2C30 5085:675.766    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A400 if necessary
+T2C30 5085:675.779    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A500 if necessary
+T2C30 5085:675.792    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A600 if necessary
+T2C30 5085:675.804    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A700 if necessary
+T2C30 5085:675.815    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A800 if necessary
+T2C30 5085:675.828    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A900 if necessary
+T2C30 5085:675.840    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AA00 if necessary
+T2C30 5085:675.851    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AB00 if necessary
+T2C30 5085:675.863    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AC00 if necessary
+T2C30 5085:675.875    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AD00 if necessary
+T2C30 5085:675.888    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AE00 if necessary
+T2C30 5085:675.902    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AF00 if necessary
+T2C30 5085:675.914    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B000 if necessary
+T2C30 5085:675.925    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B100 if necessary
+T2C30 5085:675.937    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B200 if necessary
+T2C30 5085:675.949    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B300 if necessary
+T2C30 5085:675.961    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B400 if necessary
+T2C30 5085:675.973    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B500 if necessary
+T2C30 5085:675.985    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B600 if necessary
+T2C30 5085:675.997    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B700 if necessary
+T2C30 5085:676.009    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B800 if necessary
+T2C30 5085:676.021    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B900 if necessary
+T2C30 5085:676.033    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BA00 if necessary
+T2C30 5085:676.045    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BB00 if necessary
+T2C30 5085:676.057    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BC00 if necessary
+T2C30 5085:676.069    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BD00 if necessary
+T2C30 5085:676.081    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BE00 if necessary
+T2C30 5085:676.093    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BF00 if necessary
+T2C30 5085:676.105    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C000 if necessary
+T2C30 5085:676.117    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C100 if necessary
+T2C30 5085:676.129    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C200 if necessary
+T2C30 5085:676.141    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C300 if necessary
+T2C30 5085:676.152    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C400 if necessary
+T2C30 5085:676.164    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C500 if necessary
+T2C30 5085:676.177    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C600 if necessary
+T2C30 5085:676.189    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C700 if necessary
+T2C30 5085:676.202    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C800 if necessary
+T2C30 5085:676.214    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C900 if necessary
+T2C30 5085:676.226    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CA00 if necessary
+T2C30 5085:676.238    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CB00 if necessary
+T2C30 5085:676.250    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CC00 if necessary
+T2C30 5085:676.262    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CD00 if necessary
+T2C30 5085:676.274    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CE00 if necessary
+T2C30 5085:676.286    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CF00 if necessary
+T2C30 5085:676.298    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D000 if necessary
+T2C30 5085:676.309    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D100 if necessary
+T2C30 5085:676.321    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D200 if necessary
+T2C30 5085:676.333    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D300 if necessary
+T2C30 5085:676.345    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D400 if necessary
+T2C30 5085:676.357    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D500 if necessary
+T2C30 5085:676.369    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D600 if necessary
+T2C30 5085:676.383    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D700 if necessary
+T2C30 5085:676.395    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D800 if necessary
+T2C30 5085:676.407    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D900 if necessary
+T2C30 5085:676.419    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DA00 if necessary
+T2C30 5085:676.431    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DB00 if necessary
+T2C30 5085:676.443    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DC00 if necessary
+T2C30 5085:676.454    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DD00 if necessary
+T2C30 5085:676.467    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DE00 if necessary
+T2C30 5085:676.479    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DF00 if necessary
+T2C30 5085:676.491    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E000 if necessary
+T2C30 5085:676.503    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E100 if necessary
+T2C30 5085:676.515    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E200 if necessary
+T2C30 5085:676.527    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E300 if necessary
+T2C30 5085:676.558    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E400 if necessary
+T2C30 5085:676.570    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E500 if necessary
+T2C30 5085:676.582    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E600 if necessary
+T2C30 5085:676.594    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E700 if necessary
+T2C30 5085:676.606    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E800 if necessary
+T2C30 5085:676.618    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000E900 if necessary
+T2C30 5085:676.630    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EA00 if necessary
+T2C30 5085:676.666    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EB00 if necessary
+T2C30 5085:676.678    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EC00 if necessary
+T2C30 5085:676.689    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000ED00 if necessary
+T2C30 5085:676.701    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EE00 if necessary
+T2C30 5085:676.713    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000EF00 if necessary
+T2C30 5085:676.725    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F000 if necessary
+T2C30 5085:676.737    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F100 if necessary
+T2C30 5085:676.749    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F200 if necessary
+T2C30 5085:676.761    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F300 if necessary
+T2C30 5085:676.773    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F400 if necessary
+T2C30 5085:676.785    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F500 if necessary
+T2C30 5085:676.797    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F600 if necessary
+T2C30 5085:676.809    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F700 if necessary
+T2C30 5085:676.821    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F800 if necessary
+T2C30 5085:676.833    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000F900 if necessary
+T2C30 5085:676.845    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FA00 if necessary
+T2C30 5085:676.857    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FB00 if necessary
+T2C30 5085:676.869    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FC00 if necessary
+T2C30 5085:676.881    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FD00 if necessary
+T2C30 5085:676.893    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FE00 if necessary
+T2C30 5085:676.907    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000FF00 if necessary
+T2C30 5085:676.919    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010000 if necessary
+T2C30 5085:676.931    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010100 if necessary
+T2C30 5085:676.943    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010200 if necessary
+T2C30 5085:676.955    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010300 if necessary
+T2C30 5085:676.966    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010400 if necessary
+T2C30 5085:676.978    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010500 if necessary
+T2C30 5085:676.990    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010600 if necessary
+T2C30 5085:677.002    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010700 if necessary
+T2C30 5085:677.014    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010800 if necessary
+T2C30 5085:677.026    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010900 if necessary
+T2C30 5085:677.038    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010A00 if necessary
+T2C30 5085:677.050    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010B00 if necessary
+T2C30 5085:677.062    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010C00 if necessary
+T2C30 5085:677.074    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010D00 if necessary
+T2C30 5085:677.088    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010E00 if necessary
+T2C30 5085:677.099    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00010F00 if necessary
+T2C30 5085:677.111    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011000 if necessary
+T2C30 5085:677.123    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011100 if necessary
+T2C30 5085:677.135    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011200 if necessary
+T2C30 5085:677.147    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011300 if necessary
+T2C30 5085:677.159    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011400 if necessary
+T2C30 5085:677.171    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011500 if necessary
+T2C30 5085:677.183    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011600 if necessary
+T2C30 5085:677.195    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011700 if necessary
+T2C30 5085:677.207    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011800 if necessary
+T2C30 5085:677.219    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011900 if necessary
+T2C30 5085:677.231    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011A00 if necessary
+T2C30 5085:677.243    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011B00 if necessary
+T2C30 5085:677.255    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011C00 if necessary
+T2C30 5085:677.267    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011D00 if necessary
+T2C30 5085:677.279    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011E00 if necessary
+T2C30 5085:677.291    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00011F00 if necessary
+T2C30 5085:677.303    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012000 if necessary
+T2C30 5085:677.315    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012100 if necessary
+T2C30 5085:677.327    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012200 if necessary
+T2C30 5085:677.338    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012300 if necessary
+T2C30 5085:677.350    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012400 if necessary
+T2C30 5085:677.362    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012500 if necessary
+T2C30 5085:677.402    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012600 if necessary
+T2C30 5085:677.414    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012700 if necessary
+T2C30 5085:677.426    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012800 if necessary
+T2C30 5085:677.438    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012900 if necessary
+T2C30 5085:677.450    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012A00 if necessary
+T2C30 5085:677.462    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012B00 if necessary
+T2C30 5085:677.474    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012C00 if necessary
+T2C30 5085:677.486    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012D00 if necessary
+T2C30 5085:677.498    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012E00 if necessary
+T2C30 5085:677.510    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00012F00 if necessary
+T2C30 5085:677.522    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013000 if necessary
+T2C30 5085:677.538    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013100 if necessary
+T2C30 5085:677.550    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013200 if necessary
+T2C30 5085:677.562    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013300 if necessary
+T2C30 5085:677.574    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013400 if necessary
+T2C30 5085:677.586    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013500 if necessary
+T2C30 5085:677.598    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013600 if necessary
+T2C30 5085:677.609    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013700 if necessary
+T2C30 5085:677.621    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013800 if necessary
+T2C30 5085:677.633    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013900 if necessary
+T2C30 5085:677.645    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013A00 if necessary
+T2C30 5085:677.657    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013B00 if necessary
+T2C30 5085:677.669    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013C00 if necessary
+T2C30 5085:677.681    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013D00 if necessary
+T2C30 5085:677.693    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013E00 if necessary
+T2C30 5085:677.705    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00013F00 if necessary
+T2C30 5085:677.727    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014000 if necessary
+T2C30 5085:677.739    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014100 if necessary
+T2C30 5085:677.751    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014200 if necessary
+T2C30 5085:677.763    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014300 if necessary
+T2C30 5085:677.775    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014400 if necessary
+T2C30 5085:677.787    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014500 if necessary
+T2C30 5085:677.799    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014600 if necessary
+T2C30 5085:677.811    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014700 if necessary
+T2C30 5085:677.823    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014800 if necessary
+T2C30 5085:677.835    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014900 if necessary
+T2C30 5085:677.847    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014A00 if necessary
+T2C30 5085:677.859    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014B00 if necessary
+T2C30 5085:677.871    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014C00 if necessary
+T2C30 5085:677.883    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014D00 if necessary
+T2C30 5085:677.895    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014E00 if necessary
+T2C30 5085:677.907    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00014F00 if necessary
+T2C30 5085:677.919    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015000 if necessary
+T2C30 5085:677.931    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015100 if necessary
+T2C30 5085:677.943    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015200 if necessary
+T2C30 5085:677.955    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015300 if necessary
+T2C30 5085:677.969    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015400 if necessary
+T2C30 5085:677.980    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015500 if necessary
+T2C30 5085:677.993    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015600 if necessary
+T2C30 5085:678.004    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015700 if necessary
+T2C30 5085:678.016    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015800 if necessary
+T2C30 5085:678.033    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015900 if necessary
+T2C30 5085:678.045    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015A00 if necessary
+T2C30 5085:678.057    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015B00 if necessary
+T2C30 5085:678.069    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015C00 if necessary
+T2C30 5085:678.081    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015D00 if necessary
+T2C30 5085:678.093    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015E00 if necessary
+T2C30 5085:678.105    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00015F00 if necessary
+T2C30 5085:678.117    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016000 if necessary
+T2C30 5085:678.129    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016100 if necessary
+T2C30 5085:678.141    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016200 if necessary
+T2C30 5085:678.153    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016300 if necessary
+T2C30 5085:678.165    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016400 if necessary
+T2C30 5085:678.177    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016500 if necessary
+T2C30 5085:678.189    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016600 if necessary
+T2C30 5085:678.201    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016700 if necessary
+T2C30 5085:678.213    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016800 if necessary
+T2C30 5085:678.225    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016900 if necessary
+T2C30 5085:678.237    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016A00 if necessary
+T2C30 5085:678.249    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016B00 if necessary
+T2C30 5085:678.261    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016C00 if necessary
+T2C30 5085:678.273    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016D00 if necessary
+T2C30 5085:678.285    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016E00 if necessary
+T2C30 5085:678.296    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00016F00 if necessary
+T2C30 5085:678.309    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017000 if necessary
+T2C30 5085:678.320    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017100 if necessary
+T2C30 5085:678.333    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017200 if necessary
+T2C30 5085:678.345    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017300 if necessary
+T2C30 5085:678.356    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017400 if necessary
+T2C30 5085:678.369    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017500 if necessary
+T2C30 5085:678.380    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017600 if necessary
+T2C30 5085:678.394    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017700 if necessary
+T2C30 5085:678.406    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017800 if necessary
+T2C30 5085:678.418    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017900 if necessary
+T2C30 5085:678.430    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017A00 if necessary
+T2C30 5085:678.442    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017B00 if necessary
+T2C30 5085:678.453    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017C00 if necessary
+T2C30 5085:678.465    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017D00 if necessary
+T2C30 5085:678.477    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017E00 if necessary
+T2C30 5085:678.501    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00017F00 if necessary
+T2C30 5085:678.518    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018000 if necessary
+T2C30 5085:678.530    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018100 if necessary
+T2C30 5085:678.587    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018200 if necessary
+T2C30 5085:678.603    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018300 if necessary
+T2C30 5085:678.619    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018400 if necessary
+T2C30 5085:678.631    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018500 if necessary
+T2C30 5085:678.643    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018600 if necessary
+T2C30 5085:678.668    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018700 if necessary
+T2C30 5085:678.681    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018800 if necessary
+T2C30 5085:678.693    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018900 if necessary
+T2C30 5085:678.705    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018A00 if necessary
+T2C30 5085:678.717    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018B00 if necessary
+T2C30 5085:678.729    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018C00 if necessary
+T2C30 5085:678.741    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018D00 if necessary
+T2C30 5085:678.753    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018E00 if necessary
+T2C30 5085:678.765    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00018F00 if necessary
+T2C30 5085:678.777    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019000 if necessary
+T2C30 5085:678.798    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019100 if necessary
+T2C30 5085:678.810    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019200 if necessary
+T2C30 5085:678.822    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019300 if necessary
+T2C30 5085:678.834    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019400 if necessary
+T2C30 5085:678.846    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019500 if necessary
+T2C30 5085:678.858    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019600 if necessary
+T2C30 5085:678.870    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019700 if necessary
+T2C30 5085:678.882    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019800 if necessary
+T2C30 5085:678.894    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00019900 if necessary
+T2C30 5085:678.964    -- End of determining dirty areas
+T2C30 5085:678.976    -- Start of preparing flash programming
+T2C30 5085:679.506    -- Calculating RAM usage
+T2C30 5085:693.374    -- RAM usage = 5956 Bytes
+T2C30 5085:693.412    -- Preserving CPU registers
+T2C30 5085:694.005    -- Preparing target
+T2C30 5085:694.051    -- Preserving target RAM temporarily used for programming
+T2C30 5085:725.379    -- Downloading RAMCode
+T2C30 5085:742.808    -- Preparing RAMCode
+T2C30 5085:750.197    -- End of preparing flash programming
+T2C30 5085:762.435    -- CPU speed could not be measured.
+T2C30 5085:762.521    -- Start of comparing flash
+T2C30 5085:762.550    -- CRC check was estimated as fastest method
+T2C30 5085:829.201    -- Comparing range 0x0000 - 0xFFFF (256 Sectors, 64 KB), using multi-block CRC calculation
+T2C30 5085:873.210    -- CRC does not match for sectors 0-255
+T2C30 5085:874.485    -- Comparing range 0x10000 - 0x199FF (154 Sectors, 38 KB), using multi-block CRC calculation
+T2C30 5085:895.564    -- CRC does not match for sectors 0-153
+T2C30 5085:895.596    -- End of comparing flash
+T2C30 5085:895.606    -- Start of erasing sectors
+T2C30 5085:895.616    -- Erasing range 0x00000000 - 0x000199FF (410 Sectors, 102 KB)
+T2C30 5086:240.376    -- End of erasing sectors
+T2C30 5086:240.452    -- Start of flash programming
+T2C30 5086:240.483    -- Programming range 0x00000000 - 0x00007FFF (128 Sectors, 32 KB)
+T2C30 5086:504.526    -- Programming range 0x00008000 - 0x0000FFFF (128 Sectors, 32 KB)
+T2C30 5086:759.992    -- Programming range 0x00010000 - 0x00017FFF (128 Sectors, 32 KB)
+T2C30 5087:015.908    -- Programming range 0x00018000 - 0x000199FF ( 26 Sectors, 6 KB)
+T2C30 5087:079.757    -- End of flash programming
+T2C30 5087:079.829    -- 0x0000 - 0x199FF (410 Sectors, 102 KB)
+T2C30 5087:079.857    -- Start of restoring
+T2C30 5087:079.884    -- Restoring RAMCode
+T2C30 5087:094.317    -- Restoring target memory
+T2C30 5087:124.056    -- Restore target
+T2C30 5087:124.153    -- Restoring CPU registers
+T2C30 5087:124.219    -- End of restoring
+T2C30 5087:124.417    -- Bank 0 @ 0x00000000: 1 range affected (104960 bytes)
+T2C30 5087:124.501    -- Total: 1.445s (Prepare: 0.083s, Compare: 0.133s, Erase: 0.344s, Program & Verify: 0.849s, Restore: 0.034s)
+T2C30 5087:124.557    -- Program & Verify speed: 120 KB/s
+T2C30 5087:138.669 - 1467.655ms returns 104960 (0x19A00)
+T2C30 5087:139.275 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T2C30 5087:139.302 - 0.027ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T2C30 5087:139.318 JLINK_Reset()
+T2C30 5087:139.353   CPU_ReadMem(4 bytes @ 0x20000000)
+T2C30 5087:139.860   CPU_WriteMem(4 bytes @ 0x20000000)
+T2C30 5087:140.533   ResetTarget() start
+T2C30 5087:140.577    J-Link Script File: Executing ResetTarget()
+T2C30 5087:141.059   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5087:141.628   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5087:142.137   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T2C30 5087:144.259   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5087:144.853   CPU_ReadMem(4 bytes @ 0x41002100)
+T2C30 5087:145.296   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5087:145.722   ResetTarget() end - Took 5.10ms
+T2C30 5087:149.485   CPU_WriteMem(4 bytes @ 0xE0002000)
+T2C30 5087:150.019   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5087:150.434   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5087:150.827   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5087:151.372 - 12.053ms
+T1780 5087:151.408 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5087:153.113   [0]: USB, S/N: 801048353
+T1780 5087:153.138 - 1.730ms returns 1
+T1780 5087:153.227 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5087:154.357 - 1.129ms returns 0
+T3DEC 5087:259.044 JLINK_Halt()
+T3DEC 5087:259.081 - 0.036ms returns 0x00
+T3DEC 5087:259.121 JLINK_ReadReg(R15 (PC))
+T3DEC 5087:259.143 - 0.021ms returns 0x0000E87C
+T3DEC 5087:259.173 JLINK_ReadReg(R13 (SP))
+T3DEC 5087:259.195 - 0.021ms returns 0x20007D58
+T3DEC 5087:271.136 JLINK_ReadMemHW(0x0000E87C, 0x0004 Bytes, ...)
+T3DEC 5087:271.260   CPU_ReadMem(4 bytes @ 0x0000E87C)
+T3DEC 5087:271.837   Data:  F8 B5 2A 4A
+T3DEC 5087:271.877 - 0.743ms returns 0
+T3DEC 5087:272.529 JLINK_ReadReg(R0)
+T3DEC 5087:272.595 - 0.073ms returns 0x00000000
+T3DEC 5087:272.638 JLINK_ReadReg(R1)
+T3DEC 5087:272.666 - 0.026ms returns 0x00000000
+T3DEC 5087:272.703 JLINK_ReadReg(R2)
+T3DEC 5087:272.732 - 0.027ms returns 0x00000000
+T3DEC 5087:272.770 JLINK_ReadReg(R3)
+T3DEC 5087:272.798 - 0.027ms returns 0x00019800
+T3DEC 5087:272.835 JLINK_ReadReg(R4)
+T3DEC 5087:272.862 - 0.026ms returns 0x200006B4
+T3DEC 5087:272.908 JLINK_ReadReg(R5)
+T3DEC 5087:272.931 - 0.022ms returns 0x2000070C
+T3DEC 5087:272.962 JLINK_ReadReg(R6)
+T3DEC 5087:272.983 - 0.021ms returns 0x2000070C
+T3DEC 5087:273.041 JLINK_ReadReg(R7)
+T3DEC 5087:273.064 - 0.022ms returns 0x20007950
+T3DEC 5087:273.093 JLINK_ReadReg(R8)
+T3DEC 5087:273.115 - 0.021ms returns 0xA5A5A5A5
+T3DEC 5087:273.147 JLINK_ReadReg(R9)
+T3DEC 5087:273.169 - 0.021ms returns 0xA5A5A5A5
+T3DEC 5087:273.199 JLINK_ReadReg(R10)
+T3DEC 5087:273.224 - 0.023ms returns 0xA5A5A5A5
+T3DEC 5087:273.250 JLINK_ReadReg(R11)
+T3DEC 5087:273.268 - 0.017ms returns 0xA5A5A5A5
+T3DEC 5087:273.298 JLINK_ReadReg(R12)
+T3DEC 5087:273.322 - 0.023ms returns 0x20000638
+T3DEC 5087:273.372 JLINK_ReadReg(R13 (SP))
+T3DEC 5087:273.397 - 0.024ms returns 0x20007D58
+T3DEC 5087:273.429 JLINK_ReadReg(R14)
+T3DEC 5087:273.455 - 0.024ms returns 0x20000341
+T3DEC 5087:273.487 JLINK_ReadReg(R15 (PC))
+T3DEC 5087:273.511 - 0.023ms returns 0x0000E87C
+T3DEC 5087:273.603 JLINK_ReadReg(XPSR)
+T3DEC 5087:273.628 - 0.024ms returns 0x61000000
+T3DEC 5087:273.659 JLINK_ReadReg(MSP)
+T3DEC 5087:273.682 - 0.022ms returns 0x20007D58
+T3DEC 5087:273.722 JLINK_ReadReg(PSP)
+T3DEC 5087:273.744 - 0.021ms returns 0x20001410
+T3DEC 5087:273.770 JLINK_ReadReg(PRIMASK)
+T3DEC 5087:273.791 - 0.020ms returns 0x00000000
+T3DEC 5087:273.821 JLINK_ReadReg(BASEPRI)
+T3DEC 5087:273.845 - 0.023ms returns 0x00000000
+T3DEC 5087:273.876 JLINK_ReadReg(FAULTMASK)
+T3DEC 5087:273.897 - 0.021ms returns 0x00000000
+T3DEC 5087:273.929 JLINK_ReadReg(CONTROL)
+T3DEC 5087:273.950 - 0.020ms returns 0x00000000
+T3DEC 5087:274.711 JLINK_ReadMemHW(0x0000E87C, 0x0002 Bytes, ...)
+T3DEC 5087:274.759   CPU_ReadMem(2 bytes @ 0x0000E87C)
+T3DEC 5087:275.342   Data:  F8 B5
+T3DEC 5087:275.383 - 0.673ms returns 0
+T152C 5087:345.396 JLINK_IsHalted()
+T152C 5087:345.430 - 0.034ms returns TRUE
+T152C 5087:547.397 JLINK_IsHalted()
+T152C 5087:547.494 - 0.097ms returns TRUE
+T152C 5087:749.399 JLINK_IsHalted()
+T152C 5087:749.993 - 0.593ms returns TRUE
+T3DEC 5087:874.341 JLINK_ReadReg(R0)
+T3DEC 5087:874.516 - 0.175ms returns 0x00000000
+T3DEC 5087:874.565 JLINK_ReadReg(R1)
+T3DEC 5087:874.573 - 0.008ms returns 0x00000000
+T3DEC 5087:874.584 JLINK_ReadReg(R2)
+T3DEC 5087:874.641 - 0.056ms returns 0x00000000
+T3DEC 5087:874.653 JLINK_ReadReg(R3)
+T3DEC 5087:874.663 - 0.009ms returns 0x00019800
+T3DEC 5087:874.672 JLINK_ReadReg(R4)
+T3DEC 5087:874.678 - 0.006ms returns 0x200006B4
+T3DEC 5087:874.686 JLINK_ReadReg(R5)
+T3DEC 5087:874.693 - 0.006ms returns 0x2000070C
+T3DEC 5087:874.701 JLINK_ReadReg(R6)
+T3DEC 5087:874.707 - 0.006ms returns 0x2000070C
+T3DEC 5087:874.716 JLINK_ReadReg(R7)
+T3DEC 5087:874.722 - 0.006ms returns 0x20007950
+T3DEC 5087:874.731 JLINK_ReadReg(R8)
+T3DEC 5087:874.737 - 0.006ms returns 0xA5A5A5A5
+T3DEC 5087:874.752 JLINK_ReadReg(R9)
+T3DEC 5087:874.767 - 0.014ms returns 0xA5A5A5A5
+T3DEC 5087:874.780 JLINK_ReadReg(R10)
+T3DEC 5087:874.801 - 0.020ms returns 0xA5A5A5A5
+T3DEC 5087:874.825 JLINK_ReadReg(R11)
+T3DEC 5087:874.836 - 0.011ms returns 0xA5A5A5A5
+T3DEC 5087:874.845 JLINK_ReadReg(R12)
+T3DEC 5087:874.871 - 0.026ms returns 0x20000638
+T3DEC 5087:874.879 JLINK_ReadReg(R13 (SP))
+T3DEC 5087:874.886 - 0.006ms returns 0x20007D58
+T3DEC 5087:874.894 JLINK_ReadReg(R14)
+T3DEC 5087:874.900 - 0.005ms returns 0x20000341
+T3DEC 5087:874.909 JLINK_ReadReg(R15 (PC))
+T3DEC 5087:874.915 - 0.006ms returns 0x0000E87C
+T3DEC 5087:874.940 JLINK_ReadReg(XPSR)
+T3DEC 5087:874.946 - 0.006ms returns 0x61000000
+T3DEC 5087:874.955 JLINK_ReadReg(MSP)
+T3DEC 5087:874.961 - 0.006ms returns 0x20007D58
+T3DEC 5087:874.969 JLINK_ReadReg(PSP)
+T3DEC 5087:874.975 - 0.006ms returns 0x20001410
+T3DEC 5087:874.983 JLINK_ReadReg(PRIMASK)
+T3DEC 5087:874.989 - 0.006ms returns 0x00000000
+T3DEC 5087:874.998 JLINK_ReadReg(BASEPRI)
+T3DEC 5087:875.004 - 0.005ms returns 0x00000000
+T3DEC 5087:875.012 JLINK_ReadReg(FAULTMASK)
+T3DEC 5087:875.018 - 0.006ms returns 0x00000000
+T3DEC 5087:875.027 JLINK_ReadReg(CONTROL)
+T3DEC 5087:875.033 - 0.006ms returns 0x00000000
+T152C 5087:950.547 JLINK_IsHalted()
+T152C 5087:950.619 - 0.071ms returns TRUE
+T152C 5088:151.471 JLINK_IsHalted()
+T152C 5088:151.608 - 0.136ms returns TRUE
+T3DEC 5088:184.427 JLINK_ReadMemHW(0x0000E87C, 0x0004 Bytes, ...)
+T3DEC 5088:184.500   CPU_ReadMem(4 bytes @ 0x0000E87C)
+T3DEC 5088:185.079   Data:  F8 B5 2A 4A
+T3DEC 5088:185.100 - 0.691ms returns 0
+T3DEC 5088:216.067 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T3DEC 5088:216.090 - 0.023ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T3DEC 5088:216.103 JLINK_Reset()
+T3DEC 5088:216.165   ResetTarget() start
+T3DEC 5088:216.180    J-Link Script File: Executing ResetTarget()
+T3DEC 5088:216.200   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3DEC 5088:216.623   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3DEC 5088:217.165   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T3DEC 5088:219.288   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T3DEC 5088:219.742   CPU_ReadMem(4 bytes @ 0x41002100)
+T3DEC 5088:220.253   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3DEC 5088:220.772   ResetTarget() end - Took 4.53ms
+T3DEC 5088:224.629   CPU_WriteMem(4 bytes @ 0xE0002000)
+T3DEC 5088:225.127   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T3DEC 5088:225.597   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3DEC 5088:226.067   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3DEC 5088:226.504 - 10.400ms
+T152C 5088:226.548 JLINK_IsHalted()
+T152C 5088:226.569 - 0.020ms returns TRUE
+T152C 5088:226.582 JLINK_GetMOEs(...)
+T152C 5088:226.595   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T152C 5088:227.126 - 0.542ms returns 0x01
+T152C 5088:227.164 JLINK_ReadReg(R15 (PC))
+T152C 5088:227.181 - 0.017ms returns 0x0000E87C
+T3DEC 5088:236.870 JLINK_ReadReg(R15 (PC))
+T3DEC 5088:236.960 - 0.090ms returns 0x0000E87C
+T3DEC 5088:236.996 JLINK_ReadReg(R13 (SP))
+T3DEC 5088:237.019 - 0.022ms returns 0x20007D58
+T3DEC 5088:237.816 JLINK_ReadMemHW(0x0000E87C, 0x0004 Bytes, ...)
+T3DEC 5088:237.926   CPU_ReadMem(4 bytes @ 0x0000E87C)
+T3DEC 5088:238.487   Data:  F8 B5 2A 4A
+T3DEC 5088:238.524 - 0.710ms returns 0
+T1780 5088:289.527 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5088:290.380   [0]: USB, S/N: 801048353
+T1780 5088:290.396 - 0.869ms returns 1
+T1780 5088:290.463 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5088:291.233 - 0.769ms returns 0
+T3DEC 5088:294.265 JLINK_ReadMemHW(0x00011BA4, 0x0001 Bytes, ...)
+T3DEC 5088:294.377   CPU_ReadMem(1 bytes @ 0x00011BA4)
+T3DEC 5088:294.972   Data:  10
+T3DEC 5088:294.991 - 0.726ms returns 0
+T3DEC 5088:340.363 JLINK_ReadReg(R15 (PC))
+T3DEC 5088:340.417 - 0.054ms returns 0x0000E87C
+T3DEC 5088:340.724 JLINK_GetNumBPUnits(Type = 0xFFFFFF02)
+T3DEC 5088:340.771 - 0.047ms returns 0x04
+T3DEC 5088:340.798 JLINK_SetBPEx(Addr = 0x00011BA4, Type = 0xFFFFFFF2)
+T3DEC 5088:340.856 - 0.057ms returns 0x00000001
+T3DEC 5088:340.925 JLINK_GetBPInfo(BPHandle = 1)
+T3DEC 5088:340.943 - 0.017ms returns 0x0
+T3DEC 5088:341.246 JLINK_Go()
+T3DEC 5088:341.294   CPU_WriteMem(4 bytes @ 0xE0002000)
+T3DEC 5088:341.835   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3DEC 5088:342.265   CPU_WriteMem(4 bytes @ 0xE0001000)
+T3DEC 5088:342.826   CPU_WriteMem(4 bytes @ 0xE000ED30)
+T3DEC 5088:343.298   CPU_WriteMem(4 bytes @ 0xE0002008)
+T3DEC 5088:343.326   CPU_WriteMem(4 bytes @ 0xE000200C)
+T3DEC 5088:343.349   CPU_WriteMem(4 bytes @ 0xE0002010)
+T3DEC 5088:343.372   CPU_WriteMem(4 bytes @ 0xE0002014)
+T3DEC 5088:344.798   CPU_WriteMem(4 bytes @ 0xE0001004)
+T3DEC 5088:347.110   Memory map 'after startup completion point' is active
+T3DEC 5088:347.149 - 5.903ms
+T152C 5088:347.277 JLINK_IsHalted()
+T152C 5088:347.846   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5088:348.450 - 1.171ms returns FALSE
+T152C 5088:368.843 JLINK_IsHalted()
+T152C 5088:369.598   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5088:370.173 - 1.329ms returns FALSE
+T152C 5088:449.830 JLINK_IsHalted()
+T152C 5088:453.839 - 4.006ms returns TRUE
+T152C 5088:453.905 JLINK_GetMOEs(...)
+T152C 5088:453.931   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T152C 5088:454.448 - 0.541ms returns 0x01
+T152C 5088:454.496 JLINK_ReadReg(R15 (PC))
+T152C 5088:454.524 - 0.027ms returns 0x00011BA4
+T3DEC 5088:464.067 JLINK_ReadReg(R15 (PC))
+T3DEC 5088:464.136 - 0.069ms returns 0x00011BA4
+T3DEC 5088:464.170 JLINK_ReadReg(R13 (SP))
+T3DEC 5088:464.193 - 0.021ms returns 0x20007D40
+T3DEC 5088:465.499 JLINK_ReadMemHW(0x00011BA4, 0x0004 Bytes, ...)
+T3DEC 5088:465.554   CPU_ReadMem(4 bytes @ 0x00011BA4)
+T3DEC 5088:466.106   Data:  10 B5 05 4B
+T3DEC 5088:466.201 - 0.702ms returns 0
+T3DEC 5088:497.720 JLINK_WriteU32_64(0xE000EDFC, 0x01000000)
+T3DEC 5088:497.778   Debug reg: DEMCR
+T3DEC 5088:498.483   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T3DEC 5088:499.043 - 1.322ms returns 0 (0x00000000)
+T3DEC 5088:499.100 JLINK_ReadMem(0xE0001000, 0x4 Bytes, ...)
+T3DEC 5088:499.141   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3DEC 5088:499.689   Data:  00 00 00 20
+T3DEC 5088:499.738   Debug reg: DWT_CTRL
+T3DEC 5088:499.776 - 0.676ms returns 0
+T3DEC 5088:499.909 JLINK_WriteU32_64(0xE0001000, 0x20000001)
+T3DEC 5088:499.936   Debug reg: DWT_CTRL
+T3DEC 5088:499.989 - 0.080ms returns 0 (0x00000000)
+T3DEC 5088:500.052 JLINK_WriteU32_64(0xE0001028, 0x00000100)
+T3DEC 5088:500.079   Debug reg: DWT_FUNC[0]
+T3DEC 5088:500.131 - 0.078ms returns 0 (0x00000000)
+T3DEC 5088:500.165 JLINK_ReadMem(0xE0001028, 0x4 Bytes, ...)
+T3DEC 5088:500.202   CPU_WriteMem(4 bytes @ 0xE0001028)
+T3DEC 5088:500.826   CPU_ReadMem(4 bytes @ 0xE0001028)
+T3DEC 5088:501.501   Data:  00 00 00 00
+T3DEC 5088:501.538   Debug reg: DWT_FUNC[0]
+T3DEC 5088:501.560 - 1.395ms returns 0
+T3DEC 5088:501.666 JLINK_WriteU32_64(0xE0001024, 0x0000001F)
+T3DEC 5088:501.692   Debug reg: DWT_MASK[0]
+T3DEC 5088:501.763 - 0.095ms returns 0 (0x00000000)
+T3DEC 5088:501.792 JLINK_ReadMem(0xE0001024, 0x4 Bytes, ...)
+T3DEC 5088:501.823   CPU_WriteMem(4 bytes @ 0xE0001024)
+T3DEC 5088:502.283   CPU_ReadMem(4 bytes @ 0xE0001024)
+T3DEC 5088:502.909   Data:  1F 00 00 00
+T3DEC 5088:502.963   Debug reg: DWT_MASK[0]
+T3DEC 5088:502.994 - 1.202ms returns 0
+T3DEC 5088:503.114 JLINK_WriteU32_64(0xE0001038, 0x00000100)
+T3DEC 5088:503.135   Debug reg: DWT_FUNC[1]
+T3DEC 5088:503.182 - 0.069ms returns 0 (0x00000000)
+T3DEC 5088:503.226 JLINK_ReadMem(0xE0001038, 0x4 Bytes, ...)
+T3DEC 5088:503.256   CPU_WriteMem(4 bytes @ 0xE0001038)
+T3DEC 5088:503.836   CPU_ReadMem(4 bytes @ 0xE0001038)
+T3DEC 5088:504.353   Data:  00 00 00 00
+T3DEC 5088:504.395   Debug reg: DWT_FUNC[1]
+T3DEC 5088:504.416 - 1.190ms returns 0
+T3DEC 5088:504.520 JLINK_WriteU32_64(0xE0001034, 0x0000001F)
+T3DEC 5088:504.542   Debug reg: DWT_MASK[1]
+T3DEC 5088:504.588 - 0.068ms returns 0 (0x00000000)
+T3DEC 5088:504.617 JLINK_ReadMem(0xE0001034, 0x4 Bytes, ...)
+T3DEC 5088:504.647   CPU_WriteMem(4 bytes @ 0xE0001034)
+T3DEC 5088:505.122   CPU_ReadMem(4 bytes @ 0xE0001034)
+T3DEC 5088:505.607   Data:  1F 00 00 00
+T3DEC 5088:505.644   Debug reg: DWT_MASK[1]
+T3DEC 5088:505.665 - 1.048ms returns 0
+T3DEC 5088:505.767 JLINK_WriteU32_64(0xE0001020, 0x00000000)
+T3DEC 5088:505.791   Debug reg: DWT_COMP[0]
+T3DEC 5088:505.838 - 0.070ms returns 0 (0x00000000)
+T3DEC 5088:505.891 JLINK_WriteU32_64(0xE0001024, 0x00000000)
+T3DEC 5088:505.918   Debug reg: DWT_MASK[0]
+T3DEC 5088:505.965 - 0.073ms returns 0 (0x00000000)
+T3DEC 5088:506.048 JLINK_WriteU32_64(0xE0001028, 0x00000000)
+T3DEC 5088:506.073   Debug reg: DWT_FUNC[0]
+T3DEC 5088:506.109 - 0.061ms returns 0 (0x00000000)
+T3DEC 5088:506.142 JLINK_WriteU32_64(0xE0001030, 0x00000000)
+T3DEC 5088:506.164   Debug reg: DWT_COMP[1]
+T3DEC 5088:506.196 - 0.054ms returns 0 (0x00000000)
+T3DEC 5088:506.229 JLINK_WriteU32_64(0xE0001034, 0x00000000)
+T3DEC 5088:506.244   Debug reg: DWT_MASK[1]
+T3DEC 5088:506.269 - 0.039ms returns 0 (0x00000000)
+T3DEC 5088:506.332 JLINK_WriteU32_64(0xE0001038, 0x00000000)
+T3DEC 5088:506.353   Debug reg: DWT_FUNC[1]
+T3DEC 5088:506.389 - 0.056ms returns 0 (0x00000000)
+T3DEC 5088:506.419 JLINK_GetBPInfo(BPHandle = 1)
+T3DEC 5088:506.436 - 0.016ms returns 0x0
+T3DEC 5088:506.470 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T3DEC 5088:506.488 - 0.017ms returns 0x00
+T3DEC 5088:506.550 JLINK_ReadReg(R15 (PC))
+T3DEC 5088:506.567 - 0.017ms returns 0x00011BA4
+T3DEC 5088:506.892 JLINK_Go()
+T3DEC 5088:506.948   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3DEC 5088:507.385   CPU_WriteMem(4 bytes @ 0xE000ED30)
+T3DEC 5088:507.962   CPU_WriteMem(4 bytes @ 0xE0001020)
+T3DEC 5088:508.006   CPU_WriteMem(4 bytes @ 0xE0001030)
+T3DEC 5088:508.037   CPU_WriteMem(4 bytes @ 0xE0001024)
+T3DEC 5088:508.058   CPU_WriteMem(4 bytes @ 0xE0001034)
+T3DEC 5088:508.079   CPU_WriteMem(4 bytes @ 0xE0001028)
+T3DEC 5088:508.100   CPU_WriteMem(4 bytes @ 0xE0001038)
+T3DEC 5088:508.121   CPU_WriteMem(4 bytes @ 0xE0002008)
+T3DEC 5088:510.627 - 3.733ms
+T152C 5088:510.687 JLINK_IsHalted()
+T152C 5088:511.217   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5088:511.767 - 1.078ms returns FALSE
+T152C 5088:552.759 JLINK_IsHalted()
+T152C 5088:553.324   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5088:553.858 - 1.096ms returns FALSE
+T152C 5088:714.769 JLINK_IsHalted()
+T152C 5088:715.228   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5088:715.693 - 0.922ms returns FALSE
+T152C 5088:918.157 JLINK_IsHalted()
+T152C 5088:918.925   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5088:919.639 - 1.480ms returns FALSE
+T152C 5089:119.748 JLINK_IsHalted()
+T152C 5089:120.730   Connection to device lost. Trying to reconnect to target.
+T152C 5089:121.795   Found SW-DP with ID 0x0BC11477
+T152C 5089:124.308   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5089:124.931 - 5.182ms returns FALSE
+T152C 5089:324.844 JLINK_IsHalted()
+T152C 5089:325.448   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5089:325.953 - 1.108ms returns FALSE
+T1780 5089:448.633 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5089:450.046   [0]: USB, S/N: 801048353
+T1780 5089:450.061 - 1.429ms returns 1
+T1780 5089:450.125 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5089:450.919 - 0.793ms returns 0
+T152C 5089:530.114 JLINK_IsHalted()
+T152C 5089:531.116   Connection to device lost. Trying to reconnect to target.
+T152C 5089:532.179   Found SW-DP with ID 0x0BC11477
+T152C 5089:534.912   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5089:535.427 - 5.312ms returns FALSE
+T152C 5089:735.986 JLINK_IsHalted()
+T152C 5089:736.543   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5089:737.098 - 1.115ms returns FALSE
+T152C 5089:938.639 JLINK_IsHalted()
+T152C 5089:939.769   Connection to device lost. Trying to reconnect to target.
+T152C 5089:940.903   Found SW-DP with ID 0x0BC11477
+T152C 5089:943.618   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5089:944.240 - 5.600ms returns FALSE
+T152C 5090:149.124 JLINK_IsHalted()
+T152C 5090:149.934   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5090:150.409 - 1.283ms returns FALSE
+T152C 5090:350.713 JLINK_IsHalted()
+T152C 5090:351.289   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5090:351.883 - 1.168ms returns FALSE
+T152C 5090:553.604 JLINK_IsHalted()
+T152C 5090:554.525   Connection to device lost. Trying to reconnect to target.
+T152C 5090:555.603   Found SW-DP with ID 0x0BC11477
+T152C 5090:558.457   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5090:558.955 - 5.351ms returns FALSE
+T1780 5090:599.191 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5090:600.038   [0]: USB, S/N: 801048353
+T1780 5090:600.053 - 0.862ms returns 1
+T1780 5090:600.127 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5090:600.923 - 0.796ms returns 0
+T152C 5090:759.025 JLINK_IsHalted()
+T152C 5090:759.620   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5090:760.120 - 1.099ms returns FALSE
+T152C 5090:961.084 JLINK_IsHalted()
+T152C 5090:962.435   Connection to device lost. Trying to reconnect to target.
+T152C 5090:963.540   Found SW-DP with ID 0x0BC11477
+T152C 5090:966.245   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5090:966.932 - 5.846ms returns FALSE
+T152C 5091:167.538 JLINK_IsHalted()
+T152C 5091:168.049   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5091:168.430 - 0.891ms returns FALSE
+T152C 5091:368.699 JLINK_IsHalted()
+T152C 5091:369.917   Connection to device lost. Trying to reconnect to target.
+T152C 5091:371.122   Found SW-DP with ID 0x0BC11477
+T152C 5091:373.665   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5091:374.218 - 5.517ms returns FALSE
+T152C 5091:574.213 JLINK_IsHalted()
+T152C 5091:574.936   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5091:575.509 - 1.294ms returns FALSE
+T1780 5091:762.145 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5091:763.005   [0]: USB, S/N: 801048353
+T1780 5091:763.020 - 0.875ms returns 1
+T1780 5091:763.081 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5091:763.823 - 0.741ms returns 0
+T152C 5091:776.760 JLINK_IsHalted()
+T152C 5091:777.329   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5091:777.860 - 1.099ms returns FALSE
+T152C 5091:980.905 JLINK_IsHalted()
+T152C 5091:982.325   Connection to device lost. Trying to reconnect to target.
+T152C 5091:983.473   Found SW-DP with ID 0x0BC11477
+T152C 5091:986.565   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5091:987.147 - 6.241ms returns FALSE
+T152C 5092:188.558 JLINK_IsHalted()
+T152C 5092:189.170   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5092:189.814 - 1.253ms returns FALSE
+T152C 5092:390.244 JLINK_IsHalted()
+T152C 5092:391.513   Connection to device lost. Trying to reconnect to target.
+T152C 5092:392.692   Found SW-DP with ID 0x0BC11477
+T152C 5092:395.407   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5092:395.951 - 5.706ms returns FALSE
+T152C 5092:597.978 JLINK_IsHalted()
+T152C 5092:598.623   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5092:599.255 - 1.275ms returns FALSE
+T152C 5092:801.350 JLINK_IsHalted()
+T152C 5092:802.139   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5092:802.809 - 1.457ms returns FALSE
+T1780 5092:927.091 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5092:928.973   [0]: USB, S/N: 801048353
+T1780 5092:929.007 - 1.916ms returns 1
+T1780 5092:929.109 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5092:930.115 - 1.005ms returns 0
+T152C 5093:006.707 JLINK_IsHalted()
+T152C 5093:007.911   Connection to device lost. Trying to reconnect to target.
+T152C 5093:009.089   Found SW-DP with ID 0x0BC11477
+T152C 5093:011.533   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5093:012.099 - 5.390ms returns FALSE
+T152C 5093:212.476 JLINK_IsHalted()
+T152C 5093:213.129   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5093:213.636 - 1.159ms returns FALSE
+T152C 5093:415.880 JLINK_IsHalted()
+T152C 5093:416.969   Connection to device lost. Trying to reconnect to target.
+T152C 5093:418.051   Found SW-DP with ID 0x0BC11477
+T152C 5093:420.713   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5093:421.224 - 5.342ms returns FALSE
+T152C 5093:622.271 JLINK_IsHalted()
+T152C 5093:622.898   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5093:623.416 - 1.143ms returns FALSE
+T152C 5093:825.716 JLINK_IsHalted()
+T152C 5093:826.965   Connection to device lost. Trying to reconnect to target.
+T152C 5093:828.214   Found SW-DP with ID 0x0BC11477
+T152C 5093:830.604   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5093:831.119 - 5.403ms returns FALSE
+T152C 5094:031.557 JLINK_IsHalted()
+T152C 5094:032.194   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5094:032.668 - 1.110ms returns FALSE
+T1780 5094:098.968 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5094:099.876   [0]: USB, S/N: 801048353
+T1780 5094:099.891 - 0.937ms returns 1
+T1780 5094:099.950 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5094:100.718 - 0.767ms returns 0
+T152C 5094:233.935 JLINK_IsHalted()
+T152C 5094:234.583   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5094:235.081 - 1.145ms returns FALSE
+T152C 5094:434.903 JLINK_IsHalted()
+T152C 5094:435.947   Connection to device lost. Trying to reconnect to target.
+T152C 5094:436.992   Found SW-DP with ID 0x0BC11477
+T152C 5094:439.374   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5094:439.905 - 5.000ms returns FALSE
+T152C 5094:641.887 JLINK_IsHalted()
+T152C 5094:642.533   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5094:643.096 - 1.207ms returns FALSE
+T152C 5094:846.177 JLINK_IsHalted()
+T152C 5094:847.334   Connection to device lost. Trying to reconnect to target.
+T152C 5094:848.493   Found SW-DP with ID 0x0BC11477
+T152C 5094:850.939   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5094:851.463 - 5.285ms returns FALSE
+T152C 5095:052.239 JLINK_IsHalted()
+T152C 5095:052.884   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5095:053.408 - 1.167ms returns FALSE
+T152C 5095:254.594 JLINK_IsHalted()
+T152C 5095:255.413   Connection to device lost. Trying to reconnect to target.
+T152C 5095:256.363   Found SW-DP with ID 0x0BC11477
+T152C 5095:258.753   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5095:259.202 - 4.607ms returns FALSE
+T1780 5095:263.336 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5095:265.367   [0]: USB, S/N: 801048353
+T1780 5095:265.400 - 2.064ms returns 1
+T1780 5095:265.510 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5095:267.169 - 1.662ms returns 0
+T152C 5095:461.371 JLINK_IsHalted()
+T152C 5095:461.873   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5095:462.487 - 1.114ms returns FALSE
+T152C 5095:662.849 JLINK_IsHalted()
+T152C 5095:663.351   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5095:663.948 - 1.097ms returns FALSE
+T152C 5095:864.931 JLINK_IsHalted()
+T152C 5095:866.169   Connection to device lost. Trying to reconnect to target.
+T152C 5095:867.255   Found SW-DP with ID 0x0BC11477
+T152C 5095:869.875   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5095:870.369 - 5.436ms returns FALSE
+T152C 5096:070.638 JLINK_IsHalted()
+T152C 5096:071.258   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5096:071.803 - 1.164ms returns FALSE
+T152C 5096:271.936 JLINK_IsHalted()
+T152C 5096:273.036   Connection to device lost. Trying to reconnect to target.
+T152C 5096:274.077   Found SW-DP with ID 0x0BC11477
+T152C 5096:276.718   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5096:277.146 - 5.210ms returns FALSE
+T1780 5096:418.304 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5096:419.183   [0]: USB, S/N: 801048353
+T1780 5096:419.199 - 0.895ms returns 1
+T1780 5096:419.260 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5096:420.060 - 0.798ms returns 0
+T152C 5096:476.992 JLINK_IsHalted()
+T152C 5096:477.701   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5096:478.267 - 1.274ms returns FALSE
+T152C 5096:680.267 JLINK_IsHalted()
+T152C 5096:681.456   Connection to device lost. Trying to reconnect to target.
+T152C 5096:682.513   Found SW-DP with ID 0x0BC11477
+T152C 5096:685.092   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5096:685.625 - 5.357ms returns FALSE
+T152C 5096:887.720 JLINK_IsHalted()
+T152C 5096:888.341   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5096:888.894 - 1.173ms returns FALSE
+T152C 5097:090.531 JLINK_IsHalted()
+T152C 5097:091.050   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5097:091.505 - 0.972ms returns FALSE
+T152C 5097:292.251 JLINK_IsHalted()
+T152C 5097:293.421   Connection to device lost. Trying to reconnect to target.
+T152C 5097:294.624   Found SW-DP with ID 0x0BC11477
+T152C 5097:297.113   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5097:297.631 - 5.379ms returns FALSE
+T152C 5097:498.262 JLINK_IsHalted()
+T152C 5097:499.083   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5097:499.629 - 1.365ms returns FALSE
+T1780 5097:580.755 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5097:581.625   [0]: USB, S/N: 801048353
+T1780 5097:581.642 - 0.887ms returns 1
+T1780 5097:581.708 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5097:582.458 - 0.749ms returns 0
+T152C 5097:702.953 JLINK_IsHalted()
+T152C 5097:704.000   Connection to device lost. Trying to reconnect to target.
+T152C 5097:705.074   Found SW-DP with ID 0x0BC11477
+T152C 5097:707.668   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5097:708.160 - 5.206ms returns FALSE
+T152C 5097:907.915 JLINK_IsHalted()
+T152C 5097:908.464   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5097:908.976 - 1.060ms returns FALSE
+T152C 5098:110.742 JLINK_IsHalted()
+T152C 5098:111.935   Connection to device lost. Trying to reconnect to target.
+T152C 5098:113.180   Found SW-DP with ID 0x0BC11477
+T152C 5098:115.760   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5098:116.359 - 5.615ms returns FALSE
+T152C 5098:317.090 JLINK_IsHalted()
+T152C 5098:317.667   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5098:318.183 - 1.091ms returns FALSE
+T152C 5098:518.637 JLINK_IsHalted()
+T152C 5098:519.168   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5098:519.629 - 0.992ms returns FALSE
+T152C 5098:720.148 JLINK_IsHalted()
+T152C 5098:720.989   Connection to device lost. Trying to reconnect to target.
+T152C 5098:721.868   Found SW-DP with ID 0x0BC11477
+T152C 5098:724.313   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5098:724.779 - 4.629ms returns FALSE
+T1780 5098:748.414 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5098:749.928   [0]: USB, S/N: 801048353
+T1780 5098:749.945 - 1.533ms returns 1
+T1780 5098:750.008 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5098:750.756 - 0.747ms returns 0
+T152C 5098:926.677 JLINK_IsHalted()
+T152C 5098:927.338   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5098:927.925 - 1.246ms returns FALSE
+T152C 5099:132.132 JLINK_IsHalted()
+T152C 5099:133.310   Connection to device lost. Trying to reconnect to target.
+T152C 5099:134.436   Found SW-DP with ID 0x0BC11477
+T152C 5099:137.017   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5099:137.543 - 5.409ms returns FALSE
+T152C 5099:336.958 JLINK_IsHalted()
+T152C 5099:337.680   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5099:338.241 - 1.280ms returns FALSE
+T152C 5099:538.550 JLINK_IsHalted()
+T152C 5099:539.205   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5099:539.763 - 1.212ms returns FALSE
+T152C 5099:743.009 JLINK_IsHalted()
+T152C 5099:744.007   Connection to device lost. Trying to reconnect to target.
+T152C 5099:745.143   Found SW-DP with ID 0x0BC11477
+T152C 5099:747.731   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5099:748.268 - 5.257ms returns FALSE
+T1780 5099:921.050 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5099:921.919   [0]: USB, S/N: 801048353
+T1780 5099:921.934 - 0.884ms returns 1
+T1780 5099:922.057 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5099:923.110 - 1.052ms returns 0
+T152C 5099:950.670 JLINK_IsHalted()
+T152C 5099:951.246   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5099:951.805 - 1.134ms returns FALSE
+T152C 5100:158.671 JLINK_IsHalted()
+T152C 5100:159.804   Connection to device lost. Trying to reconnect to target.
+T152C 5100:160.967   Found SW-DP with ID 0x0BC11477
+T152C 5100:163.523   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5100:164.066 - 5.393ms returns FALSE
+T152C 5100:365.133 JLINK_IsHalted()
+T152C 5100:365.866   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5100:366.391 - 1.256ms returns FALSE
+T152C 5100:569.039 JLINK_IsHalted()
+T152C 5100:570.273   Connection to device lost. Trying to reconnect to target.
+T152C 5100:571.368   Found SW-DP with ID 0x0BC11477
+T152C 5100:573.912   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5100:574.451 - 5.411ms returns FALSE
+T152C 5100:775.811 JLINK_IsHalted()
+T152C 5100:776.527   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5100:777.057 - 1.244ms returns FALSE
+T152C 5100:978.053 JLINK_IsHalted()
+T152C 5100:978.629   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5100:979.125 - 1.070ms returns FALSE
+T1780 5101:091.775 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5101:092.622   [0]: USB, S/N: 801048353
+T1780 5101:092.641 - 0.866ms returns 1
+T1780 5101:092.705 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5101:093.598 - 0.892ms returns 0
+T152C 5101:180.215 JLINK_IsHalted()
+T152C 5101:181.515   Connection to device lost. Trying to reconnect to target.
+T152C 5101:182.554   Found SW-DP with ID 0x0BC11477
+T152C 5101:185.104   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5101:185.631 - 5.415ms returns FALSE
+T152C 5101:387.681 JLINK_IsHalted()
+T152C 5101:388.256   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5101:388.700 - 1.018ms returns FALSE
+T152C 5101:591.422 JLINK_IsHalted()
+T152C 5101:592.563   Connection to device lost. Trying to reconnect to target.
+T152C 5101:593.558   Found SW-DP with ID 0x0BC11477
+T152C 5101:596.163   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5101:596.664 - 5.240ms returns FALSE
+T152C 5101:798.541 JLINK_IsHalted()
+T152C 5101:799.025   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5101:799.536 - 0.994ms returns FALSE
+T152C 5102:000.746 JLINK_IsHalted()
+T152C 5102:001.955   Connection to device lost. Trying to reconnect to target.
+T152C 5102:003.213   Found SW-DP with ID 0x0BC11477
+T152C 5102:005.780   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5102:006.371 - 5.624ms returns FALSE
+T152C 5102:205.950 JLINK_IsHalted()
+T152C 5102:206.616   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5102:207.121 - 1.169ms returns FALSE
+T1780 5102:257.427 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5102:259.272   [0]: USB, S/N: 801048353
+T1780 5102:259.287 - 1.861ms returns 1
+T1780 5102:259.405 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5102:260.460 - 1.055ms returns 0
+T152C 5102:410.050 JLINK_IsHalted()
+T152C 5102:410.745   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5102:411.290 - 1.243ms returns FALSE
+T152C 5102:613.882 JLINK_IsHalted()
+T152C 5102:614.948   Connection to device lost. Trying to reconnect to target.
+T152C 5102:616.129   Found SW-DP with ID 0x0BC11477
+T152C 5102:618.756   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5102:619.310 - 5.427ms returns FALSE
+T152C 5102:820.846 JLINK_IsHalted()
+T152C 5102:821.433   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5102:821.894 - 1.047ms returns FALSE
+T152C 5103:022.146 JLINK_IsHalted()
+T152C 5103:023.305   Connection to device lost. Trying to reconnect to target.
+T152C 5103:024.523   Found SW-DP with ID 0x0BC11477
+T152C 5103:026.984   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5103:027.518 - 5.370ms returns FALSE
+T152C 5103:228.264 JLINK_IsHalted()
+T152C 5103:228.941   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5103:229.458 - 1.192ms returns FALSE
+T1780 5103:428.426 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5103:430.118   [0]: USB, S/N: 801048353
+T1780 5103:430.134 - 1.709ms returns 1
+T1780 5103:430.197 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5103:430.976 - 0.779ms returns 0
+T152C 5103:432.752 JLINK_IsHalted()
+T152C 5103:433.611   Connection to device lost. Trying to reconnect to target.
+T152C 5103:434.527   Found SW-DP with ID 0x0BC11477
+T152C 5103:436.757   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5103:437.186 - 4.433ms returns FALSE
+T152C 5103:640.297 JLINK_IsHalted()
+T152C 5103:640.924   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5103:641.398 - 1.099ms returns FALSE
+T152C 5103:841.381 JLINK_IsHalted()
+T152C 5103:842.143   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5103:842.779 - 1.397ms returns FALSE
+T152C 5104:046.703 JLINK_IsHalted()
+T152C 5104:048.056   Connection to device lost. Trying to reconnect to target.
+T152C 5104:049.148   Found SW-DP with ID 0x0BC11477
+T152C 5104:051.658   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5104:052.194 - 5.489ms returns FALSE
+T152C 5104:253.658 JLINK_IsHalted()
+T152C 5104:254.315   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5104:254.901 - 1.240ms returns FALSE
+T152C 5104:457.521 JLINK_IsHalted()
+T152C 5104:458.512   Connection to device lost. Trying to reconnect to target.
+T152C 5104:459.521   Found SW-DP with ID 0x0BC11477
+T152C 5104:462.409   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5104:462.937 - 5.415ms returns FALSE
+T1780 5104:599.107 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5104:600.629   [0]: USB, S/N: 801048353
+T1780 5104:600.653 - 1.547ms returns 1
+T1780 5104:600.736 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5104:601.569 - 0.832ms returns 0
+T152C 5104:662.598 JLINK_IsHalted()
+T152C 5104:663.140   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5104:663.551 - 0.952ms returns FALSE
+T152C 5104:866.802 JLINK_IsHalted()
+T152C 5104:868.127   Connection to device lost. Trying to reconnect to target.
+T152C 5104:869.262   Found SW-DP with ID 0x0BC11477
+T152C 5104:871.917   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5104:872.486 - 5.682ms returns FALSE
+T152C 5105:078.011 JLINK_IsHalted()
+T152C 5105:078.644   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5105:079.248 - 1.235ms returns FALSE
+T152C 5105:279.334 JLINK_IsHalted()
+T152C 5105:280.069   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5105:280.665 - 1.337ms returns FALSE
+T152C 5105:483.402 JLINK_IsHalted()
+T152C 5105:484.729   Connection to device lost. Trying to reconnect to target.
+T152C 5105:485.942   Found SW-DP with ID 0x0BC11477
+T152C 5105:488.976   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5105:489.610 - 6.207ms returns FALSE
+T152C 5105:691.624 JLINK_IsHalted()
+T152C 5105:692.144   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5105:692.708 - 1.082ms returns FALSE
+T1780 5105:770.317 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5105:771.253   [0]: USB, S/N: 801048353
+T1780 5105:771.269 - 0.952ms returns 1
+T1780 5105:771.330 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5105:772.100 - 0.770ms returns 0
+T152C 5105:892.930 JLINK_IsHalted()
+T152C 5105:893.882   Connection to device lost. Trying to reconnect to target.
+T152C 5105:894.917   Found SW-DP with ID 0x0BC11477
+T152C 5105:897.390   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5105:897.939 - 5.009ms returns FALSE
+T152C 5106:100.264 JLINK_IsHalted()
+T152C 5106:101.081   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5106:101.687 - 1.421ms returns FALSE
+T152C 5106:302.690 JLINK_IsHalted()
+T152C 5106:303.705   Connection to device lost. Trying to reconnect to target.
+T152C 5106:304.823   Found SW-DP with ID 0x0BC11477
+T152C 5106:307.423   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5106:307.975 - 5.283ms returns FALSE
+T152C 5106:509.981 JLINK_IsHalted()
+T152C 5106:510.539   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5106:511.132 - 1.150ms returns FALSE
+T152C 5106:712.387 JLINK_IsHalted()
+T152C 5106:712.852   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5106:713.307 - 0.920ms returns FALSE
+T152C 5106:914.119 JLINK_IsHalted()
+T152C 5106:914.984   Connection to device lost. Trying to reconnect to target.
+T152C 5106:915.921   Found SW-DP with ID 0x0BC11477
+T152C 5106:918.112   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5106:918.552 - 4.432ms returns FALSE
+T1780 5106:946.163 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5106:948.472   [0]: USB, S/N: 801048353
+T1780 5106:948.509 - 2.346ms returns 1
+T1780 5106:948.619 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5106:950.517 - 1.897ms returns 0
+T152C 5107:118.142 JLINK_IsHalted()
+T152C 5107:118.675   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5107:119.164 - 1.021ms returns FALSE
+T152C 5107:320.352 JLINK_IsHalted()
+T152C 5107:321.380   Connection to device lost. Trying to reconnect to target.
+T152C 5107:322.435   Found SW-DP with ID 0x0BC11477
+T152C 5107:324.835   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5107:325.299 - 4.946ms returns FALSE
+T152C 5107:527.177 JLINK_IsHalted()
+T152C 5107:527.726   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5107:528.168 - 0.989ms returns FALSE
+T152C 5107:728.436 JLINK_IsHalted()
+T152C 5107:729.432   Connection to device lost. Trying to reconnect to target.
+T152C 5107:730.510   Found SW-DP with ID 0x0BC11477
+T152C 5107:732.927   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5107:733.638 - 5.201ms returns FALSE
+T152C 5107:934.778 JLINK_IsHalted()
+T152C 5107:935.439   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5107:936.030 - 1.230ms returns FALSE
+T1780 5108:118.444 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5108:119.909   [0]: USB, S/N: 801048353
+T1780 5108:119.932 - 1.488ms returns 1
+T1780 5108:120.021 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5108:121.071 - 1.049ms returns 0
+T152C 5108:137.810 JLINK_IsHalted()
+T152C 5108:138.365   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5108:138.794 - 0.982ms returns FALSE
+T152C 5108:339.440 JLINK_IsHalted()
+T152C 5108:340.685   Connection to device lost. Trying to reconnect to target.
+T152C 5108:341.858   Found SW-DP with ID 0x0BC11477
+T152C 5108:344.493   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5108:345.008 - 5.567ms returns FALSE
+T152C 5108:545.288 JLINK_IsHalted()
+T152C 5108:545.939   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5108:546.556 - 1.266ms returns FALSE
+T152C 5108:747.715 JLINK_IsHalted()
+T152C 5108:748.813   Connection to device lost. Trying to reconnect to target.
+T152C 5108:749.796   Found SW-DP with ID 0x0BC11477
+T152C 5108:752.159   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5108:752.686 - 4.970ms returns FALSE
+T152C 5108:954.684 JLINK_IsHalted()
+T152C 5108:955.212   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5108:955.697 - 1.012ms returns FALSE
+T152C 5109:156.349 JLINK_IsHalted()
+T152C 5109:156.917   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5109:157.402 - 1.052ms returns FALSE
+T1780 5109:290.345 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5109:293.019   [0]: USB, S/N: 801048353
+T1780 5109:293.057 - 2.713ms returns 1
+T1780 5109:293.163 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5109:294.854 - 1.689ms returns 0
+T152C 5109:358.694 JLINK_IsHalted()
+T152C 5109:359.839   Connection to device lost. Trying to reconnect to target.
+T152C 5109:361.000   Found SW-DP with ID 0x0BC11477
+T152C 5109:363.510   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5109:364.147 - 5.452ms returns FALSE
+T152C 5109:564.811 JLINK_IsHalted()
+T152C 5109:565.465   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5109:565.945 - 1.133ms returns FALSE
+T152C 5109:766.509 JLINK_IsHalted()
+T152C 5109:767.525   Connection to device lost. Trying to reconnect to target.
+T152C 5109:768.610   Found SW-DP with ID 0x0BC11477
+T152C 5109:771.106   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5109:771.559 - 5.049ms returns FALSE
+T152C 5109:972.390 JLINK_IsHalted()
+T152C 5109:973.134   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5109:973.716 - 1.324ms returns FALSE
+T152C 5110:174.171 JLINK_IsHalted()
+T152C 5110:175.169   Connection to device lost. Trying to reconnect to target.
+T152C 5110:176.086   Found SW-DP with ID 0x0BC11477
+T152C 5110:178.681   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5110:179.209 - 5.036ms returns FALSE
+T152C 5110:380.496 JLINK_IsHalted()
+T152C 5110:381.145   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5110:381.761 - 1.262ms returns FALSE
+T1780 5110:465.363 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5110:467.553   [0]: USB, S/N: 801048353
+T1780 5110:467.595 - 2.233ms returns 1
+T1780 5110:467.705 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5110:469.449 - 1.743ms returns 0
+T152C 5110:582.417 JLINK_IsHalted()
+T152C 5110:583.159   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5110:583.855 - 1.435ms returns FALSE
+T152C 5110:783.478 JLINK_IsHalted()
+T152C 5110:784.289   Connection to device lost. Trying to reconnect to target.
+T152C 5110:784.995   Found SW-DP with ID 0x0BC11477
+T152C 5110:786.888   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5110:787.248 - 3.770ms returns FALSE
+T152C 5110:987.081 JLINK_IsHalted()
+T152C 5110:987.759   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5110:988.283 - 1.203ms returns FALSE
+T152C 5111:195.160 JLINK_IsHalted()
+T152C 5111:196.216   Connection to device lost. Trying to reconnect to target.
+T152C 5111:197.298   Found SW-DP with ID 0x0BC11477
+T152C 5111:199.748   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5111:200.288 - 5.126ms returns FALSE
+T152C 5111:401.948 JLINK_IsHalted()
+T152C 5111:402.555   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5111:403.234 - 1.285ms returns FALSE
+T152C 5111:605.553 JLINK_IsHalted()
+T152C 5111:606.368   Connection to device lost. Trying to reconnect to target.
+T152C 5111:607.299   Found SW-DP with ID 0x0BC11477
+T152C 5111:609.604   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5111:610.169 - 4.615ms returns FALSE
+T1780 5111:638.205 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5111:640.534   [0]: USB, S/N: 801048353
+T1780 5111:640.576 - 2.371ms returns 1
+T1780 5111:640.768 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5111:642.781 - 2.011ms returns 0
+T152C 5111:810.770 JLINK_IsHalted()
+T152C 5111:811.544   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5111:812.106 - 1.334ms returns FALSE
+T152C 5112:014.253 JLINK_IsHalted()
+T152C 5112:014.884   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5112:015.389 - 1.134ms returns FALSE
+T152C 5112:215.667 JLINK_IsHalted()
+T152C 5112:216.655   Connection to device lost. Trying to reconnect to target.
+T152C 5112:217.806   Found SW-DP with ID 0x0BC11477
+T152C 5112:220.637   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5112:221.259 - 5.590ms returns FALSE
+T152C 5112:424.038 JLINK_IsHalted()
+T152C 5112:424.611   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5112:425.106 - 1.066ms returns FALSE
+T152C 5112:626.403 JLINK_IsHalted()
+T152C 5112:627.482   Connection to device lost. Trying to reconnect to target.
+T152C 5112:628.540   Found SW-DP with ID 0x0BC11477
+T152C 5112:631.111   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5112:631.631 - 5.226ms returns FALSE
+T1780 5112:799.595 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5112:800.519   [0]: USB, S/N: 801048353
+T1780 5112:800.535 - 0.941ms returns 1
+T1780 5112:800.597 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5112:801.335 - 0.737ms returns 0
+T152C 5112:834.539 JLINK_IsHalted()
+T152C 5112:835.128   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5112:835.615 - 1.074ms returns FALSE
+T152C 5113:036.852 JLINK_IsHalted()
+T152C 5113:038.106   Connection to device lost. Trying to reconnect to target.
+T152C 5113:039.201   Found SW-DP with ID 0x0BC11477
+T152C 5113:042.030   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5113:042.551 - 5.696ms returns FALSE
+T152C 5113:246.774 JLINK_IsHalted()
+T152C 5113:247.485   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5113:248.139 - 1.362ms returns FALSE
+T152C 5113:448.982 JLINK_IsHalted()
+T152C 5113:449.583   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5113:450.114 - 1.130ms returns FALSE
+T152C 5113:650.201 JLINK_IsHalted()
+T152C 5113:651.172   Connection to device lost. Trying to reconnect to target.
+T152C 5113:652.164   Found SW-DP with ID 0x0BC11477
+T152C 5113:654.718   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5113:655.232 - 5.030ms returns FALSE
+T152C 5113:855.346 JLINK_IsHalted()
+T152C 5113:856.029   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5113:856.597 - 1.249ms returns FALSE
+T1780 5113:964.020 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5113:964.877   [0]: USB, S/N: 801048353
+T1780 5113:964.891 - 0.871ms returns 1
+T1780 5113:964.954 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5113:965.706 - 0.751ms returns 0
+T152C 5114:058.645 JLINK_IsHalted()
+T152C 5114:059.557   Connection to device lost. Trying to reconnect to target.
+T152C 5114:060.538   Found SW-DP with ID 0x0BC11477
+T152C 5114:062.905   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5114:063.431 - 4.784ms returns FALSE
+T152C 5114:265.949 JLINK_IsHalted()
+T152C 5114:266.728   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5114:267.469 - 1.518ms returns FALSE
+T152C 5114:469.959 JLINK_IsHalted()
+T152C 5114:471.236   Connection to device lost. Trying to reconnect to target.
+T152C 5114:472.242   Found SW-DP with ID 0x0BC11477
+T152C 5114:474.620   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5114:475.239 - 5.278ms returns FALSE
+T152C 5114:675.635 JLINK_IsHalted()
+T152C 5114:676.405   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5114:677.143 - 1.507ms returns FALSE
+T152C 5114:878.699 JLINK_IsHalted()
+T152C 5114:879.299   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5114:879.932 - 1.230ms returns FALSE
+T152C 5115:087.533 JLINK_IsHalted()
+T152C 5115:088.366   Connection to device lost. Trying to reconnect to target.
+T152C 5115:089.372   Found SW-DP with ID 0x0BC11477
+T152C 5115:091.787   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5115:092.238 - 4.704ms returns FALSE
+T1780 5115:133.374 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5115:135.293   [0]: USB, S/N: 801048353
+T1780 5115:135.325 - 1.952ms returns 1
+T1780 5115:135.428 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5115:137.092 - 1.663ms returns 0
+T152C 5115:292.517 JLINK_IsHalted()
+T152C 5115:292.986   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5115:293.477 - 0.956ms returns FALSE
+T152C 5115:494.853 JLINK_IsHalted()
+T152C 5115:495.834   Connection to device lost. Trying to reconnect to target.
+T152C 5115:496.855   Found SW-DP with ID 0x0BC11477
+T152C 5115:499.350   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5115:499.912 - 5.058ms returns FALSE
+T152C 5115:701.040 JLINK_IsHalted()
+T152C 5115:701.488   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5115:702.025 - 0.984ms returns FALSE
+T152C 5115:902.580 JLINK_IsHalted()
+T152C 5115:903.614   Connection to device lost. Trying to reconnect to target.
+T152C 5115:904.628   Found SW-DP with ID 0x0BC11477
+T152C 5115:906.976   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5115:907.550 - 4.969ms returns FALSE
+T152C 5116:110.728 JLINK_IsHalted()
+T152C 5116:111.202   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5116:111.705 - 0.974ms returns FALSE
+T1780 5116:302.658 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5116:304.784   [0]: USB, S/N: 801048353
+T1780 5116:304.822 - 2.164ms returns 1
+T1780 5116:305.021 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5116:306.851 - 1.835ms returns 0
+T152C 5116:314.790 JLINK_IsHalted()
+T152C 5116:315.436   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5116:315.975 - 1.184ms returns FALSE
+T152C 5116:520.892 JLINK_IsHalted()
+T152C 5116:521.855   Connection to device lost. Trying to reconnect to target.
+T152C 5116:522.808   Found SW-DP with ID 0x0BC11477
+T152C 5116:525.180   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5116:525.725 - 4.831ms returns FALSE
+T152C 5116:725.501 JLINK_IsHalted()
+T152C 5116:726.066   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5116:726.588 - 1.086ms returns FALSE
+T152C 5116:926.712 JLINK_IsHalted()
+T152C 5116:927.930   Connection to device lost. Trying to reconnect to target.
+T152C 5116:929.040   Found SW-DP with ID 0x0BC11477
+T152C 5116:931.858   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5116:932.350 - 5.637ms returns FALSE
+T152C 5117:133.451 JLINK_IsHalted()
+T152C 5117:134.091   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5117:134.605 - 1.153ms returns FALSE
+T152C 5117:335.381 JLINK_IsHalted()
+T152C 5117:336.015   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5117:336.592 - 1.210ms returns FALSE
+T1780 5117:472.204 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5117:473.087   [0]: USB, S/N: 801048353
+T1780 5117:473.101 - 0.897ms returns 1
+T1780 5117:473.163 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5117:473.896 - 0.732ms returns 0
+T152C 5117:537.880 JLINK_IsHalted()
+T152C 5117:539.152   Connection to device lost. Trying to reconnect to target.
+T152C 5117:540.334   Found SW-DP with ID 0x0BC11477
+T152C 5117:542.898   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5117:543.403 - 5.521ms returns FALSE
+T152C 5117:743.106 JLINK_IsHalted()
+T152C 5117:743.871   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5117:744.375 - 1.267ms returns FALSE
+T152C 5117:947.741 JLINK_IsHalted()
+T152C 5117:949.066   Connection to device lost. Trying to reconnect to target.
+T152C 5117:950.159   Found SW-DP with ID 0x0BC11477
+T152C 5117:952.725   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5117:953.258 - 5.515ms returns FALSE
+T152C 5118:155.815 JLINK_IsHalted()
+T152C 5118:156.502   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5118:157.068 - 1.251ms returns FALSE
+T152C 5118:358.042 JLINK_IsHalted()
+T152C 5118:358.933   Connection to device lost. Trying to reconnect to target.
+T152C 5118:360.255   Found SW-DP with ID 0x0BC11477
+T152C 5118:362.521   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5118:363.099 - 5.055ms returns FALSE
+T152C 5118:562.619 JLINK_IsHalted()
+T152C 5118:563.133   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5118:563.634 - 1.014ms returns FALSE
+T1780 5118:637.835 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5118:639.997   [0]: USB, S/N: 801048353
+T1780 5118:640.039 - 2.205ms returns 1
+T1780 5118:640.176 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5118:641.170 - 0.993ms returns 0
+T152C 5118:767.032 JLINK_IsHalted()
+T152C 5118:767.877   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5118:768.417 - 1.384ms returns FALSE
+T152C 5118:969.674 JLINK_IsHalted()
+T152C 5118:971.049   Connection to device lost. Trying to reconnect to target.
+T152C 5118:972.294   Found SW-DP with ID 0x0BC11477
+T152C 5118:974.927   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5118:975.484 - 5.808ms returns FALSE
+T152C 5119:177.951 JLINK_IsHalted()
+T152C 5119:178.516   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5119:179.068 - 1.116ms returns FALSE
+T152C 5119:380.861 JLINK_IsHalted()
+T152C 5119:381.993   Connection to device lost. Trying to reconnect to target.
+T152C 5119:383.177   Found SW-DP with ID 0x0BC11477
+T152C 5119:385.676   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5119:386.154 - 5.292ms returns FALSE
+T152C 5119:587.791 JLINK_IsHalted()
+T152C 5119:588.473   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5119:588.992 - 1.199ms returns FALSE
+T152C 5119:790.662 JLINK_IsHalted()
+T152C 5119:791.669   Connection to device lost. Trying to reconnect to target.
+T152C 5119:792.548   Found SW-DP with ID 0x0BC11477
+T152C 5119:795.106   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5119:795.553 - 4.889ms returns FALSE
+T1780 5119:807.632 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5119:809.318   [0]: USB, S/N: 801048353
+T1780 5119:809.333 - 1.728ms returns 1
+T1780 5119:809.392 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5119:810.153 - 0.760ms returns 0
+T152C 5119:998.958 JLINK_IsHalted()
+T152C 5119:999.511   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5120:000.160 - 1.191ms returns FALSE
+T152C 5120:203.650 JLINK_IsHalted()
+T152C 5120:204.216   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5120:204.660 - 1.008ms returns FALSE
+T152C 5120:405.468 JLINK_IsHalted()
+T152C 5120:406.415   Connection to device lost. Trying to reconnect to target.
+T152C 5120:407.738   Found SW-DP with ID 0x0BC11477
+T152C 5120:410.251   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5120:410.775 - 5.304ms returns FALSE
+T152C 5120:611.889 JLINK_IsHalted()
+T152C 5120:612.569   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5120:613.092 - 1.201ms returns FALSE
+T152C 5120:814.686 JLINK_IsHalted()
+T152C 5120:815.815   Connection to device lost. Trying to reconnect to target.
+T152C 5120:816.930   Found SW-DP with ID 0x0BC11477
+T152C 5120:819.431   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5120:819.961 - 5.273ms returns FALSE
+T1780 5120:984.006 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5120:985.993   [0]: USB, S/N: 801048353
+T1780 5120:986.025 - 2.020ms returns 1
+T1780 5120:986.131 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5120:987.795 - 1.663ms returns 0
+T152C 5121:020.962 JLINK_IsHalted()
+T152C 5121:021.544   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5121:022.136 - 1.172ms returns FALSE
+T152C 5121:222.715 JLINK_IsHalted()
+T152C 5121:224.007   Connection to device lost. Trying to reconnect to target.
+T152C 5121:225.160   Found SW-DP with ID 0x0BC11477
+T152C 5121:227.800   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5121:228.326 - 5.610ms returns FALSE
+T152C 5121:430.801 JLINK_IsHalted()
+T152C 5121:431.366   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5121:431.903 - 1.101ms returns FALSE
+T152C 5121:634.093 JLINK_IsHalted()
+T152C 5121:634.881   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5121:635.331 - 1.237ms returns FALSE
+T152C 5121:837.452 JLINK_IsHalted()
+T152C 5121:838.605   Connection to device lost. Trying to reconnect to target.
+T152C 5121:839.861   Found SW-DP with ID 0x0BC11477
+T152C 5121:842.891   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5121:843.414 - 5.961ms returns FALSE
+T152C 5122:044.178 JLINK_IsHalted()
+T152C 5122:044.669   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5122:045.139 - 0.959ms returns FALSE
+T1780 5122:154.956 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5122:156.019   [0]: USB, S/N: 801048353
+T1780 5122:156.034 - 1.077ms returns 1
+T1780 5122:156.095 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5122:156.935 - 0.840ms returns 0
+T152C 5122:247.021 JLINK_IsHalted()
+T152C 5122:248.016   Connection to device lost. Trying to reconnect to target.
+T152C 5122:249.117   Found SW-DP with ID 0x0BC11477
+T152C 5122:251.982   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5122:252.511 - 5.488ms returns FALSE
+T152C 5122:453.237 JLINK_IsHalted()
+T152C 5122:453.653   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5122:454.208 - 0.969ms returns FALSE
+T152C 5122:654.691 JLINK_IsHalted()
+T152C 5122:655.653   Connection to device lost. Trying to reconnect to target.
+T152C 5122:656.505   Found SW-DP with ID 0x0BC11477
+T152C 5122:658.410   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5122:658.824 - 4.133ms returns FALSE
+T152C 5122:861.861 JLINK_IsHalted()
+T152C 5122:862.431   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5122:862.927 - 1.064ms returns FALSE
+T152C 5123:066.678 JLINK_IsHalted()
+T152C 5123:067.367   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5123:067.953 - 1.273ms returns FALSE
+T152C 5123:268.771 JLINK_IsHalted()
+T152C 5123:269.641   Connection to device lost. Trying to reconnect to target.
+T152C 5123:270.602   Found SW-DP with ID 0x0BC11477
+T152C 5123:272.856   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5123:273.430 - 4.658ms returns FALSE
+T1780 5123:324.308 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5123:325.567   [0]: USB, S/N: 801048353
+T1780 5123:325.611 - 1.303ms returns 1
+T1780 5123:325.732 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5123:327.146 - 1.412ms returns 0
+T152C 5123:473.521 JLINK_IsHalted()
+T152C 5123:474.329   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5123:474.898 - 1.375ms returns FALSE
+T152C 5123:678.685 JLINK_IsHalted()
+T152C 5123:679.737   Connection to device lost. Trying to reconnect to target.
+T152C 5123:680.944   Found SW-DP with ID 0x0BC11477
+T152C 5123:684.009   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5123:684.458 - 5.772ms returns FALSE
+T152C 5123:885.337 JLINK_IsHalted()
+T152C 5123:886.195   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5123:886.801 - 1.461ms returns FALSE
+T152C 5124:089.992 JLINK_IsHalted()
+T152C 5124:091.149   Connection to device lost. Trying to reconnect to target.
+T152C 5124:092.306   Found SW-DP with ID 0x0BC11477
+T152C 5124:095.123   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5124:095.683 - 5.690ms returns FALSE
+T152C 5124:296.564 JLINK_IsHalted()
+T152C 5124:297.174   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5124:297.799 - 1.233ms returns FALSE
+T1780 5124:494.895 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5124:495.806   [0]: USB, S/N: 801048353
+T1780 5124:495.821 - 0.925ms returns 1
+T1780 5124:495.906 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5124:496.704 - 0.797ms returns 0
+T152C 5124:500.759 JLINK_IsHalted()
+T152C 5124:501.385   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5124:501.883 - 1.122ms returns FALSE
+T152C 5124:702.682 JLINK_IsHalted()
+T152C 5124:703.873   Connection to device lost. Trying to reconnect to target.
+T152C 5124:704.911   Found SW-DP with ID 0x0BC11477
+T152C 5124:707.903   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5124:708.439 - 5.755ms returns FALSE
+T152C 5124:909.870 JLINK_IsHalted()
+T152C 5124:910.430   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5124:910.938 - 1.066ms returns FALSE
+T152C 5125:111.084 JLINK_IsHalted()
+T152C 5125:112.219   Connection to device lost. Trying to reconnect to target.
+T152C 5125:113.267   Found SW-DP with ID 0x0BC11477
+T152C 5125:115.794   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5125:116.380 - 5.295ms returns FALSE
+T152C 5125:315.862 JLINK_IsHalted()
+T152C 5125:316.594   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5125:317.057 - 1.192ms returns FALSE
+T152C 5125:518.517 JLINK_IsHalted()
+T152C 5125:519.653   Connection to device lost. Trying to reconnect to target.
+T152C 5125:520.721   Found SW-DP with ID 0x0BC11477
+T152C 5125:523.764   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5125:524.264 - 5.746ms returns FALSE
+T1780 5125:661.558 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5125:662.443   [0]: USB, S/N: 801048353
+T1780 5125:662.458 - 0.900ms returns 1
+T1780 5125:662.519 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5125:663.344 - 0.824ms returns 0
+T152C 5125:725.812 JLINK_IsHalted()
+T152C 5125:726.374   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5125:726.915 - 1.101ms returns FALSE
+T152C 5125:927.728 JLINK_IsHalted()
+T152C 5125:928.466   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5125:928.962 - 1.231ms returns FALSE
+T152C 5126:130.524 JLINK_IsHalted()
+T152C 5126:131.710   Connection to device lost. Trying to reconnect to target.
+T152C 5126:132.759   Found SW-DP with ID 0x0BC11477
+T152C 5126:135.443   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5126:135.892 - 5.368ms returns FALSE
+T152C 5126:336.436 JLINK_IsHalted()
+T152C 5126:337.223   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5126:337.745 - 1.310ms returns FALSE
+T152C 5126:538.597 JLINK_IsHalted()
+T152C 5126:539.468   Connection to device lost. Trying to reconnect to target.
+T152C 5126:540.413   Found SW-DP with ID 0x0BC11477
+T152C 5126:543.142   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5126:543.576 - 4.977ms returns FALSE
+T152C 5126:743.741 JLINK_IsHalted()
+T152C 5126:744.243   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5126:744.711 - 0.969ms returns FALSE
+T1780 5126:828.238 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5126:830.434   [0]: USB, S/N: 801048353
+T1780 5126:830.455 - 2.218ms returns 1
+T1780 5126:830.520 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5126:831.320 - 0.799ms returns 0
+T152C 5126:945.795 JLINK_IsHalted()
+T152C 5126:946.611   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5126:947.279 - 1.484ms returns FALSE
+T152C 5127:150.240 JLINK_IsHalted()
+T152C 5127:151.476   Connection to device lost. Trying to reconnect to target.
+T152C 5127:152.628   Found SW-DP with ID 0x0BC11477
+T152C 5127:155.539   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5127:156.103 - 5.863ms returns FALSE
+T152C 5127:358.007 JLINK_IsHalted()
+T152C 5127:358.607   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5127:359.172 - 1.164ms returns FALSE
+T152C 5127:561.825 JLINK_IsHalted()
+T152C 5127:562.862   Connection to device lost. Trying to reconnect to target.
+T152C 5127:563.973   Found SW-DP with ID 0x0BC11477
+T152C 5127:566.975   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5127:567.475 - 5.649ms returns FALSE
+T152C 5127:769.263 JLINK_IsHalted()
+T152C 5127:769.874   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5127:770.426 - 1.162ms returns FALSE
+T152C 5127:973.708 JLINK_IsHalted()
+T152C 5127:974.584   Connection to device lost. Trying to reconnect to target.
+T152C 5127:975.429   Found SW-DP with ID 0x0BC11477
+T152C 5127:977.909   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5127:978.368 - 4.659ms returns FALSE
+T1780 5128:000.069 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5128:001.030   [0]: USB, S/N: 801048353
+T1780 5128:001.055 - 0.985ms returns 1
+T1780 5128:001.119 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5128:001.880 - 0.761ms returns 0
+T152C 5128:180.020 JLINK_IsHalted()
+T152C 5128:180.818   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5128:181.293 - 1.271ms returns FALSE
+T152C 5128:382.600 JLINK_IsHalted()
+T152C 5128:383.275   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5128:384.036 - 1.433ms returns FALSE
+T152C 5128:585.614 JLINK_IsHalted()
+T152C 5128:586.872   Connection to device lost. Trying to reconnect to target.
+T152C 5128:587.980   Found SW-DP with ID 0x0BC11477
+T152C 5128:590.808   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5128:591.410 - 5.794ms returns FALSE
+T152C 5128:791.617 JLINK_IsHalted()
+T152C 5128:792.414   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5128:793.057 - 1.437ms returns FALSE
+T152C 5128:994.570 JLINK_IsHalted()
+T152C 5128:995.714   Connection to device lost. Trying to reconnect to target.
+T152C 5128:996.830   Found SW-DP with ID 0x0BC11477
+T152C 5128:999.427   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5128:999.986 - 5.415ms returns FALSE
+T1780 5129:169.854 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5129:171.040   [0]: USB, S/N: 801048353
+T1780 5129:171.058 - 1.203ms returns 1
+T1780 5129:171.121 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5129:171.877 - 0.756ms returns 0
+T152C 5129:200.530 JLINK_IsHalted()
+T152C 5129:201.252   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5129:201.931 - 1.400ms returns FALSE
+T152C 5129:401.595 JLINK_IsHalted()
+T152C 5129:402.657   Connection to device lost. Trying to reconnect to target.
+T152C 5129:403.581   Found SW-DP with ID 0x0BC11477
+T152C 5129:405.980   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5129:406.490 - 4.893ms returns FALSE
+T152C 5129:610.399 JLINK_IsHalted()
+T152C 5129:611.203   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5129:611.784 - 1.383ms returns FALSE
+T152C 5129:814.055 JLINK_IsHalted()
+T152C 5129:814.604   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5129:815.247 - 1.191ms returns FALSE
+T152C 5130:016.398 JLINK_IsHalted()
+T152C 5130:017.565   Connection to device lost. Trying to reconnect to target.
+T152C 5130:018.662   Found SW-DP with ID 0x0BC11477
+T152C 5130:021.450   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5130:021.967 - 5.568ms returns FALSE
+T152C 5130:222.089 JLINK_IsHalted()
+T152C 5130:222.775   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5130:223.503 - 1.412ms returns FALSE
+T1780 5130:340.848 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5130:342.199   [0]: USB, S/N: 801048353
+T1780 5130:342.241 - 1.394ms returns 1
+T1780 5130:342.302 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5130:343.075 - 0.772ms returns 0
+T152C 5130:423.976 JLINK_IsHalted()
+T152C 5130:425.153   Connection to device lost. Trying to reconnect to target.
+T152C 5130:426.309   Found SW-DP with ID 0x0BC11477
+T152C 5130:428.637   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5130:429.039 - 5.061ms returns FALSE
+T152C 5130:629.608 JLINK_IsHalted()
+T152C 5130:630.312   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5130:630.940 - 1.330ms returns FALSE
+T152C 5130:831.126 JLINK_IsHalted()
+T152C 5130:832.155   Connection to device lost. Trying to reconnect to target.
+T152C 5130:833.204   Found SW-DP with ID 0x0BC11477
+T152C 5130:835.738   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5130:836.257 - 5.129ms returns FALSE
+T152C 5131:036.126 JLINK_IsHalted()
+T152C 5131:036.730   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5131:037.252 - 1.124ms returns FALSE
+T152C 5131:237.127 JLINK_IsHalted()
+T152C 5131:237.748   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5131:238.255 - 1.126ms returns FALSE
+T152C 5131:438.096 JLINK_IsHalted()
+T152C 5131:439.051   Connection to device lost. Trying to reconnect to target.
+T152C 5131:440.250   Found SW-DP with ID 0x0BC11477
+T152C 5131:443.032   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5131:443.545 - 5.447ms returns FALSE
+T1780 5131:492.152 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5131:493.054   [0]: USB, S/N: 801048353
+T1780 5131:493.073 - 0.921ms returns 1
+T1780 5131:493.224 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5131:493.985 - 0.761ms returns 0
+T152C 5131:643.080 JLINK_IsHalted()
+T152C 5131:643.549   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5131:643.968 - 0.887ms returns FALSE
+T152C 5131:844.065 JLINK_IsHalted()
+T152C 5131:844.947   Connection to device lost. Trying to reconnect to target.
+T152C 5131:845.931   Found SW-DP with ID 0x0BC11477
+T152C 5131:848.790   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5131:849.339 - 5.273ms returns FALSE
+T152C 5132:049.135 JLINK_IsHalted()
+T152C 5132:049.815   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5132:050.444 - 1.308ms returns FALSE
+T152C 5132:250.185 JLINK_IsHalted()
+T152C 5132:251.234   Connection to device lost. Trying to reconnect to target.
+T152C 5132:252.266   Found SW-DP with ID 0x0BC11477
+T152C 5132:254.764   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5132:255.404 - 5.218ms returns FALSE
+T152C 5132:455.101 JLINK_IsHalted()
+T152C 5132:455.682   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5132:456.188 - 1.084ms returns FALSE
+T1780 5132:653.828 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5132:654.763   [0]: USB, S/N: 801048353
+T1780 5132:654.780 - 0.952ms returns 1
+T1780 5132:654.842 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5132:655.677 - 0.835ms returns 0
+T152C 5132:656.113 JLINK_IsHalted()
+T152C 5132:656.585   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5132:656.996 - 0.882ms returns FALSE
+T152C 5132:857.120 JLINK_IsHalted()
+T152C 5132:858.435   Connection to device lost. Trying to reconnect to target.
+T152C 5132:859.387   Found SW-DP with ID 0x0BC11477
+T152C 5132:862.398   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5132:862.979 - 5.857ms returns FALSE
+T152C 5133:069.753 JLINK_IsHalted()
+T152C 5133:070.580   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5133:071.190 - 1.436ms returns FALSE
+T152C 5133:275.835 JLINK_IsHalted()
+T152C 5133:277.158   Connection to device lost. Trying to reconnect to target.
+T152C 5133:278.239   Found SW-DP with ID 0x0BC11477
+T152C 5133:280.863   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5133:281.534 - 5.697ms returns FALSE
+T152C 5133:481.582 JLINK_IsHalted()
+T152C 5133:482.203   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5133:482.759 - 1.175ms returns FALSE
+T152C 5133:683.614 JLINK_IsHalted()
+T152C 5133:684.638   Connection to device lost. Trying to reconnect to target.
+T152C 5133:685.689   Found SW-DP with ID 0x0BC11477
+T152C 5133:688.434   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5133:688.979 - 5.363ms returns FALSE
+T1780 5133:828.681 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5133:830.680   [0]: USB, S/N: 801048353
+T1780 5133:830.712 - 2.031ms returns 1
+T1780 5133:830.817 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5133:832.721 - 1.903ms returns 0
+T152C 5133:893.993 JLINK_IsHalted()
+T152C 5133:894.651   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5133:895.272 - 1.278ms returns FALSE
+T152C 5134:097.264 JLINK_IsHalted()
+T152C 5134:097.822   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5134:098.478 - 1.212ms returns FALSE
+T152C 5134:302.495 JLINK_IsHalted()
+T152C 5134:303.500   Connection to device lost. Trying to reconnect to target.
+T152C 5134:304.521   Found SW-DP with ID 0x0BC11477
+T152C 5134:307.109   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5134:307.553 - 5.055ms returns FALSE
+T152C 5134:510.584 JLINK_IsHalted()
+T152C 5134:511.291   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5134:512.065 - 1.479ms returns FALSE
+T152C 5134:713.179 JLINK_IsHalted()
+T152C 5134:714.138   Connection to device lost. Trying to reconnect to target.
+T152C 5134:715.212   Found SW-DP with ID 0x0BC11477
+T152C 5134:717.811   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5134:718.328 - 5.148ms returns FALSE
+T152C 5134:918.834 JLINK_IsHalted()
+T152C 5134:919.353   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5134:919.820 - 0.985ms returns FALSE
+T1780 5134:963.119 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5134:964.067   [0]: USB, S/N: 801048353
+T1780 5134:964.085 - 0.966ms returns 1
+T1780 5134:964.162 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5134:964.966 - 0.804ms returns 0
+T152C 5135:120.528 JLINK_IsHalted()
+T152C 5135:121.162   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5135:121.717 - 1.186ms returns FALSE
+T152C 5135:323.326 JLINK_IsHalted()
+T152C 5135:324.312   Connection to device lost. Trying to reconnect to target.
+T152C 5135:325.628   Found SW-DP with ID 0x0BC11477
+T152C 5135:328.077   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5135:328.578 - 5.251ms returns FALSE
+T152C 5135:529.264 JLINK_IsHalted()
+T152C 5135:529.861   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5135:530.485 - 1.208ms returns FALSE
+T152C 5135:732.897 JLINK_IsHalted()
+T152C 5135:733.927   Connection to device lost. Trying to reconnect to target.
+T152C 5135:735.116   Found SW-DP with ID 0x0BC11477
+T152C 5135:737.773   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5135:738.284 - 5.386ms returns FALSE
+T152C 5135:946.654 JLINK_IsHalted()
+T152C 5135:947.338   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5135:947.926 - 1.270ms returns FALSE
+T1780 5136:114.163 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5136:115.458   [0]: USB, S/N: 801048353
+T1780 5136:115.489 - 1.326ms returns 1
+T1780 5136:115.561 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5136:116.701 - 1.138ms returns 0
+T152C 5136:150.043 JLINK_IsHalted()
+T152C 5136:150.819   Connection to device lost. Trying to reconnect to target.
+T152C 5136:151.501   Found SW-DP with ID 0x0BC11477
+T152C 5136:156.847   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5136:157.190 - 7.146ms returns FALSE
+T152C 5136:358.636 JLINK_IsHalted()
+T152C 5136:359.093   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5136:359.442 - 0.806ms returns FALSE
+T152C 5136:558.614 JLINK_IsHalted()
+T152C 5136:559.045   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5136:559.428 - 0.814ms returns FALSE
+T152C 5136:762.195 JLINK_IsHalted()
+T152C 5136:763.371   Connection to device lost. Trying to reconnect to target.
+T152C 5136:764.457   Found SW-DP with ID 0x0BC11477
+T152C 5136:767.047   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5136:767.546 - 5.349ms returns FALSE
+T152C 5136:967.599 JLINK_IsHalted()
+T152C 5136:968.018   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5136:968.380 - 0.780ms returns FALSE
+T152C 5137:169.586 JLINK_IsHalted()
+T152C 5137:170.356   Connection to device lost. Trying to reconnect to target.
+T152C 5137:171.085   Found SW-DP with ID 0x0BC11477
+T152C 5137:172.979   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5137:173.340 - 3.754ms returns FALSE
+T1780 5137:260.142 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5137:261.490   [0]: USB, S/N: 801048353
+T1780 5137:261.512 - 1.371ms returns 1
+T1780 5137:261.593 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5137:262.716 - 1.121ms returns 0
+T152C 5137:374.057 JLINK_IsHalted()
+T152C 5137:374.492   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5137:374.895 - 0.837ms returns FALSE
+T152C 5137:574.684 JLINK_IsHalted()
+T152C 5137:575.615   Connection to device lost. Trying to reconnect to target.
+T152C 5137:576.500   Found SW-DP with ID 0x0BC11477
+T152C 5137:579.076   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5137:579.616 - 4.930ms returns FALSE
+T152C 5137:784.530 JLINK_IsHalted()
+T152C 5137:785.258   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5137:785.894 - 1.362ms returns FALSE
+T152C 5137:991.644 JLINK_IsHalted()
+T152C 5137:992.212   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5137:992.745 - 1.100ms returns FALSE
+T152C 5138:198.043 JLINK_IsHalted()
+T152C 5138:199.192   Connection to device lost. Trying to reconnect to target.
+T152C 5138:199.932   Found SW-DP with ID 0x0BC11477
+T152C 5138:203.304   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5138:203.930 - 5.923ms returns FALSE
+T1780 5138:396.459 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5138:397.862   [0]: USB, S/N: 801048353
+T1780 5138:397.885 - 1.426ms returns 1
+T1780 5138:397.961 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5138:398.939 - 0.977ms returns 0
+T152C 5138:408.297 JLINK_IsHalted()
+T152C 5138:408.668   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5138:409.008 - 0.710ms returns FALSE
+T152C 5138:610.667 JLINK_IsHalted()
+T152C 5138:611.783   Connection to device lost. Trying to reconnect to target.
+T152C 5138:612.923   Found SW-DP with ID 0x0BC11477
+T152C 5138:615.714   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5138:616.219 - 5.550ms returns FALSE
+T152C 5138:815.826 JLINK_IsHalted()
+T152C 5138:816.419   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5138:817.135 - 1.307ms returns FALSE
+T152C 5139:021.232 JLINK_IsHalted()
+T152C 5139:022.327   Connection to device lost. Trying to reconnect to target.
+T152C 5139:023.395   Found SW-DP with ID 0x0BC11477
+T152C 5139:026.078   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5139:026.746 - 5.513ms returns FALSE
+T152C 5139:230.676 JLINK_IsHalted()
+T152C 5139:231.134   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5139:231.506 - 0.829ms returns FALSE
+T152C 5139:431.535 JLINK_IsHalted()
+T152C 5139:432.257   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5139:433.052 - 1.515ms returns FALSE
+T1780 5139:559.463 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5139:560.354   [0]: USB, S/N: 801048353
+T1780 5139:560.370 - 0.907ms returns 1
+T1780 5139:560.437 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5139:561.211 - 0.774ms returns 0
+T152C 5139:635.805 JLINK_IsHalted()
+T152C 5139:637.051   Connection to device lost. Trying to reconnect to target.
+T152C 5139:638.283   Found SW-DP with ID 0x0BC11477
+T152C 5139:640.888   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5139:641.423 - 5.617ms returns FALSE
+T152C 5139:844.869 JLINK_IsHalted()
+T152C 5139:845.576   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5139:846.125 - 1.253ms returns FALSE
+T152C 5140:046.752 JLINK_IsHalted()
+T152C 5140:047.983   Connection to device lost. Trying to reconnect to target.
+T152C 5140:049.164   Found SW-DP with ID 0x0BC11477
+T152C 5140:052.133   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5140:052.700 - 5.946ms returns FALSE
+T152C 5140:253.001 JLINK_IsHalted()
+T152C 5140:253.694   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5140:254.282 - 1.280ms returns FALSE
+T152C 5140:456.251 JLINK_IsHalted()
+T152C 5140:457.412   Connection to device lost. Trying to reconnect to target.
+T152C 5140:458.684   Found SW-DP with ID 0x0BC11477
+T152C 5140:461.476   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5140:462.068 - 5.816ms returns FALSE
+T152C 5140:661.769 JLINK_IsHalted()
+T152C 5140:662.393   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5140:662.906 - 1.136ms returns FALSE
+T1780 5140:744.157 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5140:747.622   [0]: USB, S/N: 801048353
+T1780 5140:747.691 - 3.534ms returns 1
+T1780 5140:747.852 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5140:751.005 - 3.150ms returns 0
+T152C 5140:863.471 JLINK_IsHalted()
+T152C 5140:864.004   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5140:864.492 - 1.021ms returns FALSE
+T152C 5141:070.329 JLINK_IsHalted()
+T152C 5141:071.515   Connection to device lost. Trying to reconnect to target.
+T152C 5141:072.540   Found SW-DP with ID 0x0BC11477
+T152C 5141:075.329   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5141:075.880 - 5.549ms returns FALSE
+T152C 5141:275.474 JLINK_IsHalted()
+T152C 5141:276.184   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5141:276.808 - 1.332ms returns FALSE
+T152C 5141:478.061 JLINK_IsHalted()
+T152C 5141:479.334   Connection to device lost. Trying to reconnect to target.
+T152C 5141:480.444   Found SW-DP with ID 0x0BC11477
+T152C 5141:483.124   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5141:483.838 - 5.775ms returns FALSE
+T152C 5141:685.011 JLINK_IsHalted()
+T152C 5141:685.690   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5141:686.233 - 1.221ms returns FALSE
+T152C 5141:886.711 JLINK_IsHalted()
+T152C 5141:887.622   Connection to device lost. Trying to reconnect to target.
+T152C 5141:888.543   Found SW-DP with ID 0x0BC11477
+T152C 5141:891.051   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5141:891.520 - 4.808ms returns FALSE
+T1780 5141:916.742 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5141:918.805   [0]: USB, S/N: 801048353
+T1780 5141:918.859 - 2.118ms returns 1
+T1780 5141:919.001 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5141:919.913 - 0.912ms returns 0
+T152C 5142:092.746 JLINK_IsHalted()
+T152C 5142:093.357   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5142:093.859 - 1.111ms returns FALSE
+T152C 5142:297.474 JLINK_IsHalted()
+T152C 5142:298.087   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5142:298.776 - 1.300ms returns FALSE
+T152C 5142:498.383 JLINK_IsHalted()
+T152C 5142:499.563   Connection to device lost. Trying to reconnect to target.
+T152C 5142:500.635   Found SW-DP with ID 0x0BC11477
+T152C 5142:503.268   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5142:503.768 - 5.384ms returns FALSE
+T152C 5142:703.887 JLINK_IsHalted()
+T152C 5142:704.716   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5142:705.189 - 1.301ms returns FALSE
+T152C 5142:905.312 JLINK_IsHalted()
+T152C 5142:906.532   Connection to device lost. Trying to reconnect to target.
+T152C 5142:907.465   Found SW-DP with ID 0x0BC11477
+T152C 5142:910.505   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5142:911.133 - 5.819ms returns FALSE
+T1780 5143:090.472 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5143:091.397   [0]: USB, S/N: 801048353
+T1780 5143:091.413 - 0.941ms returns 1
+T1780 5143:091.475 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5143:092.240 - 0.764ms returns 0
+T152C 5143:112.735 JLINK_IsHalted()
+T152C 5143:113.183   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5143:113.630 - 0.893ms returns FALSE
+T152C 5143:316.203 JLINK_IsHalted()
+T152C 5143:316.912   Connection to device lost. Trying to reconnect to target.
+T152C 5143:317.680   Found SW-DP with ID 0x0BC11477
+T152C 5143:319.764   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5143:320.188 - 3.984ms returns FALSE
+T152C 5143:521.321 JLINK_IsHalted()
+T152C 5143:521.667   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5143:522.068 - 0.746ms returns FALSE
+T152C 5143:722.955 JLINK_IsHalted()
+T152C 5143:723.588   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5143:724.156 - 1.200ms returns FALSE
+T152C 5143:924.655 JLINK_IsHalted()
+T152C 5143:925.992   Connection to device lost. Trying to reconnect to target.
+T152C 5143:927.120   Found SW-DP with ID 0x0BC11477
+T152C 5143:929.601   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5143:930.097 - 5.441ms returns FALSE
+T152C 5144:131.656 JLINK_IsHalted()
+T152C 5144:132.138   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5144:132.763 - 1.106ms returns FALSE
+T1780 5144:229.817 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5144:230.795   [0]: USB, S/N: 801048353
+T1780 5144:230.811 - 0.994ms returns 1
+T1780 5144:230.873 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5144:231.628 - 0.754ms returns 0
+T152C 5144:333.678 JLINK_IsHalted()
+T152C 5144:334.743   Connection to device lost. Trying to reconnect to target.
+T152C 5144:335.798   Found SW-DP with ID 0x0BC11477
+T152C 5144:338.572   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5144:339.098 - 5.419ms returns FALSE
+T152C 5144:542.675 JLINK_IsHalted()
+T152C 5144:543.246   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5144:543.712 - 1.035ms returns FALSE
+T152C 5144:747.193 JLINK_IsHalted()
+T152C 5144:748.063   Connection to device lost. Trying to reconnect to target.
+T152C 5144:749.021   Found SW-DP with ID 0x0BC11477
+T152C 5144:751.990   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5144:752.535 - 5.355ms returns FALSE
+T152C 5144:952.476 JLINK_IsHalted()
+T152C 5144:953.099   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5144:953.654 - 1.176ms returns FALSE
+T152C 5145:154.142 JLINK_IsHalted()
+T152C 5145:154.867   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5145:155.681 - 1.509ms returns FALSE
+T152C 5145:355.808 JLINK_IsHalted()
+T152C 5145:356.709   Connection to device lost. Trying to reconnect to target.
+T152C 5145:357.537   Found SW-DP with ID 0x0BC11477
+T152C 5145:359.862   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5145:360.317 - 4.507ms returns FALSE
+T1780 5145:399.738 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5145:400.694   [0]: USB, S/N: 801048353
+T1780 5145:400.708 - 0.970ms returns 1
+T1780 5145:400.765 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5145:401.533 - 0.767ms returns 0
+T152C 5145:561.982 JLINK_IsHalted()
+T152C 5145:562.615   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5145:563.227 - 1.288ms returns FALSE
+T152C 5145:768.833 JLINK_IsHalted()
+T152C 5145:770.101   Connection to device lost. Trying to reconnect to target.
+T152C 5145:771.205   Found SW-DP with ID 0x0BC11477
+T152C 5145:773.996   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5145:774.567 - 5.733ms returns FALSE
+T152C 5145:975.839 JLINK_IsHalted()
+T152C 5145:976.387   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5145:976.917 - 1.077ms returns FALSE
+T152C 5146:179.224 JLINK_IsHalted()
+T152C 5146:179.961   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5146:180.652 - 1.426ms returns FALSE
+T152C 5146:380.896 JLINK_IsHalted()
+T152C 5146:382.033   Connection to device lost. Trying to reconnect to target.
+T152C 5146:383.085   Found SW-DP with ID 0x0BC11477
+T152C 5146:385.621   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5146:386.239 - 5.341ms returns FALSE
+T1780 5146:569.231 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5146:570.154   [0]: USB, S/N: 801048353
+T1780 5146:570.170 - 0.939ms returns 1
+T1780 5146:570.783 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5146:571.530 - 0.747ms returns 0
+T152C 5146:587.987 JLINK_IsHalted()
+T152C 5146:588.517   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5146:588.994 - 1.006ms returns FALSE
+T152C 5146:789.827 JLINK_IsHalted()
+T152C 5146:790.939   Connection to device lost. Trying to reconnect to target.
+T152C 5146:792.073   Found SW-DP with ID 0x0BC11477
+T152C 5146:794.732   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5146:795.263 - 5.435ms returns FALSE
+T152C 5146:998.134 JLINK_IsHalted()
+T152C 5146:998.602   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5146:998.975 - 0.840ms returns FALSE
+T152C 5147:198.937 JLINK_IsHalted()
+T152C 5147:199.874   Connection to device lost. Trying to reconnect to target.
+T152C 5147:200.885   Found SW-DP with ID 0x0BC11477
+T152C 5147:203.508   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5147:204.049 - 5.110ms returns FALSE
+T152C 5147:404.641 JLINK_IsHalted()
+T152C 5147:405.458   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5147:406.014 - 1.372ms returns FALSE
+T152C 5147:605.495 JLINK_IsHalted()
+T152C 5147:606.010   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5147:606.567 - 1.070ms returns FALSE
+T1780 5147:733.967 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T1780 5147:735.916   [0]: USB, S/N: 801048353
+T1780 5147:735.950 - 1.983ms returns 1
+T1780 5147:736.052 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T1780 5147:737.754 - 1.701ms returns 0
+T152C 5147:807.088 JLINK_IsHalted()
+T152C 5147:808.146   Connection to device lost. Trying to reconnect to target.
+T152C 5147:809.197   Found SW-DP with ID 0x0BC11477
+T152C 5147:812.090   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5147:812.617 - 5.528ms returns FALSE
+T152C 5148:013.933 JLINK_IsHalted()
+T152C 5148:014.613   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5148:015.142 - 1.208ms returns FALSE
+T152C 5148:215.911 JLINK_IsHalted()
+T152C 5148:217.114   Connection to device lost. Trying to reconnect to target.
+T152C 5148:218.163   Found SW-DP with ID 0x0BC11477
+T152C 5148:220.859   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5148:221.363 - 5.451ms returns FALSE
+T152C 5148:424.426 JLINK_IsHalted()
+T152C 5148:425.075   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5148:425.601 - 1.172ms returns FALSE
+T152C 5148:626.811 JLINK_IsHalted()
+T152C 5148:628.039   Connection to device lost. Trying to reconnect to target.
+T152C 5148:629.125   Found SW-DP with ID 0x0BC11477
+T152C 5148:631.721   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5148:632.337 - 5.524ms returns FALSE
+T152C 5148:835.734 JLINK_IsHalted()
+T152C 5148:836.358   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5148:836.903 - 1.167ms returns FALSE
+T152C 5149:037.373 JLINK_IsHalted()
+T152C 5149:038.109   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5149:038.533 - 1.159ms returns FALSE
+T152C 5149:242.238 JLINK_IsHalted()
+T152C 5149:243.207   Connection to device lost. Trying to reconnect to target.
+T152C 5149:244.312   Found SW-DP with ID 0x0BC11477
+T152C 5149:246.884   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5149:247.405 - 5.166ms returns FALSE
+T152C 5149:452.993 JLINK_IsHalted()
+T152C 5149:453.566   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5149:454.080 - 1.085ms returns FALSE
+T152C 5149:656.561 JLINK_IsHalted()
+T152C 5149:657.539   Connection to device lost. Trying to reconnect to target.
+T152C 5149:658.614   Found SW-DP with ID 0x0BC11477
+T152C 5149:661.180   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5149:661.689 - 5.127ms returns FALSE
+T152C 5149:861.538 JLINK_IsHalted()
+T152C 5149:862.005   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5149:862.576 - 1.037ms returns FALSE
+T152C 5150:062.672 JLINK_IsHalted()
+T152C 5150:063.892   Connection to device lost. Trying to reconnect to target.
+T152C 5150:065.042   Found SW-DP with ID 0x0BC11477
+T152C 5150:067.692   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5150:068.329 - 5.656ms returns FALSE
+T152C 5150:271.428 JLINK_IsHalted()
+T152C 5150:272.003   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5150:272.497 - 1.069ms returns FALSE
+T152C 5150:472.660 JLINK_IsHalted()
+T152C 5150:473.264   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5150:473.893 - 1.231ms returns FALSE
+T152C 5150:675.832 JLINK_IsHalted()
+T152C 5150:676.874   Connection to device lost. Trying to reconnect to target.
+T152C 5150:677.908   Found SW-DP with ID 0x0BC11477
+T152C 5150:680.369   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5150:680.900 - 5.076ms returns FALSE
+T152C 5150:884.048 JLINK_IsHalted()
+T152C 5150:884.581   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5150:885.056 - 1.007ms returns FALSE
+T152C 5151:085.230 JLINK_IsHalted()
+T152C 5151:086.216   Connection to device lost. Trying to reconnect to target.
+T152C 5151:087.223   Found SW-DP with ID 0x0BC11477
+T152C 5151:089.865   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5151:090.355 - 5.124ms returns FALSE
+T152C 5151:292.791 JLINK_IsHalted()
+T152C 5151:293.421   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5151:293.826 - 1.033ms returns FALSE
+T152C 5151:497.987 JLINK_IsHalted()
+T152C 5151:498.977   Connection to device lost. Trying to reconnect to target.
+T152C 5151:500.087   Found SW-DP with ID 0x0BC11477
+T152C 5151:502.656   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5151:503.286 - 5.298ms returns FALSE
+T152C 5151:703.205 JLINK_IsHalted()
+T152C 5151:703.886   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5151:704.524 - 1.317ms returns FALSE
+T152C 5151:903.989 JLINK_IsHalted()
+T152C 5151:904.602   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5151:905.322 - 1.330ms returns FALSE
+T152C 5152:105.928 JLINK_IsHalted()
+T152C 5152:107.088   Connection to device lost. Trying to reconnect to target.
+T152C 5152:108.302   Found SW-DP with ID 0x0BC11477
+T152C 5152:110.951   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5152:111.442 - 5.512ms returns FALSE
+T152C 5152:310.962 JLINK_IsHalted()
+T152C 5152:311.536   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5152:312.045 - 1.081ms returns FALSE
+T152C 5152:511.979 JLINK_IsHalted()
+T152C 5152:512.855   Connection to device lost. Trying to reconnect to target.
+T152C 5152:514.290   Found SW-DP with ID 0x0BC11477
+T152C 5152:516.402   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5152:516.944 - 4.964ms returns FALSE
+T152C 5152:716.959 JLINK_IsHalted()
+T152C 5152:717.516   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5152:718.083 - 1.122ms returns FALSE
+T152C 5152:917.916 JLINK_IsHalted()
+T152C 5152:918.943   Connection to device lost. Trying to reconnect to target.
+T152C 5152:919.906   Found SW-DP with ID 0x0BC11477
+T152C 5152:922.320   CPU_ReadMem(4 bytes @ 0x41002100)
+T152C 5152:922.915 - 4.997ms returns FALSE
+T3DEC 5153:013.607 JLINK_Halt()
+T3DEC 5153:016.535 - 2.927ms returns 0x00
+T152C 5153:122.996 JLINK_IsHalted()
+T152C 5153:123.031 - 0.034ms returns TRUE
+T152C 5153:123.061 JLINK_GetMOEs(...)
+T152C 5153:123.083   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T152C 5153:123.504 - 0.440ms returns 0x01
+T152C 5153:123.534 JLINK_ReadReg(R15 (PC))
+T152C 5153:123.547 - 0.013ms returns 0x00008FFA
+T2C30 5153:124.676 JLINK_ResetPullsRESET(ON)
+T2C30 5153:124.735 - 0.059ms
+T2C30 5153:124.750 JLINK_ResetNoHalt()
+T2C30 5153:125.049   InitTarget() start
+T2C30 5153:125.063    J-Link Script File: Executing InitTarget()
+T2C30 5153:125.078   InitTarget()
+T2C30 5153:128.531   InitTarget() end - Took 3.41ms
+T2C30 5153:129.318   Found SW-DP with ID 0x0BC11477
+T2C30 5153:132.336   DPIDR: 0x0BC11477
+T2C30 5153:132.495   CoreSight SoC-400 or earlier
+T2C30 5153:132.526   AP map detection skipped. Manually configured AP map found.
+T2C30 5153:132.553   AP[0]: AHB-AP (IDR: Not set)
+T2C30 5153:134.032   AP[0]: Core found
+T2C30 5153:134.073   AP[0]: AHB-AP ROM base: 0x41003000
+T2C30 5153:134.718   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T2C30 5153:134.739   Found Cortex-M0 r0p1, Little endian.
+T2C30 5153:134.912   -- Max. mem block: 0x00002860
+T2C30 5153:134.959   Cortex-M: The connected J-Link (S/N 801048353) uses an old firmware module: V1 (current is 2)
+T2C30 5153:134.980   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5153:135.486   CPU_ReadMem(4 bytes @ 0xE0002000)
+T2C30 5153:135.885   FPUnit: 4 code (BP) slots and 0 literal slots
+T2C30 5153:135.900   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5153:136.254   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5153:136.730   CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5153:137.215   CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5153:137.745   CoreSight components:
+T2C30 5153:137.772   ROMTbl[0] @ 41003000
+T2C30 5153:137.793   CPU_ReadMem(64 bytes @ 0x41003000)
+T2C30 5153:138.602   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T2C30 5153:139.304   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T2C30 5153:139.331   ROMTbl[1] @ E00FF000
+T2C30 5153:139.344   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T2C30 5153:140.163   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T2C30 5153:140.945   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T2C30 5153:140.975   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T2C30 5153:141.662   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T2C30 5153:141.682   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T2C30 5153:142.355   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T2C30 5153:142.375   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T2C30 5153:142.931   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T2C30 5153:142.977   JLINK_Reset()
+T2C30 5153:143.018     Memory map 'before startup completion point' is active
+T2C30 5153:143.040     ResetTarget() start
+T2C30 5153:143.054      J-Link Script File: Executing ResetTarget()
+T2C30 5153:143.073     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5153:143.475     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5153:144.002     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T2C30 5153:145.924     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T2C30 5153:146.457     CPU_ReadMem(4 bytes @ 0x41002100)
+T2C30 5153:146.874     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T2C30 5153:147.307     ResetTarget() end - Took 4.19ms
+T2C30 5153:151.417     CPU_WriteMem(4 bytes @ 0xE0002000)
+T2C30 5153:151.864     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T2C30 5153:152.393     CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5153:152.863     CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5153:153.459   - 10.481ms
+T2C30 5153:153.480   JLINK_Go()
+T2C30 5153:153.503     CPU_ReadMem(4 bytes @ 0xE0001000)
+T2C30 5153:153.985     CPU_WriteMem(4 bytes @ 0xE0001000)
+T2C30 5153:154.381     CPU_WriteMem(4 bytes @ 0xE0002008)
+T2C30 5153:154.441     CPU_WriteMem(4 bytes @ 0xE000200C)
+T2C30 5153:154.454     CPU_WriteMem(4 bytes @ 0xE0002010)
+T2C30 5153:154.466     CPU_WriteMem(4 bytes @ 0xE0002014)
+T2C30 5153:155.722     CPU_WriteMem(4 bytes @ 0xE0001004)
+T2C30 5153:156.806     Memory map 'after startup completion point' is active
+T2C30 5153:156.837   - 3.356ms
+T2C30 5153:156.845 - 32.095ms
+T2C30 5153:161.271 JLINK_Close()
+T2C30 5153:162.391   CPU is running
+T2C30 5153:162.423   CPU_WriteMem(4 bytes @ 0xE0002008)
+T2C30 5153:163.034   CPU is running
+T2C30 5153:163.060   CPU_WriteMem(4 bytes @ 0xE000200C)
+T2C30 5153:163.612   CPU is running
+T2C30 5153:163.675   CPU_WriteMem(4 bytes @ 0xE0002010)
+T2C30 5153:164.070   CPU is running
+T2C30 5153:164.094   CPU_WriteMem(4 bytes @ 0xE0002014)
+T2C30 5153:184.734 - 23.460ms
+T2C30 5153:184.770   
+T2C30 5153:184.782   Closed

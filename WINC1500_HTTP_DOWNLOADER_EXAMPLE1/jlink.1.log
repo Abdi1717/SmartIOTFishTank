@@ -1,0 +1,9 @@
+T2C30 5183:858.212   SEGGER J-Link V7.94a Log File
+T2C30 5183:858.364   DLL Compiled: Dec  6 2023 16:01:39
+T2C30 5183:858.399   Logging started @ 2023-12-19 06:32
+T2C30 5183:858.452   Process: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atbackend.exe
+T2C30 5183:858.503 - 80.902ms
+T2C30 5183:878.163 JLINK_Close()
+T2C30 5183:887.996 - 9.831ms
+T2C30 5183:888.047   
+T2C30 5183:888.062   Closed
